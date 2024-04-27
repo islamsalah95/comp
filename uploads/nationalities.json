@@ -1,0 +1,787 @@
+{
+  "1": {
+    "Arabic_Nationality": "أفغاني",
+    "English_Nationality": "Afghan"
+  },
+  "2": {
+    "Arabic_Nationality": "ألباني",
+    "English_Nationality": "Albanian"
+  },
+  "3": {
+    "Arabic_Nationality": "جزائري",
+    "English_Nationality": "Algerian"
+  },
+  "4": {
+    "Arabic_Nationality": "أمريكي",
+    "English_Nationality": "American"
+  },
+  "5": {
+    "Arabic_Nationality": "أندوري",
+    "English_Nationality": "Andorran"
+  },
+  "6": {
+    "Arabic_Nationality": "أنغولي",
+    "English_Nationality": "Angolan"
+  },
+  "7": {
+    "Arabic_Nationality": "أنتيغوي",
+    "English_Nationality": "Antiguans"
+  },
+  "8": {
+    "Arabic_Nationality": "أرجنتيني",
+    "English_Nationality": "Argentinean"
+  },
+  "9": {
+    "Arabic_Nationality": "أرميني",
+    "English_Nationality": "Armenian"
+  },
+  "10": {
+    "Arabic_Nationality": "أسترالي",
+    "English_Nationality": "Australian"
+  },
+  "11": {
+    "Arabic_Nationality": "نمساوي",
+    "English_Nationality": "Austrian"
+  },
+  "12": {
+    "Arabic_Nationality": "أذربيجاني",
+    "English_Nationality": "Azerbaijani"
+  },
+  "13": {
+    "Arabic_Nationality": "باهامي",
+    "English_Nationality": "Bahamian"
+  },
+  "14": {
+    "Arabic_Nationality": "بحريني",
+    "English_Nationality": "Bahraini"
+  },
+  "15": {
+    "Arabic_Nationality": "بنغلاديشي",
+    "English_Nationality": "Bangladeshi"
+  },
+  "16": {
+    "Arabic_Nationality": "بربادوسي",
+    "English_Nationality": "Barbadian"
+  },
+  "17": {
+    "Arabic_Nationality": "بيلاروسي",
+    "English_Nationality": "Belarusian"
+  },
+  "18": {
+    "Arabic_Nationality": "بلجيكي",
+    "English_Nationality": "Belgian"
+  },
+  "19": {
+    "Arabic_Nationality": "بليزي",
+    "English_Nationality": "Belizean"
+  },
+  "20": {
+    "Arabic_Nationality": "بنيني",
+    "English_Nationality": "Beninese"
+  },
+  "21": {
+    "Arabic_Nationality": "بوتاني",
+    "English_Nationality": "Bhutanese"
+  },
+  "22": {
+    "Arabic_Nationality": "بوليفي",
+    "English_Nationality": "Bolivian"
+  },
+  "23": {
+    "Arabic_Nationality": "بوسني",
+    "English_Nationality": "Bosnian"
+  },
+  "24": {
+    "Arabic_Nationality": "برازيلي",
+    "English_Nationality": "Brazilian"
+  },
+  "25": {
+    "Arabic_Nationality": "بريطاني",
+    "English_Nationality": "British"
+  },
+  "26": {
+    "Arabic_Nationality": "بروناي",
+    "English_Nationality": "Bruneian"
+  },
+  "27": {
+    "Arabic_Nationality": "بلغاري",
+    "English_Nationality": "Bulgarian"
+  },
+  "28": {
+    "Arabic_Nationality": "بركيني",
+    "English_Nationality": "Burkinabe"
+  },
+  "29": {
+    "Arabic_Nationality": "بورمي",
+    "English_Nationality": "Burmese"
+  },
+  "30": {
+    "Arabic_Nationality": "بوروندي",
+    "English_Nationality": "Burundian"
+  },
+  "31": {
+    "Arabic_Nationality": "كمبودي",
+    "English_Nationality": "Cambodian"
+  },
+  "32": {
+    "Arabic_Nationality": "كاميروني",
+    "English_Nationality": "Cameroonian"
+  },
+  "33": {
+    "Arabic_Nationality": "كندي",
+    "English_Nationality": "Canadian"
+  },
+  "34": {
+    "Arabic_Nationality": "الرأس الأخضر",
+    "English_Nationality": "Cape Verdean"
+  },
+  "35": {
+    "Arabic_Nationality": "أفريقي",
+    "English_Nationality": "Central African"
+  },
+  "36": {
+    "Arabic_Nationality": "تشادي",
+    "English_Nationality": "Chadian"
+  },
+  "37": {
+    "Arabic_Nationality": "تشيلي",
+    "English_Nationality": "Chilean"
+  },
+  "38": {
+    "Arabic_Nationality": "صيني",
+    "English_Nationality": "Chinese"
+  },
+  "39": {
+    "Arabic_Nationality": "كولومبي",
+    "English_Nationality": "Colombian"
+  },
+  "40": {
+    "Arabic_Nationality": "قمري",
+    "English_Nationality": "Comoran"
+  },
+  "41": {
+    "Arabic_Nationality": "كونغولي",
+    "English_Nationality": "Congolese"
+  },
+  "42": {
+    "Arabic_Nationality": "كوستاريكي",
+    "English_Nationality": "Costa Rican"
+  },
+  "43": {
+    "Arabic_Nationality": "كرواتي",
+    "English_Nationality": "Croatian"
+  },
+  "44": {
+    "Arabic_Nationality": "كوبي",
+    "English_Nationality": "Cuban"
+  },
+  "45": {
+    "Arabic_Nationality": "قبرصي",
+    "English_Nationality": "Cypriot"
+  },
+  "46": {
+    "Arabic_Nationality": "تشيكي",
+    "English_Nationality": "Czech"
+  },
+  "47": {
+    "Arabic_Nationality": "دنماركي",
+    "English_Nationality": "Danish"
+  },
+  "48": {
+    "Arabic_Nationality": "جيبوتي",
+    "English_Nationality": "Djibouti"
+  },
+  "49": {
+    "Arabic_Nationality": "دومينيكاني",
+    "English_Nationality": "Dominican"
+  },
+  "50": {
+    "Arabic_Nationality": "هولندي",
+    "English_Nationality": "Dutch"
+  },
+  "51": {
+    "Arabic_Nationality": "تيمور الشرقية",
+    "English_Nationality": "East Timorese"
+  },
+  "52": {
+    "Arabic_Nationality": "إكوادوري",
+    "English_Nationality": "Ecuadorean"
+  },
+  "53": {
+    "Arabic_Nationality": "مصري",
+    "English_Nationality": "Egyptian"
+  },
+  "54": {
+    "Arabic_Nationality": "إماراتي",
+    "English_Nationality": "Emirian"
+  },
+  "55": {
+    "Arabic_Nationality": "غيني الاستوائي",
+    "English_Nationality": "Equatorial Guinean"
+  },
+  "56": {
+    "Arabic_Nationality": "إريتري",
+    "English_Nationality": "Eritrean"
+  },
+  "57": {
+    "Arabic_Nationality": "إستوني",
+    "English_Nationality": "Estonian"
+  },
+  "58": {
+    "Arabic_Nationality": "إثيوبي",
+    "English_Nationality": "Ethiopian"
+  },
+  "59": {
+    "Arabic_Nationality": "فيجي",
+    "English_Nationality": "Fijian"
+  },
+  "60": {
+    "Arabic_Nationality": "فلبيني",
+    "English_Nationality": "Filipino"
+  },
+  "61": {
+    "Arabic_Nationality": "فنلندي",
+    "English_Nationality": "Finnish"
+  },
+  "62": {
+    "Arabic_Nationality": "فرنسي",
+    "English_Nationality": "French"
+  },
+  "63": {
+    "Arabic_Nationality": "غابوني",
+    "English_Nationality": "Gabonese"
+  },
+  "64": {
+    "Arabic_Nationality": "غامبي",
+    "English_Nationality": "Gambian"
+  },
+  "65": {
+    "Arabic_Nationality": "جورجي",
+    "English_Nationality": "Georgian"
+  },
+  "66": {
+    "Arabic_Nationality": "ألماني",
+    "English_Nationality": "German"
+  },
+  "67": {
+    "Arabic_Nationality": "غاني",
+    "English_Nationality": "Ghanaian"
+  },
+  "68": {
+    "Arabic_Nationality": "يوناني",
+    "English_Nationality": "Greek"
+  },
+  "69": {
+    "Arabic_Nationality": "جرينادي",
+    "English_Nationality": "Grenadian"
+  },
+  "70": {
+    "Arabic_Nationality": "غواتيمالي",
+    "English_Nationality": "Guatemalan"
+  },
+  "71": {
+    "Arabic_Nationality": "غيني بيساوي",
+    "English_Nationality": "Guinea-Bissauan"
+  },
+  "72": {
+    "Arabic_Nationality": "غيني",
+    "English_Nationality": "Guinean"
+  },
+  "73": {
+    "Arabic_Nationality": "غياني",
+    "English_Nationality": "Guyanese"
+  },
+  "74": {
+    "Arabic_Nationality": "هايتي",
+    "English_Nationality": "Haitian"
+  },
+  "75": {
+    "Arabic_Nationality": "هرسوتسيغوفيني",
+    "English_Nationality": "Herzegovinian"
+  },
+  "76": {
+    "Arabic_Nationality": "هندي",
+    "English_Nationality": "Honduran"
+  },
+  "77": {
+    "Arabic_Nationality": "هنغاري",
+    "English_Nationality": "Hungarian"
+  },
+  "78": {
+    "Arabic_Nationality": "إيسلندي",
+    "English_Nationality": "I-Kiribati"
+  },
+  "79": {
+    "Arabic_Nationality": "هندي",
+    "English_Nationality": "Icelander"
+  },
+  "80": {
+    "Arabic_Nationality": "هندي",
+    "English_Nationality": "Indian"
+  },
+  "81": {
+    "Arabic_Nationality": "إندونيسي",
+    "English_Nationality": "Indonesian"
+  },
+  "82": {
+    "Arabic_Nationality": "إيراني",
+    "English_Nationality": "Iranian"
+  },
+  "83": {
+    "Arabic_Nationality": "عراقي",
+    "English_Nationality": "Iraqi"
+  },
+  "84": {
+    "Arabic_Nationality": "إيرلندي",
+    "English_Nationality": "Irish"
+  },
+  "85": {
+    "Arabic_Nationality": "إسرائيلي",
+    "English_Nationality": "Israeli"
+  },
+  "86": {
+    "Arabic_Nationality": "إيطالي",
+    "English_Nationality": "Italian"
+  },
+  "87": {
+    "Arabic_Nationality": "إيفواري",
+    "English_Nationality": "Ivorian"
+  },
+  "88": {
+    "Arabic_Nationality": "جامايكي",
+    "English_Nationality": "Jamaican"
+  },
+  "89": {
+    "Arabic_Nationality": "ياباني",
+    "English_Nationality": "Japanese"
+  },
+  "90": {
+    "Arabic_Nationality": "أردني",
+    "English_Nationality": "Jordanian"
+  },
+  "91": {
+    "Arabic_Nationality": "كازاخستاني",
+    "English_Nationality": "Kazakhstani"
+  },
+  "92": {
+    "Arabic_Nationality": "كيني",
+    "English_Nationality": "Kenyan"
+  },
+  "93": {
+    "Arabic_Nationality": "سانت كيتس ونيفيس",
+    "English_Nationality": "Kittian and Nevisian"
+  },
+  "94": {
+    "Arabic_Nationality": "كويتي",
+    "English_Nationality": "Kuwaiti"
+  },
+  "95": {
+    "Arabic_Nationality": "قرغيزي",
+    "English_Nationality": "Kyrgyz"
+  },
+  "96": {
+    "Arabic_Nationality": "لاوسي",
+    "English_Nationality": "Laotian"
+  },
+  "97": {
+    "Arabic_Nationality": "لاتفي",
+    "English_Nationality": "Latvian"
+  },
+  "98": {
+    "Arabic_Nationality": "لبناني",
+    "English_Nationality": "Lebanese"
+  },
+  "99": {
+    "Arabic_Nationality": "ليبيري",
+    "English_Nationality": "Liberian"
+  },
+  "100": {
+    "Arabic_Nationality": "ليبي",
+    "English_Nationality": "Libyan"
+  },
+  "101": {
+    "Arabic_Nationality": "ليختنشتايني",
+    "English_Nationality": "Liechtensteiner"
+  },
+  "102": {
+    "Arabic_Nationality": "ليتواني",
+    "English_Nationality": "Lithuanian"
+  },
+  "103": {
+    "Arabic_Nationality": "لوكسمبورجي",
+    "English_Nationality": "Luxembourger"
+  },
+  "104": {
+    "Arabic_Nationality": "مقدوني",
+    "English_Nationality": "Macedonian"
+  },
+  "105": {
+    "Arabic_Nationality": "مدغشقري",
+    "English_Nationality": "Malagasy"
+  },
+  "106": {
+    "Arabic_Nationality": "مالاوي",
+    "English_Nationality": "Malawian"
+  },
+  "107": {
+    "Arabic_Nationality": "ماليزي",
+    "English_Nationality": "Malaysian"
+  },
+  "108": {
+    "Arabic_Nationality": "مالديفي",
+    "English_Nationality": "Maldivan"
+  },
+  "109": {
+    "Arabic_Nationality": "مالي",
+    "English_Nationality": "Malian"
+  },
+  "110": {
+    "Arabic_Nationality": "مالطي",
+    "English_Nationality": "Maltese"
+  },
+  "111": {
+    "Arabic_Nationality": "مارشالي",
+    "English_Nationality": "Marshallese"
+  },
+  "112": {
+    "Arabic_Nationality": "موريتاني",
+    "English_Nationality": "Mauritanian"
+  },
+  "113": {
+    "Arabic_Nationality": "موريشيوسي",
+    "English_Nationality": "Mauritian"
+  },
+  "114": {
+    "Arabic_Nationality": "مكسيكي",
+    "English_Nationality": "Mexican"
+  },
+  "115": {
+    "Arabic_Nationality": "ميكرونيزي",
+    "English_Nationality": "Micronesian"
+  },
+  "116": {
+    "Arabic_Nationality": "مولدوفي",
+    "English_Nationality": "Moldovan"
+  },
+  "117": {
+    "Arabic_Nationality": "موناكو",
+    "English_Nationality": "Monacan"
+  },
+  "118": {
+    "Arabic_Nationality": "منغولي",
+    "English_Nationality": "Mongolian"
+  },
+  "119": {
+    "Arabic_Nationality": "مغربي",
+    "English_Nationality": "Moroccan"
+  },
+  "120": {
+    "Arabic_Nationality": "موزمبيقي",
+    "English_Nationality": "Mozambican"
+  },
+  "121": {
+    "Arabic_Nationality": "بورمي",
+    "English_Nationality": "Burmese"
+  },
+  "122": {
+    "Arabic_Nationality": "ناميبي",
+    "English_Nationality": "Namibian"
+  },
+  "123": {
+    "Arabic_Nationality": "ناورو",
+    "English_Nationality": "Nauruan"
+  },
+  "124": {
+    "Arabic_Nationality": "نيبالي",
+    "English_Nationality": "Nepalese"
+  },
+  "125": {
+    "Arabic_Nationality": "هولندي",
+    "English_Nationality": "Dutch"
+  },
+  "126": {
+    "Arabic_Nationality": "نيوزيلندي",
+    "English_Nationality": "New Zealander"
+  },
+  "127": {
+    "Arabic_Nationality": "نيكاراغوي",
+    "English_Nationality": "Nicaraguan"
+  },
+  "128": {
+    "Arabic_Nationality": "نيجيري",
+    "English_Nationality": "Nigerian"
+  },
+  "129": {
+    "Arabic_Nationality": "نورويجي",
+    "English_Nationality": "Nigerien"
+  },
+  "130": {
+    "Arabic_Nationality": "عماني",
+    "English_Nationality": "Omani"
+  },
+  "131": {
+    "Arabic_Nationality": "باكستاني",
+    "English_Nationality": "Pakistani"
+  },
+  "132": {
+    "Arabic_Nationality": "بالاوي",
+    "English_Nationality": "Palauan"
+  },
+  "133": {
+    "Arabic_Nationality": "فلسطيني",
+    "English_Nationality": "Palestinian"
+  },
+  "134": {
+    "Arabic_Nationality": "بنمي",
+    "English_Nationality": "Panamanian"
+  },
+  "135": {
+    "Arabic_Nationality": "بابوا غينيا الجديدة",
+    "English_Nationality": "Papua New Guinean"
+  },
+  "136": {
+    "Arabic_Nationality": "باراغواي",
+    "English_Nationality": "Paraguayan"
+  },
+  "137": {
+    "Arabic_Nationality": "بيروفي",
+    "English_Nationality": "Peruvian"
+  },
+  "138": {
+    "Arabic_Nationality": "بولندي",
+    "English_Nationality": "Polish"
+  },
+  "139": {
+    "Arabic_Nationality": "برتغالي",
+    "English_Nationality": "Portuguese"
+  },
+  "140": {
+    "Arabic_Nationality": "قطري",
+    "English_Nationality": "Qatari"
+  },
+  "141": {
+    "Arabic_Nationality": "روماني",
+    "English_Nationality": "Romanian"
+  },
+  "142": {
+    "Arabic_Nationality": "روسي",
+    "English_Nationality": "Russian"
+  },
+  "143": {
+    "Arabic_Nationality": "رواندي",
+    "English_Nationality": "Rwandan"
+  },
+  "144": {
+    "Arabic_Nationality": "سانت لوسي",
+    "English_Nationality": "Saint Lucian"
+  },
+  "145": {
+    "Arabic_Nationality": "سانت فينسنت والغرينادين",
+    "English_Nationality": "Saint Vincent and the Grenadines"
+  },
+  "146": {
+    "Arabic_Nationality": "ساموا",
+    "English_Nationality": "Samoan"
+  },
+  "147": {
+    "Arabic_Nationality": "سان مارينو",
+    "English_Nationality": "San Marinese"
+  },
+  "148": {
+    "Arabic_Nationality": "ساو تومي وبرينسيبي",
+    "English_Nationality": "Sao Tomean"
+  },
+  "149": {
+    "Arabic_Nationality": "سعودي",
+    "English_Nationality": "Saudi"
+  },
+  "150": {
+    "Arabic_Nationality": "سنغالي",
+    "English_Nationality": "Senegalese"
+  },
+  "151": {
+    "Arabic_Nationality": "صربي",
+    "English_Nationality": "Serbian"
+  },
+  "152": {
+    "Arabic_Nationality": "سيشيلي",
+    "English_Nationality": "Seychellois"
+  },
+  "153": {
+    "Arabic_Nationality": "سيراليوني",
+    "English_Nationality": "Sierra Leonean"
+  },
+  "154": {
+    "Arabic_Nationality": "سنغافوري",
+    "English_Nationality": "Singaporean"
+  },
+  "155": {
+    "Arabic_Nationality": "سلوفاكي",
+    "English_Nationality": "Slovak"
+  },
+  "156": {
+    "Arabic_Nationality": "سلوفيني",
+    "English_Nationality": "Slovenian"
+  },
+  "157": {
+    "Arabic_Nationality": "جزر سليمان",
+    "English_Nationality": "Solomon Islander"
+  },
+  "158": {
+    "Arabic_Nationality": "صومالي",
+    "English_Nationality": "Somali"
+  },
+  "159": {
+    "Arabic_Nationality": "جنوب أفريقي",
+    "English_Nationality": "South African"
+  },
+  "160": {
+    "Arabic_Nationality": "كوري جنوبي",
+    "English_Nationality": "South Korean"
+  },
+  "161": {
+    "Arabic_Nationality": "جنوب السودان",
+    "English_Nationality": "South Sudanese"
+  },
+  "162": {
+    "Arabic_Nationality": "إسباني",
+    "English_Nationality": "Spanish"
+  },
+  "163": {
+    "Arabic_Nationality": "سريلانكي",
+    "English_Nationality": "Sri Lankan"
+  },
+  "164": {
+    "Arabic_Nationality": "السوداني",
+    "English_Nationality": "Sudanese"
+  },
+  "165": {
+    "Arabic_Nationality": "سوري",
+    "English_Nationality": "Surinamer"
+  },
+  "166": {
+    "Arabic_Nationality": "سوازيلاندي",
+    "English_Nationality": "Swazi"
+  },
+  "167": {
+    "Arabic_Nationality": "سويدي",
+    "English_Nationality": "Swedish"
+  },
+  "168": {
+    "Arabic_Nationality": "سويسري",
+    "English_Nationality": "Swiss"
+  },
+  "169": {
+    "Arabic_Nationality": "سورينامي",
+    "English_Nationality": "Surinamer"
+  },
+  "170": {
+    "Arabic_Nationality": "سورينامي",
+    "English_Nationality": "Surinamer"
+  },
+  "171": {
+    "Arabic_Nationality": "سواهيلي",
+    "English_Nationality": "Swahili"
+  },
+  "172": {
+    "Arabic_Nationality": "سورينامي",
+    "English_Nationality": "Surinamer"
+  },
+  "173": {
+    "Arabic_Nationality": "طاجيكستاني",
+    "English_Nationality": "Tajik"
+  },
+  "174": {
+    "Arabic_Nationality": "تنزاني",
+    "English_Nationality": "Tanzanian"
+  },
+  "175": {
+    "Arabic_Nationality": "تايلاندي",
+    "English_Nationality": "Thai"
+  },
+  "176": {
+    "Arabic_Nationality": "توغو",
+    "English_Nationality": "Togolese"
+  },
+  "177": {
+    "Arabic_Nationality": "تونغي",
+    "English_Nationality": "Tongan"
+  },
+  "178": {
+    "Arabic_Nationality": "ترينيدادي",
+    "English_Nationality": "Trinidadian"
+  },
+  "179": {
+    "Arabic_Nationality": "تونسي",
+    "English_Nationality": "Tunisian"
+  },
+  "180": {
+    "Arabic_Nationality": "تركي",
+    "English_Nationality": "Turkish"
+  },
+  "181": {
+    "Arabic_Nationality": "تركماني",
+    "English_Nationality": "Turkmen"
+  },
+  "182": {
+    "Arabic_Nationality": "توفالوي",
+    "English_Nationality": "Tuvaluan"
+  },
+  "183": {
+    "Arabic_Nationality": "أوغندي",
+    "English_Nationality": "Ugandan"
+  },
+  "184": {
+    "Arabic_Nationality": "أوكراني",
+    "English_Nationality": "Ukrainian"
+  },
+  "185": {
+    "Arabic_Nationality": "إماراتي",
+    "English_Nationality": "Emirati"
+  },
+  "186": {
+    "Arabic_Nationality": "بريطاني",
+    "English_Nationality": "British"
+  },
+  "187": {
+    "Arabic_Nationality": "أمريكي",
+    "English_Nationality": "American"
+  },
+  "188": {
+    "Arabic_Nationality": "أوروغواي",
+    "English_Nationality": "Uruguayan"
+  },
+  "189": {
+    "Arabic_Nationality": "أوزبكي",
+    "English_Nationality": "Uzbekistani"
+  },
+  "190": {
+    "Arabic_Nationality": "فانواتو",
+    "English_Nationality": "Vanuatuan"
+  },
+  "191": {
+    "Arabic_Nationality": "فنزويلي",
+    "English_Nationality": "Venezuelan"
+  },
+  "192": {
+    "Arabic_Nationality": "فيتنامي",
+    "English_Nationality": "Vietnamese"
+  },
+  "193": {
+    "Arabic_Nationality": "ويلزي",
+    "English_Nationality": "Welsh"
+  },
+  "194": {
+    "Arabic_Nationality": "اليمني",
+    "English_Nationality": "Yemenite"
+  },
+  "195": {
+    "Arabic_Nationality": "زامبي",
+    "English_Nationality": "Zambian"
+  },
+  "196": {
+    "Arabic_Nationality": "زمبابوي",
+    "English_Nationality": "Zimbabwean"
+  }
+}
+

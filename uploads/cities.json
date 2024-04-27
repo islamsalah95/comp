@@ -1,0 +1,5838 @@
+{
+   "1": {
+      "Arabic_Name": "جدة",
+      "English_Name": "Jeddeh"
+   },
+   "2": {
+      "Arabic_Name": "الرياض",
+      "English_Name": "Riyadh"
+   },
+   "3": {
+      "Arabic_Name": "الدمام",
+      "English_Name": "Dammam"
+   },
+   "4": {
+      "Arabic_Name": "الخبر",
+      "English_Name": "Khobar"
+   },
+   "5": {
+      "Arabic_Name": "الظهران",
+      "English_Name": "Dhahran"
+   },
+   "7": {
+      "Arabic_Name": "القطيف",
+      "English_Name": "Alqateef"
+   },
+   "8": {
+      "Arabic_Name": "الجبيل",
+      "English_Name": "Aljoubail"
+   },
+   "9": {
+      "Arabic_Name": "الطائف",
+      "English_Name": "Taif"
+   },
+   "10": {
+      "Arabic_Name": "تبوك",
+      "English_Name": "Tabuk"
+   },
+   "16": {
+      "Arabic_Name": "مكة المكرمة",
+      "English_Name": "Makkah"
+   },
+   "17": {
+      "Arabic_Name": "المدينة المنورة",
+      "English_Name": "Madinah Almonwarah"
+   },
+   "20": {
+      "Arabic_Name": "ينبع",
+      "English_Name": "Yanba a"
+   },
+   "22": {
+      "Arabic_Name": "خميس مشيط",
+      "English_Name": "Khamais Moshait"
+   },
+   "24": {
+      "Arabic_Name": "بريدة",
+      "English_Name": "Buraydah"
+   },
+   "28": {
+      "Arabic_Name": "بيشه",
+      "English_Name": "Beshah"
+   },
+   "75": {
+      "Arabic_Name": "الرفيعة بالخرج",
+      "English_Name": "Alrofea ah"
+   },
+   "189": {
+      "Arabic_Name": "الخيس",
+      "English_Name": "Alkhais"
+   },
+   "205": {
+      "Arabic_Name": "الرين الأعلى",
+      "English_Name": "Arrayen Alaa ala"
+   },
+   "282": {
+      "Arabic_Name": "النجيل",
+      "English_Name": "Alnjyel"
+   },
+   "313": {
+      "Arabic_Name": "الاسياح",
+      "English_Name": "Alssyah"
+   },
+   "353": {
+      "Arabic_Name": "الارطاوي",
+      "English_Name": "Alartawi"
+   },
+   "1123": {
+      "Arabic_Name": "العيينة والجبيله",
+      "English_Name": "Aloyeanah and Aljobilah"
+   },
+   "1124": {
+      "Arabic_Name": "اليمامة بالخرج",
+      "English_Name": "Alyamamah"
+   },
+   "1125": {
+      "Arabic_Name": "الضبيعه",
+      "English_Name": "Aldhobia ah"
+   },
+   "1126": {
+      "Arabic_Name": "الحزم بالخرج",
+      "English_Name": "Alhazem"
+   },
+   "1127": {
+      "Arabic_Name": "الرفايع بالخرج",
+      "English_Name": "Alrofaya"
+   },
+   "1128": {
+      "Arabic_Name": "البديعة بالخرج",
+      "English_Name": "Albadiah"
+   },
+   "1129": {
+      "Arabic_Name": "سميح بالخرج",
+      "English_Name": "Somaih"
+   },
+   "1130": {
+      "Arabic_Name": "الناصفة بالخرج",
+      "English_Name": "Alnasefah"
+   },
+   "1131": {
+      "Arabic_Name": "العين بالخرج",
+      "English_Name": "Ala aeen"
+   },
+   "1132": {
+      "Arabic_Name": "أوثيلان بالخرج",
+      "English_Name": "Othelan"
+   },
+   "1133": {
+      "Arabic_Name": "عسيله",
+      "English_Name": "Osailah"
+   },
+   "1134": {
+      "Arabic_Name": "الحفنه بالدوادمي",
+      "English_Name": "Alhefnah in Aldowadmi"
+   },
+   "1135": {
+      "Arabic_Name": "الخالدية بالدوادمي",
+      "English_Name": "Alkhalidyah"
+   },
+   "1136": {
+      "Arabic_Name": "أوثيلان بالسر",
+      "English_Name": "Othilan in Alser"
+   },
+   "1137": {
+      "Arabic_Name": "الصالحيه",
+      "English_Name": "Alssaleheyah"
+   },
+   "1138": {
+      "Arabic_Name": "حوطة سدير",
+      "English_Name": "Hodat Sedyer"
+   },
+   "1139": {
+      "Arabic_Name": "عشيرة بسدير",
+      "English_Name": "Oshairat Sedyer"
+   },
+   "1140": {
+      "Arabic_Name": "الرويضة بالعرض",
+      "English_Name": "Arroaydah in Alarth"
+   },
+   "1141": {
+      "Arabic_Name": "الخرمه",
+      "English_Name": "Alkhormah"
+   },
+   "1142": {
+      "Arabic_Name": "رنيه",
+      "English_Name": "Ranyah"
+   },
+   "1143": {
+      "Arabic_Name": "عنيزه",
+      "English_Name": "Onaizah"
+   },
+   "1144": {
+      "Arabic_Name": "رياض الخبراء",
+      "English_Name": "Riyadh Alkhabara"
+   },
+   "1145": {
+      "Arabic_Name": "قبة",
+      "English_Name": "Gebah"
+   },
+   "1146": {
+      "Arabic_Name": "الأرطاوي",
+      "English_Name": "Alartawii"
+   },
+   "1147": {
+      "Arabic_Name": "الابرق",
+      "English_Name": "Alabraq"
+   },
+   "1148": {
+      "Arabic_Name": "ابانات",
+      "English_Name": "Abanat"
+   },
+   "1149": {
+      "Arabic_Name": "الأحساء",
+      "English_Name": "Alahsa"
+   },
+   "1150": {
+      "Arabic_Name": "أبقيق",
+      "English_Name": "Abqeeq"
+   },
+   "1151": {
+      "Arabic_Name": "عريعره",
+      "English_Name": "Oraia arah"
+   },
+   "1152": {
+      "Arabic_Name": "القاره",
+      "English_Name": "Algarah"
+   },
+   "1153": {
+      "Arabic_Name": "هجرة فضيلة",
+      "English_Name": "Fadilah"
+   },
+   "1154": {
+      "Arabic_Name": "هجرة الزايدية",
+      "English_Name": "Alzaydyah"
+   },
+   "1155": {
+      "Arabic_Name": "صفوي",
+      "English_Name": "Safwa"
+   },
+   "1156": {
+      "Arabic_Name": "العيينه",
+      "English_Name": "Aloyeanah"
+   },
+   "1157": {
+      "Arabic_Name": "السليمانية",
+      "English_Name": "Alslymanayah"
+   },
+   "1158": {
+      "Arabic_Name": "اللهابه",
+      "English_Name": "Allahabah"
+   },
+   "1159": {
+      "Arabic_Name": "أبها",
+      "English_Name": "Abha"
+   },
+   "1160": {
+      "Arabic_Name": "محايل",
+      "English_Name": "Mahail Aseer"
+   },
+   "1161": {
+      "Arabic_Name": "سراة عبيده",
+      "English_Name": "Srat Abeedah"
+   },
+   "1162": {
+      "Arabic_Name": "تثليت",
+      "English_Name": "Tathleth"
+   },
+   "1163": {
+      "Arabic_Name": "بالقرن",
+      "English_Name": "Balqarn"
+   },
+   "1164": {
+      "Arabic_Name": "بحر ابوسكينة",
+      "English_Name": "Bahar Abu Sakenah"
+   },
+   "1165": {
+      "Arabic_Name": "الفطيحة",
+      "English_Name": "Alfatehah"
+   },
+   "1166": {
+      "Arabic_Name": "الحرجه",
+      "English_Name": "Alharjah"
+   },
+   "1167": {
+      "Arabic_Name": "عقده",
+      "English_Name": "Eqdah"
+   },
+   "1168": {
+      "Arabic_Name": "ابوعريش",
+      "English_Name": "Abu Areesh"
+   },
+   "1169": {
+      "Arabic_Name": "صامطه",
+      "English_Name": "Samtah"
+   },
+   "1170": {
+      "Arabic_Name": "احدالمسارحه",
+      "English_Name": "Ahad Almasarhah"
+   },
+   "1171": {
+      "Arabic_Name": "العارضه",
+      "English_Name": "Ala artheyah"
+   },
+   "1172": {
+      "Arabic_Name": "فيفا",
+      "English_Name": "Fifa"
+   },
+   "1173": {
+      "Arabic_Name": "وادي جيزان",
+      "English_Name": "Wadi Jazan"
+   },
+   "1174": {
+      "Arabic_Name": "العاليه",
+      "English_Name": "Ala aleyah"
+   },
+   "1175": {
+      "Arabic_Name": "القصبه",
+      "English_Name": "Alqusbah"
+   },
+   "1176": {
+      "Arabic_Name": "القحمه",
+      "English_Name": "Alqahmah"
+   },
+   "1177": {
+      "Arabic_Name": "عشيره",
+      "English_Name": "Oshairah"
+   },
+   "1178": {
+      "Arabic_Name": "المليداء",
+      "English_Name": "Almelida"
+   },
+   "1179": {
+      "Arabic_Name": "يدمه",
+      "English_Name": "Yadmah"
+   },
+   "1180": {
+      "Arabic_Name": "الباحه",
+      "English_Name": "Albahah"
+   },
+   "1181": {
+      "Arabic_Name": "المخواه",
+      "English_Name": "Almekhwah"
+   },
+   "1182": {
+      "Arabic_Name": "قلوه",
+      "English_Name": "Qilwah"
+   },
+   "1183": {
+      "Arabic_Name": "غامد الزناد",
+      "English_Name": "Fara at Ghamed Alznad"
+   },
+   "1184": {
+      "Arabic_Name": "شدا الاعلي",
+      "English_Name": "Shda Ala ala"
+   },
+   "1185": {
+      "Arabic_Name": "تربه الخياله",
+      "English_Name": "Torobat Alkhyalah"
+   },
+   "1186": {
+      "Arabic_Name": "الحجره",
+      "English_Name": "Alhajrah"
+   },
+   "1187": {
+      "Arabic_Name": "بحره",
+      "English_Name": "Bahrah"
+   },
+   "1188": {
+      "Arabic_Name": "العرضيه الجنوبيه",
+      "English_Name": "Ala artheyah Aljnobayah"
+   },
+   "1189": {
+      "Arabic_Name": "العرضيه الشمالية",
+      "English_Name": "Ala artheyah alshmalyah"
+   },
+   "1190": {
+      "Arabic_Name": "الجائزة",
+      "English_Name": "Aljaa azah"
+   },
+   "1191": {
+      "Arabic_Name": "مستوره",
+      "English_Name": "Mastorah"
+   },
+   "1192": {
+      "Arabic_Name": "الابواء",
+      "English_Name": "Alabwaa a"
+   },
+   "1193": {
+      "Arabic_Name": "الاملح",
+      "English_Name": "Alamlah"
+   },
+   "1194": {
+      "Arabic_Name": "الطرفيه الشرقية",
+      "English_Name": "Alterfayah Alshergayah"
+   },
+   "1195": {
+      "Arabic_Name": "وادي أبو علي",
+      "English_Name": "Wadi Abu Ali"
+   },
+   "1196": {
+      "Arabic_Name": "دخنه",
+      "English_Name": "Dekhnah"
+   },
+   "1197": {
+      "Arabic_Name": "السيح والحجازية",
+      "English_Name": "Alsaih and Alhejazyah"
+   },
+   "1198": {
+      "Arabic_Name": "العمار بالأفلاج",
+      "English_Name": "Alammar"
+   },
+   "1199": {
+      "Arabic_Name": "مصده بالحوطه",
+      "English_Name": "Mssadah"
+   },
+   "1200": {
+      "Arabic_Name": "تمره",
+      "English_Name": "Tamrah"
+   },
+   "1201": {
+      "Arabic_Name": "رغبه",
+      "English_Name": "Raghba"
+   },
+   "1202": {
+      "Arabic_Name": "سكاكا",
+      "English_Name": "Sakakah"
+   },
+   "1203": {
+      "Arabic_Name": "عرقة",
+      "English_Name": "Erqah"
+   },
+   "1204": {
+      "Arabic_Name": "الحاير",
+      "English_Name": "Alhayr"
+   },
+   "1205": {
+      "Arabic_Name": "هيت",
+      "English_Name": "Hait"
+   },
+   "1206": {
+      "Arabic_Name": "مرات",
+      "English_Name": "Marat"
+   },
+   "1207": {
+      "Arabic_Name": "ثرمداء",
+      "English_Name": "Tharmeda"
+   },
+   "1208": {
+      "Arabic_Name": "لبخه",
+      "English_Name": "Labkha"
+   },
+   "1209": {
+      "Arabic_Name": "العماجية",
+      "English_Name": "Alomajyah"
+   },
+   "1210": {
+      "Arabic_Name": "لبن",
+      "English_Name": "Lban"
+   },
+   "1211": {
+      "Arabic_Name": "بنبان",
+      "English_Name": "Banban"
+   },
+   "1212": {
+      "Arabic_Name": "أثيثيه",
+      "English_Name": "Athaithyah"
+   },
+   "1213": {
+      "Arabic_Name": "حويته",
+      "English_Name": "Howitah"
+   },
+   "1214": {
+      "Arabic_Name": "العزة بالحائر",
+      "English_Name": "Alezah in Alhair"
+   },
+   "1215": {
+      "Arabic_Name": "الدرعية",
+      "English_Name": "Aldera yah"
+   },
+   "1216": {
+      "Arabic_Name": "سدوس",
+      "English_Name": "Sdos"
+   },
+   "1217": {
+      "Arabic_Name": "العمارية",
+      "English_Name": "Alamarayah"
+   },
+   "1218": {
+      "Arabic_Name": "بوضه",
+      "English_Name": "Bodha"
+   },
+   "1219": {
+      "Arabic_Name": "سلطانه",
+      "English_Name": "Soltanah"
+   },
+   "1220": {
+      "Arabic_Name": "حزوى",
+      "English_Name": "Hazwa"
+   },
+   "1221": {
+      "Arabic_Name": "الخرج",
+      "English_Name": "Kharj"
+   },
+   "1222": {
+      "Arabic_Name": "الدلم",
+      "English_Name": "Dolam"
+   },
+   "1223": {
+      "Arabic_Name": "الهياثم",
+      "English_Name": "Alhayathem"
+   },
+   "1224": {
+      "Arabic_Name": "نعجان",
+      "English_Name": "Na ajan"
+   },
+   "1225": {
+      "Arabic_Name": "السلمية",
+      "English_Name": "Alsselmyah"
+   },
+   "1226": {
+      "Arabic_Name": "الوسيطاء",
+      "English_Name": "Alwasita"
+   },
+   "1227": {
+      "Arabic_Name": "ماوان",
+      "English_Name": "Mawan"
+   },
+   "1228": {
+      "Arabic_Name": "بدع ابن عرفج",
+      "English_Name": "Beda Ibn Arfaj"
+   },
+   "1229": {
+      "Arabic_Name": "السهباء",
+      "English_Name": "Alsahba"
+   },
+   "1230": {
+      "Arabic_Name": "مقبولة",
+      "English_Name": "Maqbolah"
+   },
+   "1231": {
+      "Arabic_Name": "البديع",
+      "English_Name": "Albdea"
+   },
+   "1232": {
+      "Arabic_Name": "المحمدي",
+      "English_Name": "Almohamedi"
+   },
+   "1233": {
+      "Arabic_Name": "الشكرة",
+      "English_Name": "Alshokrah"
+   },
+   "1234": {
+      "Arabic_Name": "التوضحية",
+      "English_Name": "Altawdhehyah"
+   },
+   "1235": {
+      "Arabic_Name": "الرغيب",
+      "English_Name": "Alroghaib"
+   },
+   "1236": {
+      "Arabic_Name": "الشديدة",
+      "English_Name": "Alshedeedah"
+   },
+   "1237": {
+      "Arabic_Name": "الفيحاء",
+      "English_Name": "Alfaiha"
+   },
+   "1238": {
+      "Arabic_Name": "قور الحرشة",
+      "English_Name": "Gor Alharshah"
+   },
+   "1239": {
+      "Arabic_Name": "العزيزية",
+      "English_Name": "Alazizyah"
+   },
+   "1240": {
+      "Arabic_Name": "الريان",
+      "English_Name": "Alrayan"
+   },
+   "1241": {
+      "Arabic_Name": "بهجة",
+      "English_Name": "Bahjah"
+   },
+   "1242": {
+      "Arabic_Name": "صبحية",
+      "English_Name": "Sabheah"
+   },
+   "1243": {
+      "Arabic_Name": "العسيلة",
+      "English_Name": "Alasel ah"
+   },
+   "1244": {
+      "Arabic_Name": "بلثقاء",
+      "English_Name": "Bal thga a"
+   },
+   "1245": {
+      "Arabic_Name": "الدوادمي",
+      "English_Name": "Dowadmi"
+   },
+   "1246": {
+      "Arabic_Name": "ساجر",
+      "English_Name": "Sajer"
+   },
+   "1247": {
+      "Arabic_Name": "نفي",
+      "English_Name": "Nofay"
+   },
+   "1248": {
+      "Arabic_Name": "عروى",
+      "English_Name": "Arwa"
+   },
+   "1249": {
+      "Arabic_Name": "الجمش",
+      "English_Name": "Aljomsh"
+   },
+   "1250": {
+      "Arabic_Name": "القاعية",
+      "English_Name": "Algaa eh"
+   },
+   "1251": {
+      "Arabic_Name": "ماسل",
+      "English_Name": "Masel"
+   },
+   "1252": {
+      "Arabic_Name": "رفائع الجمش",
+      "English_Name": "Rfae Aljemsh"
+   },
+   "1253": {
+      "Arabic_Name": "عرجاء",
+      "English_Name": "Arja"
+   },
+   "1254": {
+      "Arabic_Name": "الحفيرة",
+      "English_Name": "Alhofairah"
+   },
+   "1255": {
+      "Arabic_Name": "خف",
+      "English_Name": "Khof"
+   },
+   "1256": {
+      "Arabic_Name": "مصده",
+      "English_Name": "Massdah"
+   },
+   "1257": {
+      "Arabic_Name": "ارطاوي حليت",
+      "English_Name": "Artawi Holait"
+   },
+   "1258": {
+      "Arabic_Name": "القرارة",
+      "English_Name": "Alqrarah"
+   },
+   "1259": {
+      "Arabic_Name": "أبو جلال",
+      "English_Name": "Abu Jalal"
+   },
+   "1260": {
+      "Arabic_Name": "كبشان",
+      "English_Name": "Kabshan"
+   },
+   "1261": {
+      "Arabic_Name": "شبيرمة",
+      "English_Name": "Shobairemah"
+   },
+   "1262": {
+      "Arabic_Name": "أوضاخ",
+      "English_Name": "Awdhakh"
+   },
+   "1263": {
+      "Arabic_Name": "منيفة جلوي",
+      "English_Name": "Monifat jluwi"
+   },
+   "1264": {
+      "Arabic_Name": "الأرطاوي الجديد",
+      "English_Name": "Alrtawai Aljadeed"
+   },
+   "1265": {
+      "Arabic_Name": "جهام",
+      "English_Name": "Juham"
+   },
+   "1266": {
+      "Arabic_Name": "أم سليم بالسر",
+      "English_Name": "Om solaim in alsser"
+   },
+   "1267": {
+      "Arabic_Name": "الدمثي",
+      "English_Name": "Aldemthi"
+   },
+   "1268": {
+      "Arabic_Name": "عريفجان",
+      "English_Name": "Orifejan"
+   },
+   "1269": {
+      "Arabic_Name": "الشعراء",
+      "English_Name": "Asha ra"
+   },
+   "1270": {
+      "Arabic_Name": "البجادية",
+      "English_Name": "Albejadyah"
+   },
+   "1271": {
+      "Arabic_Name": "السر",
+      "English_Name": "Alsser"
+   },
+   "1272": {
+      "Arabic_Name": "حاضرة نفي",
+      "English_Name": "Haderat Nofai"
+   },
+   "1273": {
+      "Arabic_Name": "السكران",
+      "English_Name": "Alssakran"
+   },
+   "1274": {
+      "Arabic_Name": "القرين",
+      "English_Name": "Alqorain"
+   },
+   "1275": {
+      "Arabic_Name": "البرود",
+      "English_Name": "Alburood"
+   },
+   "1276": {
+      "Arabic_Name": "الأثلة",
+      "English_Name": "Alathelah"
+   },
+   "1277": {
+      "Arabic_Name": "أفقره",
+      "English_Name": "Afqarah"
+   },
+   "1278": {
+      "Arabic_Name": "الرشاوية",
+      "English_Name": "Alrrashawiah"
+   },
+   "1279": {
+      "Arabic_Name": "عين القنور",
+      "English_Name": "Aen Algunor"
+   },
+   "1280": {
+      "Arabic_Name": "مغيراء",
+      "English_Name": "Moghairah"
+   },
+   "1281": {
+      "Arabic_Name": "العقلة",
+      "English_Name": "Aloqlah"
+   },
+   "1282": {
+      "Arabic_Name": "العبل",
+      "English_Name": "Alabel"
+   },
+   "1283": {
+      "Arabic_Name": "الحيد",
+      "English_Name": "Alhaid"
+   },
+   "1284": {
+      "Arabic_Name": "ارطاوي الحماميد",
+      "English_Name": "Artawi Alhomamaid"
+   },
+   "1285": {
+      "Arabic_Name": "بدائع ابن نجم",
+      "English_Name": "Badae Ibn Najem"
+   },
+   "1286": {
+      "Arabic_Name": "الفقارة",
+      "English_Name": "Alfoqarah"
+   },
+   "1287": {
+      "Arabic_Name": "الحفنة",
+      "English_Name": "Alhofnah"
+   },
+   "1288": {
+      "Arabic_Name": "علياء",
+      "English_Name": "Alya"
+   },
+   "1289": {
+      "Arabic_Name": "الشفلحية",
+      "English_Name": "Alshaflehyah"
+   },
+   "1290": {
+      "Arabic_Name": "مشرفة نفي",
+      "English_Name": "Mosharifat Nofay"
+   },
+   "1291": {
+      "Arabic_Name": "منية",
+      "English_Name": "Monyah"
+   },
+   "1292": {
+      "Arabic_Name": "العاذرية",
+      "English_Name": "Alatheryah"
+   },
+   "1293": {
+      "Arabic_Name": "خريمان",
+      "English_Name": "Khoraiman"
+   },
+   "1294": {
+      "Arabic_Name": "عشيران",
+      "English_Name": "Oshairan"
+   },
+   "1295": {
+      "Arabic_Name": "المستجدة",
+      "English_Name": "Almostajedah"
+   },
+   "1296": {
+      "Arabic_Name": "المطاوي",
+      "English_Name": "Almotawi"
+   },
+   "1297": {
+      "Arabic_Name": "النبوان",
+      "English_Name": "Alnbwan"
+   },
+   "1298": {
+      "Arabic_Name": "فيضة المفص",
+      "English_Name": "Faidat Almafas"
+   },
+   "1299": {
+      "Arabic_Name": "الودي",
+      "English_Name": "Alwodi"
+   },
+   "1300": {
+      "Arabic_Name": "عريدة",
+      "English_Name": "Oraidah"
+   },
+   "1301": {
+      "Arabic_Name": "عواضة",
+      "English_Name": "Awadha"
+   },
+   "1302": {
+      "Arabic_Name": "عصام",
+      "English_Name": "Essam"
+   },
+   "1303": {
+      "Arabic_Name": "عـنـز",
+      "English_Name": "A nz"
+   },
+   "1304": {
+      "Arabic_Name": "أم رضمة",
+      "English_Name": "Om Rdhmah"
+   },
+   "1305": {
+      "Arabic_Name": "جفناء",
+      "English_Name": "Jafna"
+   },
+   "1306": {
+      "Arabic_Name": "حديجة",
+      "English_Name": "Hodaijah"
+   },
+   "1307": {
+      "Arabic_Name": "سرورة",
+      "English_Name": "Surorah"
+   },
+   "1308": {
+      "Arabic_Name": "نجخ",
+      "English_Name": "Nejkh"
+   },
+   "1309": {
+      "Arabic_Name": "مغيب",
+      "English_Name": "Magheeb"
+   },
+   "1310": {
+      "Arabic_Name": "عين الصوينع",
+      "English_Name": "Ain Alsowaina"
+   },
+   "1311": {
+      "Arabic_Name": "ارطاوي الرقاص",
+      "English_Name": "Artawai Alrragass"
+   },
+   "1312": {
+      "Arabic_Name": "عصماء",
+      "English_Name": "Assma"
+   },
+   "1313": {
+      "Arabic_Name": "أم زموع",
+      "English_Name": "Om Zamoa"
+   },
+   "1314": {
+      "Arabic_Name": "جفن",
+      "English_Name": "Jafen"
+   },
+   "1315": {
+      "Arabic_Name": "الخفيفية",
+      "English_Name": "Alkhofaifiah"
+   },
+   "1316": {
+      "Arabic_Name": "عشيرة المخامر",
+      "English_Name": "Osherat Almakhamer"
+   },
+   "1317": {
+      "Arabic_Name": "البراحة",
+      "English_Name": "Albrahah"
+   },
+   "1318": {
+      "Arabic_Name": "العلوه",
+      "English_Name": "Alolwah"
+   },
+   "1319": {
+      "Arabic_Name": "الظلماوي",
+      "English_Name": "Aldhalmawi"
+   },
+   "1320": {
+      "Arabic_Name": "أبو ركب",
+      "English_Name": "Abu Rokab"
+   },
+   "1321": {
+      "Arabic_Name": "الوطاة",
+      "English_Name": "Alwotat"
+   },
+   "1322": {
+      "Arabic_Name": "عسيلة الوسطى",
+      "English_Name": "Osailah Alwosta"
+   },
+   "1323": {
+      "Arabic_Name": "العازمية",
+      "English_Name": "Alazimyah"
+   },
+   "1324": {
+      "Arabic_Name": "سهلة",
+      "English_Name": "Sahlah"
+   },
+   "1325": {
+      "Arabic_Name": "ساحب",
+      "English_Name": "Saheb"
+   },
+   "1326": {
+      "Arabic_Name": "مشرف",
+      "English_Name": "Moshref"
+   },
+   "1327": {
+      "Arabic_Name": "النير",
+      "English_Name": "Alnear"
+   },
+   "1328": {
+      "Arabic_Name": "التسرير",
+      "English_Name": "Altasrear"
+   },
+   "1329": {
+      "Arabic_Name": "شرارة",
+      "English_Name": "Shararah"
+   },
+   "1330": {
+      "Arabic_Name": "الثندوة",
+      "English_Name": "Althandwoah"
+   },
+   "1331": {
+      "Arabic_Name": "المنجور",
+      "English_Name": "Almanjor"
+   },
+   "1332": {
+      "Arabic_Name": "المدرع",
+      "English_Name": "Almedra"
+   },
+   "1333": {
+      "Arabic_Name": "المصلوم",
+      "English_Name": "Almasslom"
+   },
+   "1334": {
+      "Arabic_Name": "الراجحية",
+      "English_Name": "Alrrajehyah"
+   },
+   "1335": {
+      "Arabic_Name": "مساوي",
+      "English_Name": "Mesawi"
+   },
+   "1336": {
+      "Arabic_Name": "الفيصلية",
+      "English_Name": "Alfaisaliah"
+   },
+   "1337": {
+      "Arabic_Name": "الروسان بالقرنة",
+      "English_Name": "Alrosan in Alqernah"
+   },
+   "1338": {
+      "Arabic_Name": "الديرية",
+      "English_Name": "Aldereyah"
+   },
+   "1339": {
+      "Arabic_Name": "الشامية",
+      "English_Name": "Alshameyah"
+   },
+   "1340": {
+      "Arabic_Name": "عنـيزان",
+      "English_Name": "Enezan"
+   },
+   "1341": {
+      "Arabic_Name": "روضةعنـز بنفي",
+      "English_Name": "Rodat A anz in Nafi"
+   },
+   "1342": {
+      "Arabic_Name": "شرق النير",
+      "English_Name": "Sharq Alner"
+   },
+   "1343": {
+      "Arabic_Name": "المحمدية",
+      "English_Name": "Almohamadaih"
+   },
+   "1344": {
+      "Arabic_Name": "المجمعة",
+      "English_Name": "Almajma ah"
+   },
+   "1345": {
+      "Arabic_Name": "جلاجل",
+      "English_Name": "Jalajel"
+   },
+   "1346": {
+      "Arabic_Name": "روضة سدير",
+      "English_Name": "Rodat Sedyer"
+   },
+   "1347": {
+      "Arabic_Name": "الأرطاوية",
+      "English_Name": "Alartaweyah"
+   },
+   "1348": {
+      "Arabic_Name": "تمير",
+      "English_Name": "Tomair"
+   },
+   "1349": {
+      "Arabic_Name": "حرمه",
+      "English_Name": "Hormah"
+   },
+   "1350": {
+      "Arabic_Name": "الفروثي",
+      "English_Name": "Alfrothi"
+   },
+   "1351": {
+      "Arabic_Name": "جراب",
+      "English_Name": "Jrab"
+   },
+   "1352": {
+      "Arabic_Name": "أم الجماجم",
+      "English_Name": "Om Aljmajem"
+   },
+   "1353": {
+      "Arabic_Name": "القاعية بسدير",
+      "English_Name": "Alqa eyah in Sedyer"
+   },
+   "1354": {
+      "Arabic_Name": "أم رجوم",
+      "English_Name": "Om Rujom"
+   },
+   "1355": {
+      "Arabic_Name": "عودة سدير",
+      "English_Name": "Odat Sedyer"
+   },
+   "1356": {
+      "Arabic_Name": "مشاش عوض",
+      "English_Name": "Moshash Oatd"
+   },
+   "1357": {
+      "Arabic_Name": "العطار",
+      "English_Name": "Ala atar"
+   },
+   "1358": {
+      "Arabic_Name": "الجنوبية بسدير",
+      "English_Name": "Aljanobaih in Sedyer"
+   },
+   "1359": {
+      "Arabic_Name": "التويم",
+      "English_Name": "Altwaim"
+   },
+   "1360": {
+      "Arabic_Name": "الحصون",
+      "English_Name": "Alhoson"
+   },
+   "1361": {
+      "Arabic_Name": "العمار بسدير",
+      "English_Name": "Ala ammar in Sedyer"
+   },
+   "1362": {
+      "Arabic_Name": "الرويضة بسدير",
+      "English_Name": "Alroaidah in Sedyer"
+   },
+   "1363": {
+      "Arabic_Name": "الداخلة",
+      "English_Name": "Aldakhlah"
+   },
+   "1364": {
+      "Arabic_Name": "الخطامة",
+      "English_Name": "Alkhtamah"
+   },
+   "1365": {
+      "Arabic_Name": "مبايض",
+      "English_Name": "Mebayd"
+   },
+   "1366": {
+      "Arabic_Name": "الجنيفي",
+      "English_Name": "Aljnayfi"
+   },
+   "1367": {
+      "Arabic_Name": "المعشبه",
+      "English_Name": "Alma atshbah"
+   },
+   "1368": {
+      "Arabic_Name": "الحاير بسدير",
+      "English_Name": "Alhayer in Sedeyer"
+   },
+   "1369": {
+      "Arabic_Name": "وشي",
+      "English_Name": "Weshi"
+   },
+   "1370": {
+      "Arabic_Name": "الخفس",
+      "English_Name": "Alkhafs"
+   },
+   "1371": {
+      "Arabic_Name": "بوضه بسدير",
+      "English_Name": "Bodah in Sedyer"
+   },
+   "1372": {
+      "Arabic_Name": "الشعب",
+      "English_Name": "Alshea ab"
+   },
+   "1373": {
+      "Arabic_Name": "مصدة",
+      "English_Name": "Massadah"
+   },
+   "1374": {
+      "Arabic_Name": "حويمضة",
+      "English_Name": "Hwaimdah"
+   },
+   "1375": {
+      "Arabic_Name": "البرزة",
+      "English_Name": "Albarzah"
+   },
+   "1376": {
+      "Arabic_Name": "الشحمة",
+      "English_Name": "Alshahmah"
+   },
+   "1377": {
+      "Arabic_Name": "أم سدرة",
+      "English_Name": "Om Sedrah"
+   },
+   "1378": {
+      "Arabic_Name": "أم سديرة",
+      "English_Name": "Om Sderah"
+   },
+   "1379": {
+      "Arabic_Name": "مشذوبة",
+      "English_Name": "mashzobah"
+   },
+   "1380": {
+      "Arabic_Name": "القويعية",
+      "English_Name": "Qwaia ayah"
+   },
+   "1381": {
+      "Arabic_Name": "الرين",
+      "English_Name": "Arrayen"
+   },
+   "1382": {
+      "Arabic_Name": "الخاصرة",
+      "English_Name": "Alkhassrah"
+   },
+   "1383": {
+      "Arabic_Name": "الرين القديم",
+      "English_Name": "Arrayen Alqadeem"
+   },
+   "1384": {
+      "Arabic_Name": "العمق",
+      "English_Name": "Ala amq"
+   },
+   "1385": {
+      "Arabic_Name": "سنام",
+      "English_Name": "Snam"
+   },
+   "1386": {
+      "Arabic_Name": "البدائع بالرين",
+      "English_Name": "Albadaea a in Arrayen"
+   },
+   "1387": {
+      "Arabic_Name": "الحرمليه",
+      "English_Name": "Alharmolayah"
+   },
+   "1388": {
+      "Arabic_Name": "الناصفة بالرين",
+      "English_Name": "Alnassfah in Arrayen"
+   },
+   "1389": {
+      "Arabic_Name": "الرفايع بحلبان",
+      "English_Name": "Alrofayea a in Helban"
+   },
+   "1390": {
+      "Arabic_Name": "حلبان",
+      "English_Name": "Helban"
+   },
+   "1391": {
+      "Arabic_Name": "عبليه بالرين",
+      "English_Name": "A ableyah in Arrayen"
+   },
+   "1392": {
+      "Arabic_Name": "الرجع بالرين",
+      "English_Name": "Alraja a in Arrayen"
+   },
+   "1393": {
+      "Arabic_Name": "عنان",
+      "English_Name": "A anan"
+   },
+   "1394": {
+      "Arabic_Name": "الحصاة",
+      "English_Name": "Alhasat"
+   },
+   "1395": {
+      "Arabic_Name": "الفويلق",
+      "English_Name": "Alfwailq"
+   },
+   "1396": {
+      "Arabic_Name": "مزعل",
+      "English_Name": "Meza al"
+   },
+   "1397": {
+      "Arabic_Name": "الغريبيه بالرين",
+      "English_Name": "Algeraybeyah in Arrayen"
+   },
+   "1398": {
+      "Arabic_Name": "الخروعيه",
+      "English_Name": "Alkhrwaa ayah"
+   },
+   "1399": {
+      "Arabic_Name": "الحصاة القصوى",
+      "English_Name": "Alhasat Alqoswa"
+   },
+   "1400": {
+      "Arabic_Name": "الفرعه بالرين",
+      "English_Name": "Alfra ah in Arrayen"
+   },
+   "1401": {
+      "Arabic_Name": "صبحاء",
+      "English_Name": "Sabha"
+   },
+   "1402": {
+      "Arabic_Name": "أم سريحه",
+      "English_Name": "Om Srehah"
+   },
+   "1403": {
+      "Arabic_Name": "قبيبان",
+      "English_Name": "Gbiban"
+   },
+   "1404": {
+      "Arabic_Name": "الشظو بالرين",
+      "English_Name": "Alshatho in Arrayen"
+   },
+   "1405": {
+      "Arabic_Name": "روضة الشيابين",
+      "English_Name": "Rodat Alshyabean"
+   },
+   "1406": {
+      "Arabic_Name": "المثناه بالرين",
+      "English_Name": "Almthnat in Arrayen"
+   },
+   "1407": {
+      "Arabic_Name": "بدائع العصمه",
+      "English_Name": "Badaea a Alosmah"
+   },
+   "1408": {
+      "Arabic_Name": "المليحه الطويله",
+      "English_Name": "Almlayhah Altwailah"
+   },
+   "1409": {
+      "Arabic_Name": "العفيج بالرين",
+      "English_Name": "Alofaij in Arrayen"
+   },
+   "1410": {
+      "Arabic_Name": "عيينان",
+      "English_Name": "Oyaynan"
+   },
+   "1411": {
+      "Arabic_Name": "لجع",
+      "English_Name": "Leja a"
+   },
+   "1412": {
+      "Arabic_Name": "المليحاء",
+      "English_Name": "Almelayha"
+   },
+   "1413": {
+      "Arabic_Name": "الهفهوف",
+      "English_Name": "Alhafhof"
+   },
+   "1414": {
+      "Arabic_Name": "أم نخله",
+      "English_Name": "Om Nkhalah"
+   },
+   "1415": {
+      "Arabic_Name": "حريملاء الحصاة",
+      "English_Name": "Hraimla Alhasat"
+   },
+   "1416": {
+      "Arabic_Name": "الخنيقيه",
+      "English_Name": "Alkhnaigyah"
+   },
+   "1417": {
+      "Arabic_Name": "طحي",
+      "English_Name": "Tehai"
+   },
+   "1418": {
+      "Arabic_Name": "خيم الحصاه",
+      "English_Name": "Khem Alhasat"
+   },
+   "1419": {
+      "Arabic_Name": "المجذميه",
+      "English_Name": "Almajthimyah"
+   },
+   "1420": {
+      "Arabic_Name": "عشق",
+      "English_Name": "Esheq"
+   },
+   "1421": {
+      "Arabic_Name": "البدع بسنان",
+      "English_Name": "Albeda a in Snan"
+   },
+   "1422": {
+      "Arabic_Name": "الرفايع بالرين",
+      "English_Name": "Alrofayea a in Arrayen"
+   },
+   "1423": {
+      "Arabic_Name": "صبحاء الشعيب",
+      "English_Name": "Sabha Alsha aeeb"
+   },
+   "1424": {
+      "Arabic_Name": "الربواء",
+      "English_Name": "Alrbwa"
+   },
+   "1425": {
+      "Arabic_Name": "لجعه",
+      "English_Name": "Leja ah"
+   },
+   "1426": {
+      "Arabic_Name": "الحلوه بالرين",
+      "English_Name": "Alhelwah in Arrayen"
+   },
+   "1427": {
+      "Arabic_Name": "تبراك والجله",
+      "English_Name": "Tubrak and Aljelh"
+   },
+   "1428": {
+      "Arabic_Name": "الفهيدات",
+      "English_Name": "Alfhaidat"
+   },
+   "1429": {
+      "Arabic_Name": "الخرائق بحلبان",
+      "English_Name": "Alkhrayeq in Helban"
+   },
+   "1430": {
+      "Arabic_Name": "نخيلان",
+      "English_Name": "Nekhlan"
+   },
+   "1431": {
+      "Arabic_Name": "الرقمية",
+      "English_Name": "Alraqmeyah"
+   },
+   "1432": {
+      "Arabic_Name": "حجيلاء",
+      "English_Name": "Hjayela"
+   },
+   "1433": {
+      "Arabic_Name": "مويسل",
+      "English_Name": "Mwaisel"
+   },
+   "1434": {
+      "Arabic_Name": "محيرقه",
+      "English_Name": "Mehargah"
+   },
+   "1435": {
+      "Arabic_Name": "السيح",
+      "English_Name": "Alseeh"
+   },
+   "1436": {
+      "Arabic_Name": "عصيل",
+      "English_Name": "Osail"
+   },
+   "1437": {
+      "Arabic_Name": "تبراك",
+      "English_Name": "Tubrak"
+   },
+   "1438": {
+      "Arabic_Name": "الحجاجي",
+      "English_Name": "Alhajaji"
+   },
+   "1439": {
+      "Arabic_Name": "القلته",
+      "English_Name": "Algeltah"
+   },
+   "1440": {
+      "Arabic_Name": "قنيفذه",
+      "English_Name": "Gnaifthah"
+   },
+   "1441": {
+      "Arabic_Name": "الجفاره",
+      "English_Name": "Aljfarah"
+   },
+   "1442": {
+      "Arabic_Name": "جزالا",
+      "English_Name": "Jizala"
+   },
+   "1443": {
+      "Arabic_Name": "الامار",
+      "English_Name": "Alamar"
+   },
+   "1444": {
+      "Arabic_Name": "جزيل",
+      "English_Name": "Jzail"
+   },
+   "1445": {
+      "Arabic_Name": "الدواماء",
+      "English_Name": "Aldwadma"
+   },
+   "1446": {
+      "Arabic_Name": "دسمان",
+      "English_Name": "Dsman"
+   },
+   "1447": {
+      "Arabic_Name": "الخروعية القديمه",
+      "English_Name": "Alkhrwaa ayah Alqademah"
+   },
+   "1448": {
+      "Arabic_Name": "الفويلق الشمالي",
+      "English_Name": "Alfwailq Alshmali"
+   },
+   "1449": {
+      "Arabic_Name": "المعيزيلة",
+      "English_Name": "Alma azlayah"
+   },
+   "1450": {
+      "Arabic_Name": "الخاصرة القديمة",
+      "English_Name": "Alkhassrah Alqademah"
+   },
+   "1451": {
+      "Arabic_Name": "السحيمة",
+      "English_Name": "Alsehaymah"
+   },
+   "1452": {
+      "Arabic_Name": "حلاة الجله",
+      "English_Name": "Hlat Aljelh"
+   },
+   "1453": {
+      "Arabic_Name": "الرفاع بالرين",
+      "English_Name": "Alrofaa in Arrayen"
+   },
+   "1454": {
+      "Arabic_Name": "وادي الخنقة",
+      "English_Name": "Wadi Alkhangah"
+   },
+   "1455": {
+      "Arabic_Name": "الخالدية",
+      "English_Name": "Alkhaldeah"
+   },
+   "1456": {
+      "Arabic_Name": "الجلة القديم",
+      "English_Name": "Aljelh Alkadeem"
+   },
+   "1457": {
+      "Arabic_Name": "المديفع",
+      "English_Name": "Almodeafea a"
+   },
+   "1458": {
+      "Arabic_Name": "ام جدير",
+      "English_Name": "Om Jdear"
+   },
+   "1459": {
+      "Arabic_Name": "الجلة الجنوبي",
+      "English_Name": "Aljelh Aljanobai"
+   },
+   "1460": {
+      "Arabic_Name": "المغزالية",
+      "English_Name": "Almagzaleah"
+   },
+   "1461": {
+      "Arabic_Name": "الكلا",
+      "English_Name": "Alkalah"
+   },
+   "1462": {
+      "Arabic_Name": "وادي الدواسر",
+      "English_Name": "Wadi Aldawaser"
+   },
+   "1463": {
+      "Arabic_Name": "الخماسين",
+      "English_Name": "Alkhmaseen"
+   },
+   "1464": {
+      "Arabic_Name": "آل معدي",
+      "English_Name": "Al Ma adi"
+   },
+   "1465": {
+      "Arabic_Name": "الصالحية",
+      "English_Name": "Alssalheyah"
+   },
+   "1466": {
+      "Arabic_Name": "كمدة",
+      "English_Name": "Kamdah"
+   },
+   "1467": {
+      "Arabic_Name": "آل أبوسباع",
+      "English_Name": "Al Abu Sabbaa a"
+   },
+   "1468": {
+      "Arabic_Name": "القويز",
+      "English_Name": "Alqwaiz"
+   },
+   "1469": {
+      "Arabic_Name": "الولامين",
+      "English_Name": "Alwlameen"
+   },
+   "1470": {
+      "Arabic_Name": "آل وثيلة",
+      "English_Name": "Al Wthayelah"
+   },
+   "1471": {
+      "Arabic_Name": "الحرارشة",
+      "English_Name": "Alhrarshah"
+   },
+   "1472": {
+      "Arabic_Name": "آل بريك",
+      "English_Name": "Al Break"
+   },
+   "1473": {
+      "Arabic_Name": "آل براز",
+      "English_Name": "Al Barraz"
+   },
+   "1474": {
+      "Arabic_Name": "الزويراء",
+      "English_Name": "Alzwayraa a"
+   },
+   "1475": {
+      "Arabic_Name": "الشرافاء",
+      "English_Name": "Alsharafa"
+   },
+   "1476": {
+      "Arabic_Name": "الفايزية",
+      "English_Name": "Alfayzeyah"
+   },
+   "1477": {
+      "Arabic_Name": "النويعمة",
+      "English_Name": "Alnoa amayah"
+   },
+   "1478": {
+      "Arabic_Name": "الفاو",
+      "English_Name": "Alfaw"
+   },
+   "1479": {
+      "Arabic_Name": "الضيرين",
+      "English_Name": "Aldereen"
+   },
+   "1480": {
+      "Arabic_Name": "المخاريم",
+      "English_Name": "Almakhareem"
+   },
+   "1481": {
+      "Arabic_Name": "الطوال",
+      "English_Name": "Altwal"
+   },
+   "1482": {
+      "Arabic_Name": "اللدام",
+      "English_Name": "Alldam"
+   },
+   "1483": {
+      "Arabic_Name": "نزوى",
+      "English_Name": "Nazwa"
+   },
+   "1484": {
+      "Arabic_Name": "المعتلاء",
+      "English_Name": "Almea atla"
+   },
+   "1485": {
+      "Arabic_Name": "الخماسين الشمالي",
+      "English_Name": "Alkhamaseen Alshemali"
+   },
+   "1486": {
+      "Arabic_Name": "الحناتيش",
+      "English_Name": "Alhnateesh"
+   },
+   "1487": {
+      "Arabic_Name": "آل عريمة",
+      "English_Name": "Al Oraimah"
+   },
+   "1488": {
+      "Arabic_Name": "آل راشد",
+      "English_Name": "Al Rashed"
+   },
+   "1489": {
+      "Arabic_Name": "همجات بني بدوة",
+      "English_Name": "Hamjat Bni Badwah"
+   },
+   "1490": {
+      "Arabic_Name": "المعتلا القديم",
+      "English_Name": "Almea atla Alqadeem"
+   },
+   "1491": {
+      "Arabic_Name": "آل عويمر",
+      "English_Name": "Al Oaimer"
+   },
+   "1492": {
+      "Arabic_Name": "المصارير",
+      "English_Name": "Almssareer"
+   },
+   "1493": {
+      "Arabic_Name": "مقابل",
+      "English_Name": "Meqabel"
+   },
+   "1494": {
+      "Arabic_Name": "خالدية الجوبه",
+      "English_Name": "khaldet Aljobah"
+   },
+   "1495": {
+      "Arabic_Name": "المعيذر الجنوبي",
+      "English_Name": "Alma ayther Aljnobi"
+   },
+   "1496": {
+      "Arabic_Name": "صبحاء بالولامين الجنوبي",
+      "English_Name": "Sabha in Alwlameen Aljnobi"
+   },
+   "1497": {
+      "Arabic_Name": "الأفلاج",
+      "English_Name": "Alaflaj"
+   },
+   "1498": {
+      "Arabic_Name": "الهدار",
+      "English_Name": "Alhaddar"
+   },
+   "1499": {
+      "Arabic_Name": "الحمر",
+      "English_Name": "Alhamar"
+   },
+   "1500": {
+      "Arabic_Name": "البديع الشمالي",
+      "English_Name": "Albeda a Alshmali"
+   },
+   "1501": {
+      "Arabic_Name": "البديع الجنوبي",
+      "English_Name": "Albeda a Aljnobi"
+   },
+   "1502": {
+      "Arabic_Name": "السيح الشمالي القطين",
+      "English_Name": "Alseeh Alshmali Alqtain"
+   },
+   "1503": {
+      "Arabic_Name": "حراضه",
+      "English_Name": "Hradah"
+   },
+   "1504": {
+      "Arabic_Name": "واسط",
+      "English_Name": "Waset"
+   },
+   "1505": {
+      "Arabic_Name": "السيح الجنوبي",
+      "English_Name": "Alseeh Aljnobi"
+   },
+   "1506": {
+      "Arabic_Name": "رفاع السيح الشمالي",
+      "English_Name": "Rfaa a Alseeh Alshmali"
+   },
+   "1507": {
+      "Arabic_Name": "الغيل",
+      "English_Name": "Algeel"
+   },
+   "1508": {
+      "Arabic_Name": "الصغو",
+      "English_Name": "Alssagho"
+   },
+   "1509": {
+      "Arabic_Name": "مروان",
+      "English_Name": "Marwan"
+   },
+   "1510": {
+      "Arabic_Name": "سويدان",
+      "English_Name": "Swaidan"
+   },
+   "1511": {
+      "Arabic_Name": "قصر القاسم",
+      "English_Name": "Qasser Alqasem"
+   },
+   "1512": {
+      "Arabic_Name": "الهدار الجنوبي",
+      "English_Name": "Alhaddar Aljnobi"
+   },
+   "1513": {
+      "Arabic_Name": "الوداعين",
+      "English_Name": "Alwdaa aen"
+   },
+   "1514": {
+      "Arabic_Name": "وسيله",
+      "English_Name": "Waseelah"
+   },
+   "1515": {
+      "Arabic_Name": "الخرفه",
+      "English_Name": "Alkharfah"
+   },
+   "1516": {
+      "Arabic_Name": "العجلية",
+      "English_Name": "Alajleah"
+   },
+   "1517": {
+      "Arabic_Name": "الزلفي",
+      "English_Name": "Alzelfi"
+   },
+   "1518": {
+      "Arabic_Name": "علقه",
+      "English_Name": "A alqah"
+   },
+   "1519": {
+      "Arabic_Name": "سمنان",
+      "English_Name": "Samnan"
+   },
+   "1520": {
+      "Arabic_Name": "الثويرات",
+      "English_Name": "Althowirat"
+   },
+   "1521": {
+      "Arabic_Name": "الحمودية",
+      "English_Name": "Alhomodayah"
+   },
+   "1522": {
+      "Arabic_Name": "البعيثه",
+      "English_Name": "Alba athyah"
+   },
+   "1523": {
+      "Arabic_Name": "المستوي",
+      "English_Name": "Almestawe"
+   },
+   "1524": {
+      "Arabic_Name": "شقراء",
+      "English_Name": "Shaqra"
+   },
+   "1525": {
+      "Arabic_Name": "القصب",
+      "English_Name": "Alqassab"
+   },
+   "1526": {
+      "Arabic_Name": "أشيقر",
+      "English_Name": "Oshayqer"
+   },
+   "1527": {
+      "Arabic_Name": "الجريفه",
+      "English_Name": "Aljraifah"
+   },
+   "1528": {
+      "Arabic_Name": "الوقف",
+      "English_Name": "Alwakf"
+   },
+   "1529": {
+      "Arabic_Name": "الصوح",
+      "English_Name": "Alssoh"
+   },
+   "1530": {
+      "Arabic_Name": "الحريق بالوشم",
+      "English_Name": "Alhorayeq in Alwashem"
+   },
+   "1531": {
+      "Arabic_Name": "بادية الداهنه",
+      "English_Name": "Badeat Aldahnh"
+   },
+   "1532": {
+      "Arabic_Name": "حاضرة الداهنة",
+      "English_Name": "Hadrat aldahnah"
+   },
+   "1533": {
+      "Arabic_Name": "غسله",
+      "English_Name": "Ghaslah"
+   },
+   "1534": {
+      "Arabic_Name": "المشاش",
+      "English_Name": "Almashash"
+   },
+   "1535": {
+      "Arabic_Name": "الفرعه بالوشم",
+      "English_Name": "Alfara ah in Alwashem"
+   },
+   "1536": {
+      "Arabic_Name": "حوطة بني تميم",
+      "English_Name": "Hodat Bani Tameem"
+   },
+   "1537": {
+      "Arabic_Name": "الحلوة",
+      "English_Name": "Alholwah"
+   },
+   "1538": {
+      "Arabic_Name": "العطيان",
+      "English_Name": "Alotayan"
+   },
+   "1539": {
+      "Arabic_Name": "القبابنة",
+      "English_Name": "Algababnah"
+   },
+   "1540": {
+      "Arabic_Name": "وادي برك",
+      "English_Name": "Wadi Berk"
+   },
+   "1541": {
+      "Arabic_Name": "الحيانية",
+      "English_Name": "Alhayaneyah"
+   },
+   "1542": {
+      "Arabic_Name": "القويع",
+      "English_Name": "Alqwaia a"
+   },
+   "1543": {
+      "Arabic_Name": "الفرشة",
+      "English_Name": "Alfarshah"
+   },
+   "1544": {
+      "Arabic_Name": "عفيف",
+      "English_Name": "Afeef"
+   },
+   "1545": {
+      "Arabic_Name": "الحوميات",
+      "English_Name": "Alhomeyat"
+   },
+   "1546": {
+      "Arabic_Name": "الجمانية",
+      "English_Name": "Aljammaneyah"
+   },
+   "1547": {
+      "Arabic_Name": "ابرقية",
+      "English_Name": "Obreqyah"
+   },
+   "1548": {
+      "Arabic_Name": "عبلاء",
+      "English_Name": "Abla"
+   },
+   "1549": {
+      "Arabic_Name": "أم ارطاء",
+      "English_Name": "Om Arreta"
+   },
+   "1550": {
+      "Arabic_Name": "بدائع العضيان",
+      "English_Name": "Bdaya Alotdiban"
+   },
+   "1551": {
+      "Arabic_Name": "الخضاره",
+      "English_Name": "Alkhotarah"
+   },
+   "1552": {
+      "Arabic_Name": "الأشعرية",
+      "English_Name": "Alasha aryah"
+   },
+   "1553": {
+      "Arabic_Name": "الحنابج",
+      "English_Name": "Alhanabej"
+   },
+   "1554": {
+      "Arabic_Name": "المردمة",
+      "English_Name": "Almarmadah"
+   },
+   "1555": {
+      "Arabic_Name": "اللنسيات",
+      "English_Name": "Lanseyat"
+   },
+   "1556": {
+      "Arabic_Name": "الصقرة",
+      "English_Name": "Alsoqrah"
+   },
+   "1557": {
+      "Arabic_Name": "محاماة بن زريبة",
+      "English_Name": "Mohamat Binzrabah"
+   },
+   "1558": {
+      "Arabic_Name": "المكلاة",
+      "English_Name": "Almokalat"
+   },
+   "1559": {
+      "Arabic_Name": "وبرة",
+      "English_Name": "Wabrah"
+   },
+   "1560": {
+      "Arabic_Name": "البحرة",
+      "English_Name": "Albahrah"
+   },
+   "1561": {
+      "Arabic_Name": "المعلق",
+      "English_Name": "Almoa alaq"
+   },
+   "1562": {
+      "Arabic_Name": "محاماة ابن مصوي",
+      "English_Name": "Mohamat Ibn Masswi"
+   },
+   "1563": {
+      "Arabic_Name": "الشواطن",
+      "English_Name": "Alshwaten"
+   },
+   "1564": {
+      "Arabic_Name": "أبو عشرة",
+      "English_Name": "Abu Ashrah"
+   },
+   "1565": {
+      "Arabic_Name": "الجثوم",
+      "English_Name": "Aljathom"
+   },
+   "1566": {
+      "Arabic_Name": "بطاحة",
+      "English_Name": "Botahah"
+   },
+   "1567": {
+      "Arabic_Name": "الشفاء",
+      "English_Name": "Alshefa"
+   },
+   "1568": {
+      "Arabic_Name": "الكفية",
+      "English_Name": "Alkafyah"
+   },
+   "1569": {
+      "Arabic_Name": "روضة عسعس",
+      "English_Name": "Rodat A asa as"
+   },
+   "1570": {
+      "Arabic_Name": "فيضة نومان",
+      "English_Name": "Faidat Noman"
+   },
+   "1571": {
+      "Arabic_Name": "دار المردمه",
+      "English_Name": "Dar Almarmadah"
+   },
+   "1572": {
+      "Arabic_Name": "العسيبي",
+      "English_Name": "Alasebai"
+   },
+   "1573": {
+      "Arabic_Name": "السليل",
+      "English_Name": "Alslayel"
+   },
+   "1574": {
+      "Arabic_Name": "أم العلقاء",
+      "English_Name": "Om Ala alqa"
+   },
+   "1575": {
+      "Arabic_Name": "آل حنيش",
+      "English_Name": "Al Honaish"
+   },
+   "1576": {
+      "Arabic_Name": "آل محمد",
+      "English_Name": "Al Mohammed"
+   },
+   "1577": {
+      "Arabic_Name": "ريداء",
+      "English_Name": "Rayda"
+   },
+   "1578": {
+      "Arabic_Name": "خيران",
+      "English_Name": "Khyran"
+   },
+   "1579": {
+      "Arabic_Name": "فوار العريقات",
+      "English_Name": "Fawar Aloriqat"
+   },
+   "1580": {
+      "Arabic_Name": "آل هميل",
+      "English_Name": "Al Homayel"
+   },
+   "1581": {
+      "Arabic_Name": "آل حجي",
+      "English_Name": "Al hejji"
+   },
+   "1582": {
+      "Arabic_Name": "آل خليف",
+      "English_Name": "Al kholaif"
+   },
+   "1583": {
+      "Arabic_Name": "الشيدية",
+      "English_Name": "Al sheediah"
+   },
+   "1584": {
+      "Arabic_Name": "ضرما",
+      "English_Name": "Dhurma"
+   },
+   "1585": {
+      "Arabic_Name": "قصور آل مقبل",
+      "English_Name": "Qossor Al Moqbel"
+   },
+   "1586": {
+      "Arabic_Name": "جو",
+      "English_Name": "Jaww"
+   },
+   "1587": {
+      "Arabic_Name": "الغزيز",
+      "English_Name": "Alghozaiz"
+   },
+   "1588": {
+      "Arabic_Name": "السيباني",
+      "English_Name": "Alsybani"
+   },
+   "1589": {
+      "Arabic_Name": "الجافورة",
+      "English_Name": "Aljaforah"
+   },
+   "1590": {
+      "Arabic_Name": "المزاحمية",
+      "English_Name": "Almozahmyah"
+   },
+   "1591": {
+      "Arabic_Name": "الغطغط",
+      "English_Name": "Ghatghat"
+   },
+   "1592": {
+      "Arabic_Name": "البخراء",
+      "English_Name": "Albakhra"
+   },
+   "1593": {
+      "Arabic_Name": "الجفير",
+      "English_Name": "Aljfyair"
+   },
+   "1594": {
+      "Arabic_Name": "الحويرة بنساح",
+      "English_Name": "Alhoayrah in Nesah"
+   },
+   "1595": {
+      "Arabic_Name": "حفيرة نساح",
+      "English_Name": "Hefyrat Nesah"
+   },
+   "1596": {
+      "Arabic_Name": "آل حفيان",
+      "English_Name": "Al Hfayan"
+   },
+   "1597": {
+      "Arabic_Name": "المشاعلة",
+      "English_Name": "Almsha alah"
+   },
+   "1598": {
+      "Arabic_Name": "الزبائر",
+      "English_Name": "Alzabair"
+   },
+   "1599": {
+      "Arabic_Name": "رماح",
+      "English_Name": "Romah"
+   },
+   "1600": {
+      "Arabic_Name": "أبوثنين",
+      "English_Name": "Abu Athnayen"
+   },
+   "1601": {
+      "Arabic_Name": "شويه",
+      "English_Name": "Shawyah"
+   },
+   "1602": {
+      "Arabic_Name": "الرمحية",
+      "English_Name": "Alromheyah"
+   },
+   "1603": {
+      "Arabic_Name": "العيطلية",
+      "English_Name": "Ala aytlayah"
+   },
+   "1604": {
+      "Arabic_Name": "حفر العتش",
+      "English_Name": "Hafer Ala atsh"
+   },
+   "1605": {
+      "Arabic_Name": "العمانية",
+      "English_Name": "Alomaniyah"
+   },
+   "1606": {
+      "Arabic_Name": "بني عامر",
+      "English_Name": "Bani A amer"
+   },
+   "1607": {
+      "Arabic_Name": "الفراج",
+      "English_Name": "Alfrraj"
+   },
+   "1608": {
+      "Arabic_Name": "الصملة",
+      "English_Name": "Assamlah"
+   },
+   "1609": {
+      "Arabic_Name": "آل عوجان",
+      "English_Name": "Al Ojan"
+   },
+   "1610": {
+      "Arabic_Name": "المزيرع",
+      "English_Name": "Almzyra a"
+   },
+   "1611": {
+      "Arabic_Name": "آل علي",
+      "English_Name": "Al Ali"
+   },
+   "1612": {
+      "Arabic_Name": "الغيلانه",
+      "English_Name": "Algailanyah"
+   },
+   "1613": {
+      "Arabic_Name": "الحفنه",
+      "English_Name": "Alhafnah"
+   },
+   "1614": {
+      "Arabic_Name": "الشلاش",
+      "English_Name": "Alshlash"
+   },
+   "1615": {
+      "Arabic_Name": "آل غرير",
+      "English_Name": "Al gorair"
+   },
+   "1616": {
+      "Arabic_Name": "الصملة الشرقية",
+      "English_Name": "Assamlah Alsharqyah"
+   },
+   "1617": {
+      "Arabic_Name": "آل بليدان",
+      "English_Name": "Al blydan"
+   },
+   "1618": {
+      "Arabic_Name": "سعد",
+      "English_Name": "Se ed"
+   },
+   "1619": {
+      "Arabic_Name": "الأزمع",
+      "English_Name": "Ala azma a"
+   },
+   "1620": {
+      "Arabic_Name": "الباني",
+      "English_Name": "Albani"
+   },
+   "1621": {
+      "Arabic_Name": "العلا",
+      "English_Name": "Alola"
+   },
+   "1622": {
+      "Arabic_Name": "الفيحانية",
+      "English_Name": "Alfehanyah"
+   },
+   "1623": {
+      "Arabic_Name": "الجفلية",
+      "English_Name": "Aljafleah"
+   },
+   "1624": {
+      "Arabic_Name": "ثادق",
+      "English_Name": "Thadeg"
+   },
+   "1625": {
+      "Arabic_Name": "البير",
+      "English_Name": "Albear"
+   },
+   "1626": {
+      "Arabic_Name": "الحسي",
+      "English_Name": "Alhesi"
+   },
+   "1627": {
+      "Arabic_Name": "الصفرة",
+      "English_Name": "Assafrah"
+   },
+   "1628": {
+      "Arabic_Name": "البويردة",
+      "English_Name": "Alboyrdah"
+   },
+   "1629": {
+      "Arabic_Name": "رويضة السهول",
+      "English_Name": "Roydat Alshol"
+   },
+   "1630": {
+      "Arabic_Name": "مشاش السهول",
+      "English_Name": "Meshash Alshol"
+   },
+   "1631": {
+      "Arabic_Name": "رويغب",
+      "English_Name": "Roygeb"
+   },
+   "1632": {
+      "Arabic_Name": "دبيجة",
+      "English_Name": "Dbaijah"
+   },
+   "1633": {
+      "Arabic_Name": "الخاتلة",
+      "English_Name": "Alkhatlah"
+   },
+   "1634": {
+      "Arabic_Name": "حريملاء",
+      "English_Name": "Horaimla"
+   },
+   "1635": {
+      "Arabic_Name": "ملهم",
+      "English_Name": "Malham"
+   },
+   "1636": {
+      "Arabic_Name": "صلبوخ",
+      "English_Name": "Solbok"
+   },
+   "1637": {
+      "Arabic_Name": "البره",
+      "English_Name": "Albarrah"
+   },
+   "1638": {
+      "Arabic_Name": "القرينة",
+      "English_Name": "Alqrenah"
+   },
+   "1639": {
+      "Arabic_Name": "العويند",
+      "English_Name": "Aloyaned"
+   },
+   "1640": {
+      "Arabic_Name": "غيانة",
+      "English_Name": "Goyanh"
+   },
+   "1641": {
+      "Arabic_Name": "دقلة",
+      "English_Name": "Daglah"
+   },
+   "1642": {
+      "Arabic_Name": "الحريق",
+      "English_Name": "Alhareq"
+   },
+   "1643": {
+      "Arabic_Name": "نعام",
+      "English_Name": "Na aam"
+   },
+   "1644": {
+      "Arabic_Name": "المفيجر",
+      "English_Name": "Almfayjer"
+   },
+   "1645": {
+      "Arabic_Name": "أبو رمل",
+      "English_Name": "Abu Ramel"
+   },
+   "1646": {
+      "Arabic_Name": "الغاط",
+      "English_Name": "Alghat"
+   },
+   "1647": {
+      "Arabic_Name": "مليح",
+      "English_Name": "Mlaih"
+   },
+   "1648": {
+      "Arabic_Name": "أبا الصلابيخ",
+      "English_Name": "Aba Asslabaikh"
+   },
+   "1649": {
+      "Arabic_Name": "العبدلية",
+      "English_Name": "Ala abdlayah"
+   },
+   "1650": {
+      "Arabic_Name": "المضيق",
+      "English_Name": "Almathaiq"
+   },
+   "1651": {
+      "Arabic_Name": "الزيمة",
+      "English_Name": "Alzemah"
+   },
+   "1652": {
+      "Arabic_Name": "الشعيبة",
+      "English_Name": "Alsha beyah"
+   },
+   "1653": {
+      "Arabic_Name": "دفاق",
+      "English_Name": "Dfaq"
+   },
+   "1654": {
+      "Arabic_Name": "البيضاء",
+      "English_Name": "Albayda"
+   },
+   "1655": {
+      "Arabic_Name": "أم الراكة",
+      "English_Name": "Om Alrakah"
+   },
+   "1656": {
+      "Arabic_Name": "المطارفة",
+      "English_Name": "Almetarfh"
+   },
+   "1657": {
+      "Arabic_Name": "جعرانة",
+      "English_Name": "Joa aranah"
+   },
+   "1658": {
+      "Arabic_Name": "بني عمير",
+      "English_Name": "Bni Omair"
+   },
+   "1659": {
+      "Arabic_Name": "البجيدي",
+      "English_Name": "Albgedy"
+   },
+   "1660": {
+      "Arabic_Name": "ثول",
+      "English_Name": "Thool"
+   },
+   "1661": {
+      "Arabic_Name": "بني سعد",
+      "English_Name": "Bni Saad"
+   },
+   "1662": {
+      "Arabic_Name": "الهدا",
+      "English_Name": "Alhadda"
+   },
+   "1663": {
+      "Arabic_Name": "المحاني",
+      "English_Name": "Almahani"
+   },
+   "1664": {
+      "Arabic_Name": "ظلم",
+      "English_Name": "Thalm"
+   },
+   "1665": {
+      "Arabic_Name": "المويه",
+      "English_Name": "Almoayeh"
+   },
+   "1666": {
+      "Arabic_Name": "ميسان",
+      "English_Name": "Maisan"
+   },
+   "1667": {
+      "Arabic_Name": "القريع بني مالك",
+      "English_Name": "Alqrea a Bni Malek"
+   },
+   "1668": {
+      "Arabic_Name": "ثقيف",
+      "English_Name": "Thageef"
+   },
+   "1669": {
+      "Arabic_Name": "السيل",
+      "English_Name": "Alsayel"
+   },
+   "1670": {
+      "Arabic_Name": "حداد بني مالك",
+      "English_Name": "Haddad Bni Malek"
+   },
+   "1671": {
+      "Arabic_Name": "رضوان",
+      "English_Name": "Radwan"
+   },
+   "1672": {
+      "Arabic_Name": "السديرة",
+      "English_Name": "Alsdyrah"
+   },
+   "1673": {
+      "Arabic_Name": "الحفر",
+      "English_Name": "Alhafer"
+   },
+   "1674": {
+      "Arabic_Name": "دغيبجة",
+      "English_Name": "Dogaibjah"
+   },
+   "1675": {
+      "Arabic_Name": "قيا",
+      "English_Name": "Gaya"
+   },
+   "1676": {
+      "Arabic_Name": "الراغية",
+      "English_Name": "Alragyah"
+   },
+   "1677": {
+      "Arabic_Name": "مران",
+      "English_Name": "Meran"
+   },
+   "1678": {
+      "Arabic_Name": "الفريع",
+      "English_Name": "Alfraia a"
+   },
+   "1679": {
+      "Arabic_Name": "الزربان",
+      "English_Name": "Alzarban"
+   },
+   "1680": {
+      "Arabic_Name": "مشاش الطارف",
+      "English_Name": "Meshash Altaref"
+   },
+   "1681": {
+      "Arabic_Name": "آل مشعان",
+      "English_Name": "Al Masha aan"
+   },
+   "1682": {
+      "Arabic_Name": "الرفايع",
+      "English_Name": "Alrofayea a"
+   },
+   "1683": {
+      "Arabic_Name": "الرويلية الصلهوج",
+      "English_Name": "Alroayleh Assohloj"
+   },
+   "1684": {
+      "Arabic_Name": "أم الدوم",
+      "English_Name": "Om Aldom"
+   },
+   "1685": {
+      "Arabic_Name": "الركنة",
+      "English_Name": "Alroknah"
+   },
+   "1686": {
+      "Arabic_Name": "العطيف",
+      "English_Name": "Alateef"
+   },
+   "1687": {
+      "Arabic_Name": "الصور",
+      "English_Name": "Alssor"
+   },
+   "1688": {
+      "Arabic_Name": "فيضة المسلح",
+      "English_Name": "Faidat Almslah"
+   },
+   "1689": {
+      "Arabic_Name": "العوالي",
+      "English_Name": "Ala awali"
+   },
+   "1690": {
+      "Arabic_Name": "شقصان",
+      "English_Name": "Shagssan"
+   },
+   "1691": {
+      "Arabic_Name": "النصائف",
+      "English_Name": "Alnsa af"
+   },
+   "1692": {
+      "Arabic_Name": "الحفاير",
+      "English_Name": "Alhafayr"
+   },
+   "1693": {
+      "Arabic_Name": "المزيرعة",
+      "English_Name": "Almzyra ah"
+   },
+   "1694": {
+      "Arabic_Name": "القنفذة",
+      "English_Name": "Algonfothah"
+   },
+   "1695": {
+      "Arabic_Name": "القوز",
+      "English_Name": "Algooz"
+   },
+   "1696": {
+      "Arabic_Name": "حلي",
+      "English_Name": "Helly"
+   },
+   "1697": {
+      "Arabic_Name": "المضيلف",
+      "English_Name": "Almothaylef"
+   },
+   "1698": {
+      "Arabic_Name": "سبت الجارة",
+      "English_Name": "Sabt Aljarah"
+   },
+   "1699": {
+      "Arabic_Name": "دوقة",
+      "English_Name": "Dokah"
+   },
+   "1700": {
+      "Arabic_Name": "كنانه",
+      "English_Name": "Kenanah"
+   },
+   "1701": {
+      "Arabic_Name": "أحد بني زيد",
+      "English_Name": "Ahad Bnizaid"
+   },
+   "1702": {
+      "Arabic_Name": "ثلاثا الخرم",
+      "English_Name": "Thlatha Alkharm"
+   },
+   "1703": {
+      "Arabic_Name": "المرصد",
+      "English_Name": "Almarssad"
+   },
+   "1704": {
+      "Arabic_Name": "خميس حرب",
+      "English_Name": "khamees and Harb"
+   },
+   "1705": {
+      "Arabic_Name": "الليث",
+      "English_Name": "Aleeth"
+   },
+   "1706": {
+      "Arabic_Name": "غميقه",
+      "English_Name": "Ghomaigah"
+   },
+   "1707": {
+      "Arabic_Name": "سوق العين",
+      "English_Name": "Soq Ala ayn"
+   },
+   "1708": {
+      "Arabic_Name": "الشواق",
+      "English_Name": "Alshwaq"
+   },
+   "1709": {
+      "Arabic_Name": "أظم",
+      "English_Name": "Atham"
+   },
+   "1710": {
+      "Arabic_Name": "يلملم",
+      "English_Name": "Yalmlam"
+   },
+   "1711": {
+      "Arabic_Name": "مجمع الطرق",
+      "English_Name": "Mojama a Altoroq"
+   },
+   "1712": {
+      "Arabic_Name": "السعدية",
+      "English_Name": "Alsa adyah"
+   },
+   "1713": {
+      "Arabic_Name": "بني يزيد",
+      "English_Name": "Bni Yazyed"
+   },
+   "1714": {
+      "Arabic_Name": "جذم",
+      "English_Name": "Jathem"
+   },
+   "1715": {
+      "Arabic_Name": "سعيا",
+      "English_Name": "Sa aya"
+   },
+   "1716": {
+      "Arabic_Name": "المرقبان",
+      "English_Name": "Almorgoban"
+   },
+   "1717": {
+      "Arabic_Name": "وادي حقال",
+      "English_Name": "Wadi Hgal"
+   },
+   "1718": {
+      "Arabic_Name": "رابغ",
+      "English_Name": "Rabegh"
+   },
+   "1719": {
+      "Arabic_Name": "حجر",
+      "English_Name": "Hajer"
+   },
+   "1720": {
+      "Arabic_Name": "النويبع",
+      "English_Name": "Alnoaybea a"
+   },
+   "1721": {
+      "Arabic_Name": "القضيمة",
+      "English_Name": "Alqthaimah"
+   },
+   "1722": {
+      "Arabic_Name": "الجموم",
+      "English_Name": "Aljmom"
+   },
+   "1723": {
+      "Arabic_Name": "عسفان",
+      "English_Name": "Asfan"
+   },
+   "1724": {
+      "Arabic_Name": "مدركة",
+      "English_Name": "Medrkah"
+   },
+   "1725": {
+      "Arabic_Name": "هدى الشام",
+      "English_Name": "Hoda Alsham"
+   },
+   "1726": {
+      "Arabic_Name": "رهاط",
+      "English_Name": "Rahat"
+   },
+   "1727": {
+      "Arabic_Name": "بني مسعود",
+      "English_Name": "Bni Masa aod"
+   },
+   "1728": {
+      "Arabic_Name": "عين شمس",
+      "English_Name": "Eyen Shams"
+   },
+   "1729": {
+      "Arabic_Name": "القفيف",
+      "English_Name": "Algfaif"
+   },
+   "1730": {
+      "Arabic_Name": "خليص",
+      "English_Name": "Khlais"
+   },
+   "1731": {
+      "Arabic_Name": "وادي قديد وستارة",
+      "English_Name": "wadi Gaded and Starah"
+   },
+   "1732": {
+      "Arabic_Name": "أم الجرم",
+      "English_Name": "Om Aljorm"
+   },
+   "1733": {
+      "Arabic_Name": "الخوار",
+      "English_Name": "Alkhwar"
+   },
+   "1734": {
+      "Arabic_Name": "ملح والبريكة",
+      "English_Name": "Melh and Albraikah"
+   },
+   "1735": {
+      "Arabic_Name": "ستارة",
+      "English_Name": "Starah"
+   },
+   "1736": {
+      "Arabic_Name": "حشاش",
+      "English_Name": "Hshash"
+   },
+   "1737": {
+      "Arabic_Name": "السهم",
+      "English_Name": "Alsahm"
+   },
+   "1738": {
+      "Arabic_Name": "الكامل",
+      "English_Name": "Alkamel"
+   },
+   "1739": {
+      "Arabic_Name": "الغريف",
+      "English_Name": "Algharef"
+   },
+   "1740": {
+      "Arabic_Name": "القعور",
+      "English_Name": "Alga aor"
+   },
+   "1741": {
+      "Arabic_Name": "الحنو",
+      "English_Name": "Alheno"
+   },
+   "1742": {
+      "Arabic_Name": "أبو مروة",
+      "English_Name": "Abu Marwah"
+   },
+   "1743": {
+      "Arabic_Name": "حدي",
+      "English_Name": "Hedday"
+   },
+   "1744": {
+      "Arabic_Name": "خدان",
+      "English_Name": "Khaddan"
+   },
+   "1745": {
+      "Arabic_Name": "ورشة",
+      "English_Name": "Warshah"
+   },
+   "1746": {
+      "Arabic_Name": "الغافه",
+      "English_Name": "Alghafah"
+   },
+   "1747": {
+      "Arabic_Name": "العفيرية",
+      "English_Name": "Alofairayah"
+   },
+   "1748": {
+      "Arabic_Name": "تربه",
+      "English_Name": "Trobah"
+   },
+   "1749": {
+      "Arabic_Name": "القوامة",
+      "English_Name": "Algwamah"
+   },
+   "1750": {
+      "Arabic_Name": "الحشرج",
+      "English_Name": "Alhashraj"
+   },
+   "1751": {
+      "Arabic_Name": "شعر",
+      "English_Name": "Sha aar"
+   },
+   "1752": {
+      "Arabic_Name": "العصلة",
+      "English_Name": "Alasslah"
+   },
+   "1753": {
+      "Arabic_Name": "الخضيراء",
+      "English_Name": "Alkhodaira"
+   },
+   "1754": {
+      "Arabic_Name": "العرقين",
+      "English_Name": "Alorgain"
+   },
+   "1755": {
+      "Arabic_Name": "العلبة",
+      "English_Name": "Ala ablah"
+   },
+   "1756": {
+      "Arabic_Name": "العلاوة",
+      "English_Name": "Alalawah"
+   },
+   "1757": {
+      "Arabic_Name": "وادي الفرع",
+      "English_Name": "Wadi Alfara a"
+   },
+   "1758": {
+      "Arabic_Name": "اليتمة",
+      "English_Name": "Alytemah"
+   },
+   "1759": {
+      "Arabic_Name": "الأكحل",
+      "English_Name": "Alakhal"
+   },
+   "1760": {
+      "Arabic_Name": "أبو ضباع",
+      "English_Name": "Abu thbaa a"
+   },
+   "1761": {
+      "Arabic_Name": "المليليج",
+      "English_Name": "Almlailej"
+   },
+   "1762": {
+      "Arabic_Name": "المندسة",
+      "English_Name": "Almendasah"
+   },
+   "1763": {
+      "Arabic_Name": "شجوى",
+      "English_Name": "Shajaw"
+   },
+   "1764": {
+      "Arabic_Name": "الفريش",
+      "English_Name": "Alfraish"
+   },
+   "1765": {
+      "Arabic_Name": "أبيار الماشي",
+      "English_Name": "Abeyar Almashi"
+   },
+   "1766": {
+      "Arabic_Name": "الفقرة",
+      "English_Name": "Alfakrah"
+   },
+   "1767": {
+      "Arabic_Name": "الهندية",
+      "English_Name": "Alhendayah"
+   },
+   "1768": {
+      "Arabic_Name": "الصويدرة",
+      "English_Name": "Alssoaydrayah"
+   },
+   "1769": {
+      "Arabic_Name": "العوينة بالصويدرة",
+      "English_Name": "Aloaynah in Alssoaydraah"
+   },
+   "1770": {
+      "Arabic_Name": "العيص",
+      "English_Name": "Ala ayess"
+   },
+   "1771": {
+      "Arabic_Name": "ينبع النخل",
+      "English_Name": "Yanba a Alnakhal"
+   },
+   "1772": {
+      "Arabic_Name": "سليلة جهينة",
+      "English_Name": "Slelat Johainah"
+   },
+   "1773": {
+      "Arabic_Name": "الجابرية",
+      "English_Name": "Aljabryah"
+   },
+   "1774": {
+      "Arabic_Name": "المربع",
+      "English_Name": "Almoraba a"
+   },
+   "1775": {
+      "Arabic_Name": "تلعة نزة",
+      "English_Name": "Tala aah Nazah"
+   },
+   "1776": {
+      "Arabic_Name": "رخو",
+      "English_Name": "Rokho"
+   },
+   "1777": {
+      "Arabic_Name": "جراجر",
+      "English_Name": "Jrajer"
+   },
+   "1778": {
+      "Arabic_Name": "المرامية",
+      "English_Name": "Almramyah"
+   },
+   "1779": {
+      "Arabic_Name": "أميرة",
+      "English_Name": "Amerah"
+   },
+   "1780": {
+      "Arabic_Name": "نبط",
+      "English_Name": "Nabt"
+   },
+   "1781": {
+      "Arabic_Name": "خمال",
+      "English_Name": "Khammal"
+   },
+   "1782": {
+      "Arabic_Name": "السليم",
+      "English_Name": "Alslem"
+   },
+   "1783": {
+      "Arabic_Name": "الفقعلي",
+      "English_Name": "Alfaga ali"
+   },
+   "1784": {
+      "Arabic_Name": "ينبع الصناعية",
+      "English_Name": "Yanba a Alsyenayeah"
+   },
+   "1785": {
+      "Arabic_Name": "الهجر الثلاث",
+      "English_Name": "Alhjer Althlath"
+   },
+   "1786": {
+      "Arabic_Name": "الحجر",
+      "English_Name": "Alhajer"
+   },
+   "1787": {
+      "Arabic_Name": "أبو راكة",
+      "English_Name": "Abu Rakah"
+   },
+   "1788": {
+      "Arabic_Name": "السليلة",
+      "English_Name": "Alslylah"
+   },
+   "1789": {
+      "Arabic_Name": "فضلا",
+      "English_Name": "Fadla"
+   },
+   "1790": {
+      "Arabic_Name": "العذيب",
+      "English_Name": "Alatheb"
+   },
+   "1791": {
+      "Arabic_Name": "شلال",
+      "English_Name": "Shlal"
+   },
+   "1792": {
+      "Arabic_Name": "البريكة",
+      "English_Name": "Albraykah"
+   },
+   "1793": {
+      "Arabic_Name": "النشيفة",
+      "English_Name": "Alnshefayah"
+   },
+   "1794": {
+      "Arabic_Name": "الفارعة",
+      "English_Name": "Alfara aah"
+   },
+   "1795": {
+      "Arabic_Name": "الورد",
+      "English_Name": "Alward"
+   },
+   "1796": {
+      "Arabic_Name": "العين الجديدة",
+      "English_Name": "Alayen Aljededah"
+   },
+   "1797": {
+      "Arabic_Name": "الجديدة",
+      "English_Name": "Aljededah"
+   },
+   "1798": {
+      "Arabic_Name": "بئر الأراك",
+      "English_Name": "Ba ar Alarak"
+   },
+   "1799": {
+      "Arabic_Name": "المهد",
+      "English_Name": "Almahed"
+   },
+   "1800": {
+      "Arabic_Name": "السويرقية",
+      "English_Name": "Alsoyrgayah"
+   },
+   "1801": {
+      "Arabic_Name": "أرن",
+      "English_Name": "Aran"
+   },
+   "1802": {
+      "Arabic_Name": "الحمنة",
+      "English_Name": "Alhamnah"
+   },
+   "1803": {
+      "Arabic_Name": "صفينة",
+      "English_Name": "Sfainah"
+   },
+   "1804": {
+      "Arabic_Name": "ثرب",
+      "English_Name": "Tharb"
+   },
+   "1805": {
+      "Arabic_Name": "الحره",
+      "English_Name": "Alhorrah"
+   },
+   "1806": {
+      "Arabic_Name": "حاذة",
+      "English_Name": "Hathah"
+   },
+   "1807": {
+      "Arabic_Name": "الأصيحر",
+      "English_Name": "Alassyher"
+   },
+   "1808": {
+      "Arabic_Name": "المويهية",
+      "English_Name": "Almoyheyah"
+   },
+   "1809": {
+      "Arabic_Name": "الصعبية",
+      "English_Name": "Alssoa abayah"
+   },
+   "1810": {
+      "Arabic_Name": "السريحية",
+      "English_Name": "Alsreheayah"
+   },
+   "1811": {
+      "Arabic_Name": "هبا",
+      "English_Name": "Heba"
+   },
+   "1812": {
+      "Arabic_Name": "الهرارة",
+      "English_Name": "Alhrrarah"
+   },
+   "1813": {
+      "Arabic_Name": "الرويضة",
+      "English_Name": "Arroaydah"
+   },
+   "1814": {
+      "Arabic_Name": "بدر",
+      "English_Name": "Bader"
+   },
+   "1815": {
+      "Arabic_Name": "المسيجيد",
+      "English_Name": "Almsayjed"
+   },
+   "1816": {
+      "Arabic_Name": "الواسطة",
+      "English_Name": "Alwastah"
+   },
+   "1817": {
+      "Arabic_Name": "القاحة",
+      "English_Name": "Algahah"
+   },
+   "1818": {
+      "Arabic_Name": "الرايس",
+      "English_Name": "Alrayes"
+   },
+   "1819": {
+      "Arabic_Name": "بئر الروحاء",
+      "English_Name": "Ba ar Alroha a"
+   },
+   "1820": {
+      "Arabic_Name": "الشفية",
+      "English_Name": "Alshfayah"
+   },
+   "1821": {
+      "Arabic_Name": "طاشا",
+      "English_Name": "Tasha a"
+   },
+   "1822": {
+      "Arabic_Name": "ام البرك",
+      "English_Name": "Om Albrk"
+   },
+   "1823": {
+      "Arabic_Name": "خيبر",
+      "English_Name": "Khayber"
+   },
+   "1824": {
+      "Arabic_Name": "العشاش",
+      "English_Name": "Ala ashash"
+   },
+   "1825": {
+      "Arabic_Name": "الصلصلة",
+      "English_Name": "Alssalsslah"
+   },
+   "1826": {
+      "Arabic_Name": "العيينة",
+      "English_Name": "Aloyaynah"
+   },
+   "1827": {
+      "Arabic_Name": "العشيرة",
+      "English_Name": "Aloshayrah"
+   },
+   "1828": {
+      "Arabic_Name": "الثمد",
+      "English_Name": "Althamed"
+   },
+   "1829": {
+      "Arabic_Name": "جدعا",
+      "English_Name": "Jada aa"
+   },
+   "1830": {
+      "Arabic_Name": "اللحن",
+      "English_Name": "Allahn"
+   },
+   "1831": {
+      "Arabic_Name": "العرايد",
+      "English_Name": "Alaraaed"
+   },
+   "1832": {
+      "Arabic_Name": "الحناكية",
+      "English_Name": "Alhenakeyah"
+   },
+   "1833": {
+      "Arabic_Name": "الحسو",
+      "English_Name": "Alhaso"
+   },
+   "1834": {
+      "Arabic_Name": "النخيل",
+      "English_Name": "Alnakhail"
+   },
+   "1835": {
+      "Arabic_Name": "الضميرية",
+      "English_Name": "Aldameryah"
+   },
+   "1836": {
+      "Arabic_Name": "طلال",
+      "English_Name": "Talal"
+   },
+   "1837": {
+      "Arabic_Name": "الهميج",
+      "English_Name": "Alhmaij"
+   },
+   "1838": {
+      "Arabic_Name": "هدبان",
+      "English_Name": "Hadban"
+   },
+   "1839": {
+      "Arabic_Name": "بلغة",
+      "English_Name": "Balgah"
+   },
+   "1840": {
+      "Arabic_Name": "صخيبرة",
+      "English_Name": "Sokaybrah"
+   },
+   "1841": {
+      "Arabic_Name": "حزرة",
+      "English_Name": "Harzah"
+   },
+   "1842": {
+      "Arabic_Name": "ضعه",
+      "English_Name": "Tha ah"
+   },
+   "1843": {
+      "Arabic_Name": "العوينة",
+      "English_Name": "Aloaynah"
+   },
+   "1844": {
+      "Arabic_Name": "الشقران",
+      "English_Name": "Alshagran"
+   },
+   "1845": {
+      "Arabic_Name": "غراب",
+      "English_Name": "Grab"
+   },
+   "1846": {
+      "Arabic_Name": "يطحى",
+      "English_Name": "Yatha"
+   },
+   "1847": {
+      "Arabic_Name": "الشقة",
+      "English_Name": "Alshegah"
+   },
+   "1848": {
+      "Arabic_Name": "البصر",
+      "English_Name": "Albsser"
+   },
+   "1849": {
+      "Arabic_Name": "البطين",
+      "English_Name": "Albotayen"
+   },
+   "1850": {
+      "Arabic_Name": "الفوارة",
+      "English_Name": "Alfwarah"
+   },
+   "1851": {
+      "Arabic_Name": "الخبراء",
+      "English_Name": "Alkhabra"
+   },
+   "1852": {
+      "Arabic_Name": "القرعاء",
+      "English_Name": "Alkra aa"
+   },
+   "1853": {
+      "Arabic_Name": "قصيباء",
+      "English_Name": "Qssayba"
+   },
+   "1854": {
+      "Arabic_Name": "المدرج",
+      "English_Name": "Almadraj"
+   },
+   "1855": {
+      "Arabic_Name": "محير الترمس",
+      "English_Name": "Mahayer Altermais"
+   },
+   "1856": {
+      "Arabic_Name": "شري",
+      "English_Name": "Sheri"
+   },
+   "1857": {
+      "Arabic_Name": "الشبيكية",
+      "English_Name": "Alshbaikayah"
+   },
+   "1858": {
+      "Arabic_Name": "الخشيـبي",
+      "English_Name": "Alkhoshaybi"
+   },
+   "1859": {
+      "Arabic_Name": "الدليمية",
+      "English_Name": "Aldlaymeyah"
+   },
+   "1860": {
+      "Arabic_Name": "الذيبية",
+      "English_Name": "Althebayah"
+   },
+   "1861": {
+      "Arabic_Name": "الربيعية",
+      "English_Name": "Alrbaya ayah"
+   },
+   "1862": {
+      "Arabic_Name": "الهدية",
+      "English_Name": "Alhadyah"
+   },
+   "1863": {
+      "Arabic_Name": "خضيراء",
+      "English_Name": "Khodayra"
+   },
+   "1864": {
+      "Arabic_Name": "رواق",
+      "English_Name": "Rowaq"
+   },
+   "1865": {
+      "Arabic_Name": "الخضر والوجيعان",
+      "English_Name": "Alkhother and Alwjea aan"
+   },
+   "1866": {
+      "Arabic_Name": "القصيعة",
+      "English_Name": "Alqssaya ah"
+   },
+   "1867": {
+      "Arabic_Name": "اللسيب",
+      "English_Name": "Alseeb"
+   },
+   "1868": {
+      "Arabic_Name": "حويلان",
+      "English_Name": "Hoaylan"
+   },
+   "1869": {
+      "Arabic_Name": "المريديسية",
+      "English_Name": "Almraydesayah"
+   },
+   "1870": {
+      "Arabic_Name": "جرية العمران وخب ثنيان",
+      "English_Name": "Jaryat Alomran and Khob Thinyan"
+   },
+   "1871": {
+      "Arabic_Name": "الدعيسة",
+      "English_Name": "Aldea aseayah"
+   },
+   "1872": {
+      "Arabic_Name": "العريمضي",
+      "English_Name": "Aloraimdi"
+   },
+   "1873": {
+      "Arabic_Name": "الصباخ",
+      "English_Name": "Alssobakh"
+   },
+   "1874": {
+      "Arabic_Name": "الغماس",
+      "English_Name": "Alghammas"
+   },
+   "1875": {
+      "Arabic_Name": "خب روضان",
+      "English_Name": "Khob Rodan"
+   },
+   "1876": {
+      "Arabic_Name": "ضراس",
+      "English_Name": "Doras"
+   },
+   "1877": {
+      "Arabic_Name": "طلحة",
+      "English_Name": "Talha"
+   },
+   "1878": {
+      "Arabic_Name": "خب البريدي",
+      "English_Name": "khob Alboraidi"
+   },
+   "1879": {
+      "Arabic_Name": "الشقة السفلى",
+      "English_Name": "Alsheqah Alsofla"
+   },
+   "1880": {
+      "Arabic_Name": "القوارة",
+      "English_Name": "Algawarh"
+   },
+   "1881": {
+      "Arabic_Name": "الثامرية",
+      "English_Name": "Althameryah"
+   },
+   "1882": {
+      "Arabic_Name": "العمار",
+      "English_Name": "Ala amar"
+   },
+   "1883": {
+      "Arabic_Name": "عقلة الصقور",
+      "English_Name": "Oqlat Alsoqor"
+   },
+   "1884": {
+      "Arabic_Name": "هجرة عقلة الصقور",
+      "English_Name": "Hegrat Oqlat Alsoqor"
+   },
+   "1885": {
+      "Arabic_Name": "قصر بن عقيل",
+      "English_Name": "Qaser Bin Aqeel"
+   },
+   "1886": {
+      "Arabic_Name": "الكدادية",
+      "English_Name": "Alkaddadyah"
+   },
+   "1887": {
+      "Arabic_Name": "الروغاني",
+      "English_Name": "Alroghani"
+   },
+   "1888": {
+      "Arabic_Name": "وادي الجناح",
+      "English_Name": "Wadi Aljanah"
+   },
+   "1889": {
+      "Arabic_Name": "العوشزية",
+      "English_Name": "Alosheziah"
+   },
+   "1890": {
+      "Arabic_Name": "الأحمدية",
+      "English_Name": "Alahmadiah"
+   },
+   "1891": {
+      "Arabic_Name": "الرس",
+      "English_Name": "Arrass"
+   },
+   "1892": {
+      "Arabic_Name": "ضرية",
+      "English_Name": "Dhariah"
+   },
+   "1893": {
+      "Arabic_Name": "مسكة",
+      "English_Name": "Meskah"
+   },
+   "1894": {
+      "Arabic_Name": "الصمعورية",
+      "English_Name": "Alsamoriah"
+   },
+   "1895": {
+      "Arabic_Name": "سلام",
+      "English_Name": "Salam"
+   },
+   "1896": {
+      "Arabic_Name": "الشنانة",
+      "English_Name": "Shenanh"
+   },
+   "1897": {
+      "Arabic_Name": "الخريشاء",
+      "English_Name": "khoraisha"
+   },
+   "1898": {
+      "Arabic_Name": "الدحلة",
+      "English_Name": "Dohlah"
+   },
+   "1899": {
+      "Arabic_Name": "المطيوي الجنوبي",
+      "English_Name": "Motaiwi Aljanobi"
+   },
+   "1900": {
+      "Arabic_Name": "بقيعا الجنوبية",
+      "English_Name": "Bogai a Aljanobiah"
+   },
+   "1901": {
+      "Arabic_Name": "بدائع الضبطان",
+      "English_Name": "Badae Aldabtan"
+   },
+   "1902": {
+      "Arabic_Name": "العاقر",
+      "English_Name": "Aqer"
+   },
+   "1903": {
+      "Arabic_Name": "الظاهرية",
+      "English_Name": "Taheryah"
+   },
+   "1904": {
+      "Arabic_Name": "المطية",
+      "English_Name": "Matyah"
+   },
+   "1905": {
+      "Arabic_Name": "هرمولة",
+      "English_Name": "Harmolah"
+   },
+   "1906": {
+      "Arabic_Name": "الغيدانية",
+      "English_Name": "Gaidanyah"
+   },
+   "1907": {
+      "Arabic_Name": "فيضة الريشية",
+      "English_Name": "Faidat Alresheh"
+   },
+   "1908": {
+      "Arabic_Name": "ليم",
+      "English_Name": "Leem"
+   },
+   "1909": {
+      "Arabic_Name": "المذنب",
+      "English_Name": "Mathnab"
+   },
+   "1910": {
+      "Arabic_Name": "روضة الحسو",
+      "English_Name": "Rodhat Alhaso"
+   },
+   "1911": {
+      "Arabic_Name": "الخرماء",
+      "English_Name": "Alkharma"
+   },
+   "1912": {
+      "Arabic_Name": "الخرماء الشمالية",
+      "English_Name": "Alkharma Ashemaliah"
+   },
+   "1913": {
+      "Arabic_Name": "سامودة",
+      "English_Name": "Samodh"
+   },
+   "1914": {
+      "Arabic_Name": "ربيق",
+      "English_Name": "Robaiq"
+   },
+   "1915": {
+      "Arabic_Name": "الملقاء",
+      "English_Name": "Malqa"
+   },
+   "1916": {
+      "Arabic_Name": "البكيرية",
+      "English_Name": "Albokairyah"
+   },
+   "1917": {
+      "Arabic_Name": "الهلالية",
+      "English_Name": "Alhilaliah"
+   },
+   "1918": {
+      "Arabic_Name": "الشيحية",
+      "English_Name": "Ashehyah"
+   },
+   "1919": {
+      "Arabic_Name": "كحلة",
+      "English_Name": "Kohlah"
+   },
+   "1920": {
+      "Arabic_Name": "الضلفعة",
+      "English_Name": "Atalfa aah"
+   },
+   "1921": {
+      "Arabic_Name": "مشاش جروه",
+      "English_Name": "Mushash Jarwah"
+   },
+   "1922": {
+      "Arabic_Name": "الفيضة",
+      "English_Name": "Alfaidah"
+   },
+   "1923": {
+      "Arabic_Name": "النجبة",
+      "English_Name": "Alnajbah"
+   },
+   "1924": {
+      "Arabic_Name": "ساق",
+      "English_Name": "Saq"
+   },
+   "1925": {
+      "Arabic_Name": "البدائع",
+      "English_Name": "Albadae"
+   },
+   "1926": {
+      "Arabic_Name": "دهيماء",
+      "English_Name": "Dohaima"
+   },
+   "1927": {
+      "Arabic_Name": "علباء",
+      "English_Name": "Alba"
+   },
+   "1928": {
+      "Arabic_Name": "خصيبة",
+      "English_Name": "Khosaibah"
+   },
+   "1929": {
+      "Arabic_Name": "أبا الورود",
+      "English_Name": "Aba Alworood"
+   },
+   "1930": {
+      "Arabic_Name": "ضيدة",
+      "English_Name": "Thedah"
+   },
+   "1931": {
+      "Arabic_Name": "حنيظل",
+      "English_Name": "Honaidel"
+   },
+   "1932": {
+      "Arabic_Name": "طريف الأسياح",
+      "English_Name": "Toraif Alssyah"
+   },
+   "1933": {
+      "Arabic_Name": "التنومة",
+      "English_Name": "Tanomah"
+   },
+   "1934": {
+      "Arabic_Name": "الجعلة",
+      "English_Name": "Joa alah"
+   },
+   "1935": {
+      "Arabic_Name": "البندرية",
+      "English_Name": "Albanedriah"
+   },
+   "1936": {
+      "Arabic_Name": "النبهانية",
+      "English_Name": "Alnabhaniah"
+   },
+   "1937": {
+      "Arabic_Name": "ثادج",
+      "English_Name": "Thadej"
+   },
+   "1938": {
+      "Arabic_Name": "اللغفية",
+      "English_Name": "Logaifyah"
+   },
+   "1939": {
+      "Arabic_Name": "القيصومة",
+      "English_Name": "Qaisomah"
+   },
+   "1940": {
+      "Arabic_Name": "البتراء",
+      "English_Name": "Albatra"
+   },
+   "1941": {
+      "Arabic_Name": "روضة قرادان",
+      "English_Name": "Rodhat Gradan"
+   },
+   "1942": {
+      "Arabic_Name": "عطاء",
+      "English_Name": "Atta"
+   },
+   "1943": {
+      "Arabic_Name": "عطي",
+      "English_Name": "Otti"
+   },
+   "1944": {
+      "Arabic_Name": "الهمجة",
+      "English_Name": "Alhamjah"
+   },
+   "1945": {
+      "Arabic_Name": "خضراء",
+      "English_Name": "Khadra"
+   },
+   "1946": {
+      "Arabic_Name": "الحنينية",
+      "English_Name": "Alhonainyah"
+   },
+   "1947": {
+      "Arabic_Name": "المرموثة",
+      "English_Name": "Almarmothah"
+   },
+   "1948": {
+      "Arabic_Name": "الزهيرية",
+      "English_Name": "Alzohairyah"
+   },
+   "1949": {
+      "Arabic_Name": "الصليــبي",
+      "English_Name": "Alssolaibi"
+   },
+   "1950": {
+      "Arabic_Name": "الجرذاوية",
+      "English_Name": "Aljarthawyah"
+   },
+   "1951": {
+      "Arabic_Name": "رفايع اللهيب",
+      "English_Name": "Rfae Allohaib"
+   },
+   "1952": {
+      "Arabic_Name": "الخطيم",
+      "English_Name": "khotaim"
+   },
+   "1953": {
+      "Arabic_Name": "مطربة",
+      "English_Name": "Motribah"
+   },
+   "1954": {
+      "Arabic_Name": "البصيري",
+      "English_Name": "Albosairi"
+   },
+   "1955": {
+      "Arabic_Name": "البعجاء",
+      "English_Name": "Alba aja"
+   },
+   "1956": {
+      "Arabic_Name": "عريفجان ساحوق",
+      "English_Name": "Orifejan Sahok"
+   },
+   "1957": {
+      "Arabic_Name": "الطرفية الغربية",
+      "English_Name": "Altorfiah Algharbiah"
+   },
+   "1958": {
+      "Arabic_Name": "الغضياء والسلمات",
+      "English_Name": "Alghathia and Alslemat"
+   },
+   "1959": {
+      "Arabic_Name": "فياضة",
+      "English_Name": "Fayadh"
+   },
+   "1960": {
+      "Arabic_Name": "صعينين",
+      "English_Name": "Soa ainen"
+   },
+   "1961": {
+      "Arabic_Name": "الجفن",
+      "English_Name": "Aljafen"
+   },
+   "1962": {
+      "Arabic_Name": "الافيهد",
+      "English_Name": "Alafaihed"
+   },
+   "1963": {
+      "Arabic_Name": "مظيفير",
+      "English_Name": "Modhaifee\\r"
+   },
+   "1964": {
+      "Arabic_Name": "دوبح",
+      "English_Name": "Dobh"
+   },
+   "1965": {
+      "Arabic_Name": "جرار",
+      "English_Name": "Jarrar"
+   },
+   "1966": {
+      "Arabic_Name": "رفايع الحميمة",
+      "English_Name": "Rafae Alhomaimah"
+   },
+   "1967": {
+      "Arabic_Name": "رفايع الحجرة",
+      "English_Name": "Rafae Alhojrah"
+   },
+   "1968": {
+      "Arabic_Name": "عيون الجواء",
+      "English_Name": "Oyon Aljowa"
+   },
+   "1969": {
+      "Arabic_Name": "الصلبية",
+      "English_Name": "Assolobiah"
+   },
+   "1970": {
+      "Arabic_Name": "غاف الجواء",
+      "English_Name": "Ghaf Aljowa"
+   },
+   "1971": {
+      "Arabic_Name": "روض الجواء",
+      "English_Name": "Roodh Aljowa"
+   },
+   "1972": {
+      "Arabic_Name": "أوثال",
+      "English_Name": "Awthal"
+   },
+   "1973": {
+      "Arabic_Name": "الطراق",
+      "English_Name": "Altoraq"
+   },
+   "1974": {
+      "Arabic_Name": "المخرم",
+      "English_Name": "Almakhram"
+   },
+   "1975": {
+      "Arabic_Name": "كبد",
+      "English_Name": "Kabd"
+   },
+   "1976": {
+      "Arabic_Name": "النمرية",
+      "English_Name": "Alnomryah"
+   },
+   "1977": {
+      "Arabic_Name": "الطرفاوي",
+      "English_Name": "Altrfawi"
+   },
+   "1978": {
+      "Arabic_Name": "صبيح",
+      "English_Name": "Sobaih"
+   },
+   "1979": {
+      "Arabic_Name": "المطيوي الشمالي",
+      "English_Name": "Almatwi Ashemali"
+   },
+   "1980": {
+      "Arabic_Name": "قطن",
+      "English_Name": "Goten"
+   },
+   "1981": {
+      "Arabic_Name": "امباري",
+      "English_Name": "Embari"
+   },
+   "1982": {
+      "Arabic_Name": "المحيلاني",
+      "English_Name": "Almohailani"
+   },
+   "1983": {
+      "Arabic_Name": "ذوقان الركايا",
+      "English_Name": "Thoqan Alrrokaya"
+   },
+   "1984": {
+      "Arabic_Name": "فيضة ذيبان",
+      "English_Name": "Faidhat Theeban"
+   },
+   "1985": {
+      "Arabic_Name": "الحيسونية",
+      "English_Name": "Alhaisonyah"
+   },
+   "1986": {
+      "Arabic_Name": "النقرة",
+      "English_Name": "Alnoqrah"
+   },
+   "1987": {
+      "Arabic_Name": "الهميلية",
+      "English_Name": "Alhomailyah"
+   },
+   "1988": {
+      "Arabic_Name": "عماير سعيدة",
+      "English_Name": "Amayer So aidah"
+   },
+   "1989": {
+      "Arabic_Name": "شقران الحاجر",
+      "English_Name": "Shaqran Alhajer"
+   },
+   "1990": {
+      "Arabic_Name": "الشماسية",
+      "English_Name": "Shomasyah"
+   },
+   "1991": {
+      "Arabic_Name": "أم حزم",
+      "English_Name": "Om hazem"
+   },
+   "1992": {
+      "Arabic_Name": "النبقية",
+      "English_Name": "Alnobgyah"
+   },
+   "1993": {
+      "Arabic_Name": "سحمة",
+      "English_Name": "Sahmah"
+   },
+   "1994": {
+      "Arabic_Name": "ذاعبلوتن",
+      "English_Name": "Tha bloten"
+   },
+   "1995": {
+      "Arabic_Name": "عردة",
+      "English_Name": "Ordah"
+   },
+   "1996": {
+      "Arabic_Name": "أبو قميص",
+      "English_Name": "Abu Qames"
+   },
+   "1997": {
+      "Arabic_Name": "جودة",
+      "English_Name": "Jowdah"
+   },
+   "1998": {
+      "Arabic_Name": "يبرين",
+      "English_Name": "Yabreen"
+   },
+   "1999": {
+      "Arabic_Name": "الخن",
+      "English_Name": "Alkhen"
+   },
+   "2000": {
+      "Arabic_Name": "الغويبة",
+      "English_Name": "Algowaibah"
+   },
+   "2001": {
+      "Arabic_Name": "أنباك",
+      "English_Name": "Anbak"
+   },
+   "2002": {
+      "Arabic_Name": "أم ربيعة",
+      "English_Name": "Om Rbia h"
+   },
+   "2003": {
+      "Arabic_Name": "أم أثلة",
+      "English_Name": "Om Athelah"
+   },
+   "2004": {
+      "Arabic_Name": "سلوى",
+      "English_Name": "Salwa"
+   },
+   "2005": {
+      "Arabic_Name": "العيون",
+      "English_Name": "Aloyon"
+   },
+   "2006": {
+      "Arabic_Name": "العضيلية",
+      "English_Name": "Alodhailyah"
+   },
+   "2007": {
+      "Arabic_Name": "حرض",
+      "English_Name": "Haradh"
+   },
+   "2008": {
+      "Arabic_Name": "خريص",
+      "English_Name": "Khorais"
+   },
+   "2009": {
+      "Arabic_Name": "البطحاء",
+      "English_Name": "Albataha"
+   },
+   "2010": {
+      "Arabic_Name": "العديد",
+      "English_Name": "Alodaid"
+   },
+   "2011": {
+      "Arabic_Name": "العقير",
+      "English_Name": "Aoqair"
+   },
+   "2012": {
+      "Arabic_Name": "الجفر",
+      "English_Name": "Aljafer"
+   },
+   "2013": {
+      "Arabic_Name": "الحنى",
+      "English_Name": "Alhona"
+   },
+   "2014": {
+      "Arabic_Name": "أم العراد",
+      "English_Name": "Om Alorad"
+   },
+   "2015": {
+      "Arabic_Name": "الطويلة",
+      "English_Name": "Altawilah"
+   },
+   "2016": {
+      "Arabic_Name": "شجعة",
+      "English_Name": "Shoja h"
+   },
+   "2017": {
+      "Arabic_Name": "مريطبه",
+      "English_Name": "Moritbah"
+   },
+   "2018": {
+      "Arabic_Name": "وسيع",
+      "English_Name": "Wse a"
+   },
+   "2019": {
+      "Arabic_Name": "الدهو",
+      "English_Name": "Adaho"
+   },
+   "2020": {
+      "Arabic_Name": "حفر الباطن",
+      "English_Name": "Hafer Albaten"
+   },
+   "2021": {
+      "Arabic_Name": "القلت",
+      "English_Name": "Algelt"
+   },
+   "2022": {
+      "Arabic_Name": "المتياهة الجنوبية",
+      "English_Name": "Almetyahah Aljanobyah"
+   },
+   "2023": {
+      "Arabic_Name": "الرقعي",
+      "English_Name": "Alroqa i"
+   },
+   "2024": {
+      "Arabic_Name": "الصداوي",
+      "English_Name": "Alsadawi"
+   },
+   "2025": {
+      "Arabic_Name": "النظيم",
+      "English_Name": "Alnadheem"
+   },
+   "2026": {
+      "Arabic_Name": "أم قليب",
+      "English_Name": "Om Qlaib"
+   },
+   "2027": {
+      "Arabic_Name": "السعيرة",
+      "English_Name": "Alsa ayrah"
+   },
+   "2028": {
+      "Arabic_Name": "الحماطيات",
+      "English_Name": "Alhematyat"
+   },
+   "2029": {
+      "Arabic_Name": "ذبحة",
+      "English_Name": "Dabhah"
+   },
+   "2030": {
+      "Arabic_Name": "أم عشر",
+      "English_Name": "Om Asher"
+   },
+   "2031": {
+      "Arabic_Name": "المطرقة",
+      "English_Name": "Almetrakah"
+   },
+   "2032": {
+      "Arabic_Name": "الصفيري",
+      "English_Name": "Alssfairai"
+   },
+   "2033": {
+      "Arabic_Name": "جوسمين",
+      "English_Name": "Jawsameen"
+   },
+   "2034": {
+      "Arabic_Name": "جزيرة جنة",
+      "English_Name": "Jazerat Jannah"
+   },
+   "2035": {
+      "Arabic_Name": "سيهات",
+      "English_Name": "Sayhat"
+   },
+   "2036": {
+      "Arabic_Name": "عنك",
+      "English_Name": "Anak"
+   },
+   "2037": {
+      "Arabic_Name": "تاروت",
+      "English_Name": "Tarot"
+   },
+   "2038": {
+      "Arabic_Name": "النابية",
+      "English_Name": "Alnaybayah"
+   },
+   "2039": {
+      "Arabic_Name": "ام الساهك",
+      "English_Name": "Om Alsahek"
+   },
+   "2040": {
+      "Arabic_Name": "جسر الملك فهد",
+      "English_Name": "King Fahad Causeway"
+   },
+   "2041": {
+      "Arabic_Name": "الثقبة",
+      "English_Name": "Althuqbah"
+   },
+   "2042": {
+      "Arabic_Name": "الخفجي",
+      "English_Name": "Alkhafji"
+   },
+   "2043": {
+      "Arabic_Name": "السفانية",
+      "English_Name": "Alsfanyah"
+   },
+   "2044": {
+      "Arabic_Name": "أبرق الكبريت",
+      "English_Name": "Abraq Alkebret"
+   },
+   "2045": {
+      "Arabic_Name": "رأس تنورة",
+      "English_Name": "RasTanorh"
+   },
+   "2046": {
+      "Arabic_Name": "يكرب",
+      "English_Name": "Yakrub"
+   },
+   "2047": {
+      "Arabic_Name": "عين دار الجديدة",
+      "English_Name": "Aen Dar Aljededah"
+   },
+   "2048": {
+      "Arabic_Name": "الراجحة",
+      "English_Name": "Alrajhah"
+   },
+   "2049": {
+      "Arabic_Name": "فودة",
+      "English_Name": "Fodah"
+   },
+   "2050": {
+      "Arabic_Name": "عين دار البلد",
+      "English_Name": "Aen Dar Albalad"
+   },
+   "2051": {
+      "Arabic_Name": "الحبل",
+      "English_Name": "Alhabel"
+   },
+   "2052": {
+      "Arabic_Name": "الدغيمية",
+      "English_Name": "Aldegaimeyah"
+   },
+   "2053": {
+      "Arabic_Name": "صلاصل",
+      "English_Name": "Slasel"
+   },
+   "2054": {
+      "Arabic_Name": "الفردانية",
+      "English_Name": "Alfardanyah"
+   },
+   "2055": {
+      "Arabic_Name": "خور الذيابة",
+      "English_Name": "Khor Althyabh"
+   },
+   "2056": {
+      "Arabic_Name": "النعيرية",
+      "English_Name": "Alnea aryah"
+   },
+   "2057": {
+      "Arabic_Name": "الصرار",
+      "English_Name": "Alssrar"
+   },
+   "2058": {
+      "Arabic_Name": "مليجة",
+      "English_Name": "Melaijah"
+   },
+   "2059": {
+      "Arabic_Name": "حنيذ",
+      "English_Name": "Haneth"
+   },
+   "2060": {
+      "Arabic_Name": "القليب",
+      "English_Name": "Alqlaib"
+   },
+   "2061": {
+      "Arabic_Name": "عتيق",
+      "English_Name": "Ateeq"
+   },
+   "2062": {
+      "Arabic_Name": "الكهفة",
+      "English_Name": "Alkahfah"
+   },
+   "2063": {
+      "Arabic_Name": "الصحاف",
+      "English_Name": "Alssahaf"
+   },
+   "2064": {
+      "Arabic_Name": "ثاج",
+      "English_Name": "Thaj"
+   },
+   "2065": {
+      "Arabic_Name": "الونان",
+      "English_Name": "Alwanan"
+   },
+   "2066": {
+      "Arabic_Name": "الزغين",
+      "English_Name": "Alzgain"
+   },
+   "2067": {
+      "Arabic_Name": "نطاع",
+      "English_Name": "Nataa a"
+   },
+   "2068": {
+      "Arabic_Name": "النقيرة",
+      "English_Name": "Alnkairah"
+   },
+   "2069": {
+      "Arabic_Name": "غنوة",
+      "English_Name": "Ganwah"
+   },
+   "2070": {
+      "Arabic_Name": "المليحة",
+      "English_Name": "Almelaihah"
+   },
+   "2071": {
+      "Arabic_Name": "أم السواد",
+      "English_Name": "Om Alswad"
+   },
+   "2072": {
+      "Arabic_Name": "الهليسية",
+      "English_Name": "Alhelaisayah"
+   },
+   "2073": {
+      "Arabic_Name": "مغطي",
+      "English_Name": "Magta"
+   },
+   "2074": {
+      "Arabic_Name": "الحناه",
+      "English_Name": "Alhanat"
+   },
+   "2075": {
+      "Arabic_Name": "شفيه",
+      "English_Name": "Shafeah"
+   },
+   "2076": {
+      "Arabic_Name": "قرية العليا",
+      "English_Name": "Qaryat Alolya"
+   },
+   "2077": {
+      "Arabic_Name": "الرفيعة",
+      "English_Name": "Alrufaya ah"
+   },
+   "2078": {
+      "Arabic_Name": "الشيط",
+      "English_Name": "Alshet"
+   },
+   "2079": {
+      "Arabic_Name": "أم الهوشات",
+      "English_Name": "Om Alhoshat"
+   },
+   "2080": {
+      "Arabic_Name": "الفريدة",
+      "English_Name": "Alfraidayah"
+   },
+   "2081": {
+      "Arabic_Name": "اللصافة",
+      "English_Name": "Allssafah"
+   },
+   "2082": {
+      "Arabic_Name": "أم الشفلح",
+      "English_Name": "Om Alshaflah"
+   },
+   "2083": {
+      "Arabic_Name": "الحيرا",
+      "English_Name": "Alhera"
+   },
+   "2084": {
+      "Arabic_Name": "مناخ",
+      "English_Name": "Manakh"
+   },
+   "2085": {
+      "Arabic_Name": "أم عقلا",
+      "English_Name": "Om Aqla"
+   },
+   "2086": {
+      "Arabic_Name": "خبيراء",
+      "English_Name": "Khbaira"
+   },
+   "2087": {
+      "Arabic_Name": "أم غور",
+      "English_Name": "Om Gor"
+   },
+   "2088": {
+      "Arabic_Name": "معراج السوبان",
+      "English_Name": "Mea araj Alsoban"
+   },
+   "2089": {
+      "Arabic_Name": "أم كداد",
+      "English_Name": "Om Kadad"
+   },
+   "2090": {
+      "Arabic_Name": "رديفة القرعاء",
+      "English_Name": "Radifat Alqara aa"
+   },
+   "2091": {
+      "Arabic_Name": "البويبـيات",
+      "English_Name": "Albowaibat"
+   },
+   "2092": {
+      "Arabic_Name": "المحوى",
+      "English_Name": "Almahwa"
+   },
+   "2093": {
+      "Arabic_Name": "مشله",
+      "English_Name": "Mashlah"
+   },
+   "2094": {
+      "Arabic_Name": "السودة",
+      "English_Name": "Alsodah"
+   },
+   "2095": {
+      "Arabic_Name": "مدينة سلطان",
+      "English_Name": "Madenat Sultan"
+   },
+   "2096": {
+      "Arabic_Name": "بللحمر",
+      "English_Name": "Balahmar"
+   },
+   "2097": {
+      "Arabic_Name": "الشعف",
+      "English_Name": "Alshea af"
+   },
+   "2098": {
+      "Arabic_Name": "تنومة",
+      "English_Name": "Tannomah"
+   },
+   "2099": {
+      "Arabic_Name": "بللسمر",
+      "English_Name": "Balasmar"
+   },
+   "2100": {
+      "Arabic_Name": "مربه",
+      "English_Name": "Marbah"
+   },
+   "2101": {
+      "Arabic_Name": "طبب",
+      "English_Name": "Tabab"
+   },
+   "2102": {
+      "Arabic_Name": "البرك",
+      "English_Name": "Alberk"
+   },
+   "2103": {
+      "Arabic_Name": "اربوعة",
+      "English_Name": "Arboa ah"
+   },
+   "2104": {
+      "Arabic_Name": "عمق",
+      "English_Name": "Omeq"
+   },
+   "2105": {
+      "Arabic_Name": "ذهبان",
+      "English_Name": "Thahban"
+   },
+   "2106": {
+      "Arabic_Name": "تمنيه",
+      "English_Name": "Tamnyah"
+   },
+   "2107": {
+      "Arabic_Name": "الماوين",
+      "English_Name": "Almawheen"
+   },
+   "2108": {
+      "Arabic_Name": "صدر وائلة",
+      "English_Name": "Sadr Wa aelah"
+   },
+   "2109": {
+      "Arabic_Name": "بيحان",
+      "English_Name": "Behan"
+   },
+   "2110": {
+      "Arabic_Name": "تندحة",
+      "English_Name": "Tandahah"
+   },
+   "2111": {
+      "Arabic_Name": "وادي بن هشبل",
+      "English_Name": "Wadi Bin Hashbal"
+   },
+   "2112": {
+      "Arabic_Name": "يعرى",
+      "English_Name": "Ya ara"
+   },
+   "2113": {
+      "Arabic_Name": "خيبر الجنوب",
+      "English_Name": "Khabeer Aljanob"
+   },
+   "2114": {
+      "Arabic_Name": "المضة",
+      "English_Name": "Almatdah"
+   },
+   "2115": {
+      "Arabic_Name": "الرونه",
+      "English_Name": "Alronah"
+   },
+   "2116": {
+      "Arabic_Name": "العماره",
+      "English_Name": "Ala amarah"
+   },
+   "2117": {
+      "Arabic_Name": "الحيمة",
+      "English_Name": "Alhe mah"
+   },
+   "2118": {
+      "Arabic_Name": "الصفيه",
+      "English_Name": "Alsa feah"
+   },
+   "2119": {
+      "Arabic_Name": "النقيع",
+      "English_Name": "Alnqaia a"
+   },
+   "2120": {
+      "Arabic_Name": "الحازمي",
+      "English_Name": "Alhazmi"
+   },
+   "2121": {
+      "Arabic_Name": "صمخ",
+      "English_Name": "Samkh"
+   },
+   "2122": {
+      "Arabic_Name": "الثنية",
+      "English_Name": "Althanyah"
+   },
+   "2123": {
+      "Arabic_Name": "تبالة",
+      "English_Name": "Tbalah"
+   },
+   "2124": {
+      "Arabic_Name": "الجعبة",
+      "English_Name": "Alja abah"
+   },
+   "2125": {
+      "Arabic_Name": "وادي ترج",
+      "English_Name": "Wadi Tarj"
+   },
+   "2126": {
+      "Arabic_Name": "القوباء",
+      "English_Name": "Alqoba"
+   },
+   "2127": {
+      "Arabic_Name": "العبلاء",
+      "English_Name": "Ala abla"
+   },
+   "2128": {
+      "Arabic_Name": "الدحو",
+      "English_Name": "Aldaho"
+   },
+   "2129": {
+      "Arabic_Name": "الجنينة",
+      "English_Name": "Aljnainah"
+   },
+   "2130": {
+      "Arabic_Name": "مهر",
+      "English_Name": "Mahr"
+   },
+   "2131": {
+      "Arabic_Name": "سد الملك فهد",
+      "English_Name": "King Fahad Dam"
+   },
+   "2132": {
+      "Arabic_Name": "صور",
+      "English_Name": "Soor"
+   },
+   "2133": {
+      "Arabic_Name": "النماص",
+      "English_Name": "Alnmass"
+   },
+   "2134": {
+      "Arabic_Name": "بني عمرو",
+      "English_Name": "Bani Amro"
+   },
+   "2135": {
+      "Arabic_Name": "السرح",
+      "English_Name": "Alserh"
+   },
+   "2136": {
+      "Arabic_Name": "وادي زيد",
+      "English_Name": "Wadi zaid"
+   },
+   "2137": {
+      "Arabic_Name": "قنا",
+      "English_Name": "Gna"
+   },
+   "2138": {
+      "Arabic_Name": "تهامة بللسمر وبللحمر",
+      "English_Name": "Tehamat Belasmer and Belahmar"
+   },
+   "2139": {
+      "Arabic_Name": "السعيدة",
+      "English_Name": "Alsa aydah"
+   },
+   "2140": {
+      "Arabic_Name": "خلال",
+      "English_Name": "Khalal"
+   },
+   "2141": {
+      "Arabic_Name": "حميد العلايا",
+      "English_Name": "Sabt Alalaiah"
+   },
+   "2142": {
+      "Arabic_Name": "الجوه",
+      "English_Name": "Aljwah"
+   },
+   "2143": {
+      "Arabic_Name": "وادي الحيا",
+      "English_Name": "Wadi Alhaya"
+   },
+   "2144": {
+      "Arabic_Name": "وادي سريان",
+      "English_Name": "Wadi Saryan"
+   },
+   "2145": {
+      "Arabic_Name": "ردوم",
+      "English_Name": "Rodom"
+   },
+   "2146": {
+      "Arabic_Name": "العسران",
+      "English_Name": "Alasran"
+   },
+   "2147": {
+      "Arabic_Name": "سبت بني بشر",
+      "English_Name": "Sabt Bani Bshr"
+   },
+   "2148": {
+      "Arabic_Name": "جوف ال معمر",
+      "English_Name": "Jouf Al mamar"
+   },
+   "2149": {
+      "Arabic_Name": "عين اللواء",
+      "English_Name": "Ain Al lowa"
+   },
+   "2150": {
+      "Arabic_Name": "العين",
+      "English_Name": "Ala aen"
+   },
+   "2151": {
+      "Arabic_Name": "الصبيخة",
+      "English_Name": "Alssbaikhah"
+   },
+   "2152": {
+      "Arabic_Name": "الأمواء",
+      "English_Name": "Ala amwaa a"
+   },
+   "2153": {
+      "Arabic_Name": "أبرق النعام",
+      "English_Name": "Abraq Alna aam"
+   },
+   "2154": {
+      "Arabic_Name": "القيرة",
+      "English_Name": "Alqeerah"
+   },
+   "2155": {
+      "Arabic_Name": "حبية",
+      "English_Name": "Habyah"
+   },
+   "2156": {
+      "Arabic_Name": "الحمضة",
+      "English_Name": "Alhamdah"
+   },
+   "2157": {
+      "Arabic_Name": "الزرق",
+      "English_Name": "Alzarq"
+   },
+   "2158": {
+      "Arabic_Name": "حباش",
+      "English_Name": "Habash"
+   },
+   "2159": {
+      "Arabic_Name": "الفرع",
+      "English_Name": "Alfara a"
+   },
+   "2160": {
+      "Arabic_Name": "تجر سويدان",
+      "English_Name": "Tagr Souedan"
+   },
+   "2161": {
+      "Arabic_Name": "عمائر ال حميدان",
+      "English_Name": "Ama er Alhomedan"
+   },
+   "2162": {
+      "Arabic_Name": "النهدين",
+      "English_Name": "Alnahdain"
+   },
+   "2163": {
+      "Arabic_Name": "رجال ألمع",
+      "English_Name": "Rejal Alma a"
+   },
+   "2164": {
+      "Arabic_Name": "حسوة",
+      "English_Name": "Haswah"
+   },
+   "2165": {
+      "Arabic_Name": "الحبيل",
+      "English_Name": "Alhebail"
+   },
+   "2166": {
+      "Arabic_Name": "الحريضة",
+      "English_Name": "Alheraidah"
+   },
+   "2167": {
+      "Arabic_Name": "روام",
+      "English_Name": "Roa am"
+   },
+   "2168": {
+      "Arabic_Name": "أحد رفيدة",
+      "English_Name": "Ahad Rofaidah"
+   },
+   "2169": {
+      "Arabic_Name": "الواديين",
+      "English_Name": "Alwadiayen"
+   },
+   "2170": {
+      "Arabic_Name": "طريب",
+      "English_Name": "Tareeb"
+   },
+   "2171": {
+      "Arabic_Name": "العرين",
+      "English_Name": "Alareen"
+   },
+   "2172": {
+      "Arabic_Name": "الخنقة",
+      "English_Name": "Alkhengh"
+   },
+   "2173": {
+      "Arabic_Name": "الفرعين",
+      "English_Name": "Alfara ayen"
+   },
+   "2174": {
+      "Arabic_Name": "شعف جارمه",
+      "English_Name": "Shaf Jarmah"
+   },
+   "2175": {
+      "Arabic_Name": "ملحة الحباب",
+      "English_Name": "Mlhat Alhabab"
+   },
+   "2176": {
+      "Arabic_Name": "ظهران الجنوب",
+      "English_Name": "Thahran Aljanob"
+   },
+   "2177": {
+      "Arabic_Name": "الفيض",
+      "English_Name": "Alfaith"
+   },
+   "2178": {
+      "Arabic_Name": "علب",
+      "English_Name": "Elb"
+   },
+   "2179": {
+      "Arabic_Name": "الغائل",
+      "English_Name": "Algayel"
+   },
+   "2180": {
+      "Arabic_Name": "الحماد",
+      "English_Name": "Alhamad"
+   },
+   "2181": {
+      "Arabic_Name": "الحمرة",
+      "English_Name": "Alhamrah"
+   },
+   "2182": {
+      "Arabic_Name": "النغصاء",
+      "English_Name": "Alnagsah"
+   },
+   "2183": {
+      "Arabic_Name": "الحاجر",
+      "English_Name": "Alhajr"
+   },
+   "2184": {
+      "Arabic_Name": "كحلاء",
+      "English_Name": "Khala a"
+   },
+   "2185": {
+      "Arabic_Name": "البشائر",
+      "English_Name": "Albshayer"
+   },
+   "2186": {
+      "Arabic_Name": "عفراء",
+      "English_Name": "Afra"
+   },
+   "2187": {
+      "Arabic_Name": "خثعم",
+      "English_Name": "Khatha am"
+   },
+   "2188": {
+      "Arabic_Name": "باشوت",
+      "English_Name": "Bashoot"
+   },
+   "2189": {
+      "Arabic_Name": "آل سلمة",
+      "English_Name": "Al Slmah"
+   },
+   "2190": {
+      "Arabic_Name": "طلالا",
+      "English_Name": "Tlala"
+   },
+   "2191": {
+      "Arabic_Name": "شواص",
+      "English_Name": "Shaouas"
+   },
+   "2192": {
+      "Arabic_Name": "شعف بلقرن",
+      "English_Name": "Shaf Balqarn"
+   },
+   "2193": {
+      "Arabic_Name": "المجاردة",
+      "English_Name": "Almjardah"
+   },
+   "2194": {
+      "Arabic_Name": "بارق",
+      "English_Name": "Bareq"
+   },
+   "2195": {
+      "Arabic_Name": "ثربان",
+      "English_Name": "Tharban"
+   },
+   "2196": {
+      "Arabic_Name": "عبـس",
+      "English_Name": "A abs"
+   },
+   "2197": {
+      "Arabic_Name": "ثلوث المنظر",
+      "English_Name": "Thloth Almanthar"
+   },
+   "2198": {
+      "Arabic_Name": "جمعة ربيعة المقاطرة",
+      "English_Name": "Jema at Rbea at Almqatrah"
+   },
+   "2199": {
+      "Arabic_Name": "أحد ثربان",
+      "English_Name": "Ahad Tharban"
+   },
+   "2200": {
+      "Arabic_Name": "خبته",
+      "English_Name": "Khabtah"
+   },
+   "2201": {
+      "Arabic_Name": "مغيري",
+      "English_Name": "Megairi"
+   },
+   "2202": {
+      "Arabic_Name": "شقري",
+      "English_Name": "Shaqri"
+   },
+   "2203": {
+      "Arabic_Name": "البدع",
+      "English_Name": "Albeda a"
+   },
+   "2204": {
+      "Arabic_Name": "حالة عمار",
+      "English_Name": "halat A amar"
+   },
+   "2205": {
+      "Arabic_Name": "بجدة",
+      "English_Name": "Bajdah"
+   },
+   "2206": {
+      "Arabic_Name": "بئر بن هرماس",
+      "English_Name": "Bea ar Bin Hermas"
+   },
+   "2207": {
+      "Arabic_Name": "أم رمانة",
+      "English_Name": "Om Rommanh"
+   },
+   "2208": {
+      "Arabic_Name": "الطلعة",
+      "English_Name": "Altala ah"
+   },
+   "2209": {
+      "Arabic_Name": "رجوم الطيارة",
+      "English_Name": "Rjoom Altayarah"
+   },
+   "2210": {
+      "Arabic_Name": "الهوج",
+      "English_Name": "Alhooj"
+   },
+   "2211": {
+      "Arabic_Name": "رحيب",
+      "English_Name": "Raheeb"
+   },
+   "2212": {
+      "Arabic_Name": "اللوز",
+      "English_Name": "Allooz"
+   },
+   "2213": {
+      "Arabic_Name": "الأخضر",
+      "English_Name": "Alakhthar"
+   },
+   "2214": {
+      "Arabic_Name": "البديعة",
+      "English_Name": "Albedea ah"
+   },
+   "2215": {
+      "Arabic_Name": "قيال بالبدع",
+      "English_Name": "Qeyal in Al beda a"
+   },
+   "2216": {
+      "Arabic_Name": "عيينة بحالة عمار",
+      "English_Name": "Oyaynah in Halat Amar"
+   },
+   "2217": {
+      "Arabic_Name": "حاج بحالة عمار",
+      "English_Name": "Haj in Halat Amar"
+   },
+   "2218": {
+      "Arabic_Name": "البديع بحالة عمار",
+      "English_Name": "Albedea a in Halat Amar"
+   },
+   "2219": {
+      "Arabic_Name": "الشايب بحالة عمار",
+      "English_Name": "Alshayeb in Halat Amar"
+   },
+   "2220": {
+      "Arabic_Name": "كلوة",
+      "English_Name": "Kalwah"
+   },
+   "2221": {
+      "Arabic_Name": "السرو",
+      "English_Name": "Alsero"
+   },
+   "2222": {
+      "Arabic_Name": "العصيلية",
+      "English_Name": "Ala aseleyah"
+   },
+   "2223": {
+      "Arabic_Name": "الظلفة",
+      "English_Name": "Althaflah"
+   },
+   "2224": {
+      "Arabic_Name": "نعمى",
+      "English_Name": "Nama"
+   },
+   "2225": {
+      "Arabic_Name": "الوجه",
+      "English_Name": "Alwajh"
+   },
+   "2226": {
+      "Arabic_Name": "أبو القزاز",
+      "English_Name": "Abu Alqazaz"
+   },
+   "2227": {
+      "Arabic_Name": "بداء",
+      "English_Name": "Beda"
+   },
+   "2228": {
+      "Arabic_Name": "خرباء",
+      "English_Name": "Kharba"
+   },
+   "2229": {
+      "Arabic_Name": "النابع",
+      "English_Name": "Alnaba a"
+   },
+   "2230": {
+      "Arabic_Name": "الكر",
+      "English_Name": "Alkar"
+   },
+   "2231": {
+      "Arabic_Name": "عنتر",
+      "English_Name": "Antar"
+   },
+   "2232": {
+      "Arabic_Name": "الدبوب",
+      "English_Name": "Aldbob"
+   },
+   "2233": {
+      "Arabic_Name": "السديد",
+      "English_Name": "Alsaded"
+   },
+   "2234": {
+      "Arabic_Name": "الرش",
+      "English_Name": "Alrash"
+   },
+   "2235": {
+      "Arabic_Name": "ضباء",
+      "English_Name": "Theba"
+   },
+   "2236": {
+      "Arabic_Name": "الخريبة",
+      "English_Name": "Alkhraibah"
+   },
+   "2237": {
+      "Arabic_Name": "شواق",
+      "English_Name": "Shwaq"
+   },
+   "2238": {
+      "Arabic_Name": "شرماء",
+      "English_Name": "Sharma"
+   },
+   "2239": {
+      "Arabic_Name": "صدر",
+      "English_Name": "Sader"
+   },
+   "2240": {
+      "Arabic_Name": "المويلح",
+      "English_Name": "Almowaileh"
+   },
+   "2241": {
+      "Arabic_Name": "صر",
+      "English_Name": "Sar"
+   },
+   "2242": {
+      "Arabic_Name": "الديسة",
+      "English_Name": "Aldeesah"
+   },
+   "2243": {
+      "Arabic_Name": "شغب",
+      "English_Name": "Shagb"
+   },
+   "2244": {
+      "Arabic_Name": "رأس الخريطة",
+      "English_Name": "Ras Alkharetah"
+   },
+   "2245": {
+      "Arabic_Name": "العمود",
+      "English_Name": "Ala amod"
+   },
+   "2246": {
+      "Arabic_Name": "نابع داما",
+      "English_Name": "Naba a Dama"
+   },
+   "2247": {
+      "Arabic_Name": "الصورة",
+      "English_Name": "Alsorah"
+   },
+   "2248": {
+      "Arabic_Name": "بئر فحيمان",
+      "English_Name": "Bea ar Feheman"
+   },
+   "2249": {
+      "Arabic_Name": "ابوسلمه",
+      "English_Name": "Abo salma"
+   },
+   "2250": {
+      "Arabic_Name": "تيماء",
+      "English_Name": "Tayma"
+   },
+   "2251": {
+      "Arabic_Name": "الجهراء",
+      "English_Name": "Aljahra"
+   },
+   "2252": {
+      "Arabic_Name": "فجر",
+      "English_Name": "Fajer"
+   },
+   "2253": {
+      "Arabic_Name": "القليبة",
+      "English_Name": "Alqlebah"
+   },
+   "2254": {
+      "Arabic_Name": "الكتيب",
+      "English_Name": "Alktaib"
+   },
+   "2255": {
+      "Arabic_Name": "الغمارية",
+      "English_Name": "Algammaryah"
+   },
+   "2256": {
+      "Arabic_Name": "المعظم",
+      "English_Name": "Alma atham"
+   },
+   "2257": {
+      "Arabic_Name": "الجبعاوية",
+      "English_Name": "Aljaba awyah"
+   },
+   "2258": {
+      "Arabic_Name": "العسافية",
+      "English_Name": "Ala asafeyah"
+   },
+   "2259": {
+      "Arabic_Name": "أبيط",
+      "English_Name": "Abyat"
+   },
+   "2260": {
+      "Arabic_Name": "مديسيس",
+      "English_Name": "Medysees"
+   },
+   "2261": {
+      "Arabic_Name": "الحزم",
+      "English_Name": "Alhazm"
+   },
+   "2262": {
+      "Arabic_Name": "الجديد",
+      "English_Name": "Aljaded"
+   },
+   "2263": {
+      "Arabic_Name": "أملج",
+      "English_Name": "Amlej"
+   },
+   "2264": {
+      "Arabic_Name": "الحرة الشمالية",
+      "English_Name": "Alhorah Alshmalyah"
+   },
+   "2265": {
+      "Arabic_Name": "الشبحة",
+      "English_Name": "Alshabhah"
+   },
+   "2266": {
+      "Arabic_Name": "الشدخ",
+      "English_Name": "Alshadkh"
+   },
+   "2267": {
+      "Arabic_Name": "العنبجة",
+      "English_Name": "Ala anbajah"
+   },
+   "2268": {
+      "Arabic_Name": "مرخ",
+      "English_Name": "Marakh"
+   },
+   "2269": {
+      "Arabic_Name": "ذرفى",
+      "English_Name": "Thrfa a"
+   },
+   "2270": {
+      "Arabic_Name": "الرويضات",
+      "English_Name": "Alrouethat"
+   },
+   "2271": {
+      "Arabic_Name": "الشبعان",
+      "English_Name": "Alshaban"
+   },
+   "2272": {
+      "Arabic_Name": "حراض",
+      "English_Name": "Harath"
+   },
+   "2273": {
+      "Arabic_Name": "حقل",
+      "English_Name": "Haqel"
+   },
+   "2274": {
+      "Arabic_Name": "مقنا",
+      "English_Name": "Maqna"
+   },
+   "2275": {
+      "Arabic_Name": "الدرة",
+      "English_Name": "Alddorah"
+   },
+   "2276": {
+      "Arabic_Name": "أبو الحنشان",
+      "English_Name": "Abu Alhanshash"
+   },
+   "2277": {
+      "Arabic_Name": "علقان",
+      "English_Name": "Alqan"
+   },
+   "2278": {
+      "Arabic_Name": "الزيتة",
+      "English_Name": "Alzaytah"
+   },
+   "2279": {
+      "Arabic_Name": "الوادي الجديد",
+      "English_Name": "Alwadi Aljaded"
+   },
+   "2280": {
+      "Arabic_Name": "حائل",
+      "English_Name": "Hail"
+   },
+   "2281": {
+      "Arabic_Name": "الشملي",
+      "English_Name": "Alshemli"
+   },
+   "2282": {
+      "Arabic_Name": "جبة",
+      "English_Name": "Jubbah"
+   },
+   "2283": {
+      "Arabic_Name": "الخطة",
+      "English_Name": "Alkhottah"
+   },
+   "2284": {
+      "Arabic_Name": "موقق",
+      "English_Name": "Moqaq"
+   },
+   "2285": {
+      "Arabic_Name": "المسلسل",
+      "English_Name": "Almosalsal"
+   },
+   "2286": {
+      "Arabic_Name": "الحفير",
+      "English_Name": "Alhofair"
+   },
+   "2287": {
+      "Arabic_Name": "قناء",
+      "English_Name": "Qnaa a"
+   },
+   "2288": {
+      "Arabic_Name": "الشقيق",
+      "English_Name": "Alshqeeq"
+   },
+   "2289": {
+      "Arabic_Name": "أم القلبان",
+      "English_Name": "Om Alqulban"
+   },
+   "2290": {
+      "Arabic_Name": "بيضاء نثيل",
+      "English_Name": "Bayda Nthayel"
+   },
+   "2291": {
+      "Arabic_Name": "سميراء",
+      "English_Name": "Smayra"
+   },
+   "2292": {
+      "Arabic_Name": "الروضة",
+      "English_Name": "Alrodah"
+   },
+   "2293": {
+      "Arabic_Name": "فيضة بن سويلم",
+      "English_Name": "Faidat Bin Swailem"
+   },
+   "2294": {
+      "Arabic_Name": "عماير بن صنعاء",
+      "English_Name": "Amayer Bin Sana aa"
+   },
+   "2295": {
+      "Arabic_Name": "قفار",
+      "English_Name": "Qufar"
+   },
+   "2296": {
+      "Arabic_Name": "النيصية",
+      "English_Name": "Alnayseyah"
+   },
+   "2297": {
+      "Arabic_Name": "قصر العشروات",
+      "English_Name": "Qaser Alashrwat"
+   },
+   "2298": {
+      "Arabic_Name": "ساحوت",
+      "English_Name": "Sahoot"
+   },
+   "2299": {
+      "Arabic_Name": "العش",
+      "English_Name": "Alesh"
+   },
+   "2300": {
+      "Arabic_Name": "دليهان",
+      "English_Name": "Dlayhan"
+   },
+   "2301": {
+      "Arabic_Name": "الصنينا",
+      "English_Name": "Alssanena"
+   },
+   "2302": {
+      "Arabic_Name": "بئر الرفدي",
+      "English_Name": "Bea ar Alrfdi"
+   },
+   "2303": {
+      "Arabic_Name": "غزلانة",
+      "English_Name": "Gazlanh"
+   },
+   "2304": {
+      "Arabic_Name": "القاعد",
+      "English_Name": "Alqaa ad"
+   },
+   "2305": {
+      "Arabic_Name": "المحفر",
+      "English_Name": "Almhfar"
+   },
+   "2306": {
+      "Arabic_Name": "سعيدان",
+      "English_Name": "Saedan"
+   },
+   "2307": {
+      "Arabic_Name": "الحفيرة بالشملي",
+      "English_Name": "Alhofairah in Alshamly"
+   },
+   "2308": {
+      "Arabic_Name": "منيفة القاعد",
+      "English_Name": "Monefah Alqaa ad"
+   },
+   "2309": {
+      "Arabic_Name": "العويد",
+      "English_Name": "Alaowed"
+   },
+   "2310": {
+      "Arabic_Name": "بقعاء",
+      "English_Name": "Baqa aa"
+   },
+   "2311": {
+      "Arabic_Name": "تربة",
+      "English_Name": "Trubah"
+   },
+   "2312": {
+      "Arabic_Name": "الزبيرة",
+      "English_Name": "Alzbairah"
+   },
+   "2313": {
+      "Arabic_Name": "الخوير",
+      "English_Name": "Alkhowair"
+   },
+   "2314": {
+      "Arabic_Name": "الأجفر",
+      "English_Name": "Alajfar"
+   },
+   "2315": {
+      "Arabic_Name": "ضبيعة",
+      "English_Name": "Thbaia ah"
+   },
+   "2316": {
+      "Arabic_Name": "شعيبة المياة",
+      "English_Name": "Sha aebat Almeyah"
+   },
+   "2317": {
+      "Arabic_Name": "المحير",
+      "English_Name": "Almhair"
+   },
+   "2318": {
+      "Arabic_Name": "أم ساروت",
+      "English_Name": "Om Saroot"
+   },
+   "2319": {
+      "Arabic_Name": "الناصرية",
+      "English_Name": "Alnas reah"
+   },
+   "2320": {
+      "Arabic_Name": "الغزالة",
+      "English_Name": "Algazalah"
+   },
+   "2321": {
+      "Arabic_Name": "الحائط",
+      "English_Name": "Alhayet"
+   },
+   "2322": {
+      "Arabic_Name": "الحليفة السفلى",
+      "English_Name": "Alhalefah Alsofla"
+   },
+   "2323": {
+      "Arabic_Name": "السليمي",
+      "English_Name": "Alslaimi"
+   },
+   "2324": {
+      "Arabic_Name": "البعايث",
+      "English_Name": "Alba ayth"
+   },
+   "2325": {
+      "Arabic_Name": "أنبوان",
+      "English_Name": "Anbowan"
+   },
+   "2326": {
+      "Arabic_Name": "عقلة بن جبرين",
+      "English_Name": "Eqlat Bin Jebreen"
+   },
+   "2327": {
+      "Arabic_Name": "ريع البكر",
+      "English_Name": "Reea a Albaker"
+   },
+   "2328": {
+      "Arabic_Name": "الهويدي",
+      "English_Name": "Alhowaidi"
+   },
+   "2329": {
+      "Arabic_Name": "الحليفة العليا",
+      "English_Name": "Alhlefah Alolya"
+   },
+   "2330": {
+      "Arabic_Name": "صفيط",
+      "English_Name": "Sfait"
+   },
+   "2331": {
+      "Arabic_Name": "مراغان",
+      "English_Name": "Maragan"
+   },
+   "2332": {
+      "Arabic_Name": "المعرش",
+      "English_Name": "Almea arsh"
+   },
+   "2333": {
+      "Arabic_Name": "قاع حجلا",
+      "English_Name": "Qaa a Hejla"
+   },
+   "2334": {
+      "Arabic_Name": "فيضة أثقب",
+      "English_Name": "Faidat Athqab"
+   },
+   "2335": {
+      "Arabic_Name": "الخفيج",
+      "English_Name": "Alkhofaij"
+   },
+   "2336": {
+      "Arabic_Name": "الشويمس",
+      "English_Name": "Alshwaimes"
+   },
+   "2337": {
+      "Arabic_Name": "العجاجة",
+      "English_Name": "Ala ajajah"
+   },
+   "2338": {
+      "Arabic_Name": "سقف",
+      "English_Name": "Sakf"
+   },
+   "2339": {
+      "Arabic_Name": "الدابية",
+      "English_Name": "Aldabeyah"
+   },
+   "2340": {
+      "Arabic_Name": "العيثمة",
+      "English_Name": "Alaythamah"
+   },
+   "2341": {
+      "Arabic_Name": "الرقب",
+      "English_Name": "Alraqab"
+   },
+   "2342": {
+      "Arabic_Name": "المرير",
+      "English_Name": "Almerair"
+   },
+   "2343": {
+      "Arabic_Name": "روض بن هادي",
+      "English_Name": "Rodat Bni Hadi"
+   },
+   "2344": {
+      "Arabic_Name": "الثمامية",
+      "English_Name": "Althmamayah"
+   },
+   "2345": {
+      "Arabic_Name": "النحيتية",
+      "English_Name": "Alnhaitayah"
+   },
+   "2346": {
+      "Arabic_Name": "وسيطا الحفن",
+      "English_Name": "Wsaita Alhafen"
+   },
+   "2347": {
+      "Arabic_Name": "ضرغط",
+      "English_Name": "Thargat"
+   },
+   "2348": {
+      "Arabic_Name": "شبرية",
+      "English_Name": "Shebryah"
+   },
+   "2349": {
+      "Arabic_Name": "ضريغط",
+      "English_Name": "Thraiget"
+   },
+   "2350": {
+      "Arabic_Name": "كتيفه",
+      "English_Name": "Kteafah"
+   },
+   "2351": {
+      "Arabic_Name": "بدع الحويط",
+      "English_Name": "Beda a Alhwaet"
+   },
+   "2352": {
+      "Arabic_Name": "الشنان",
+      "English_Name": "Alshnan"
+   },
+   "2353": {
+      "Arabic_Name": "طابة",
+      "English_Name": "Tabah"
+   },
+   "2354": {
+      "Arabic_Name": "العظيم",
+      "English_Name": "Alatheem"
+   },
+   "2355": {
+      "Arabic_Name": "العدوة",
+      "English_Name": "Aladoah"
+   },
+   "2356": {
+      "Arabic_Name": "فيد",
+      "English_Name": "Faid"
+   },
+   "2357": {
+      "Arabic_Name": "المضيح",
+      "English_Name": "Almatheh"
+   },
+   "2358": {
+      "Arabic_Name": "عقلة بن طوالة",
+      "English_Name": "Eqlat Bin Twalah"
+   },
+   "2359": {
+      "Arabic_Name": "الساقية",
+      "English_Name": "Alsaqeyah"
+   },
+   "2360": {
+      "Arabic_Name": "عقلة بن داني",
+      "English_Name": "Eqlat Bin Dani"
+   },
+   "2361": {
+      "Arabic_Name": "غمرة",
+      "English_Name": "Gamrah"
+   },
+   "2362": {
+      "Arabic_Name": "رك",
+      "English_Name": "Rakk"
+   },
+   "2363": {
+      "Arabic_Name": "النعي",
+      "English_Name": "Alnea ai"
+   },
+   "2364": {
+      "Arabic_Name": "الجحفة",
+      "English_Name": "Aljahfah"
+   },
+   "2365": {
+      "Arabic_Name": "السبعان",
+      "English_Name": "Alsaba an"
+   },
+   "2366": {
+      "Arabic_Name": "غسل",
+      "English_Name": "Ghasl"
+   },
+   "2367": {
+      "Arabic_Name": "عرعر",
+      "English_Name": "Arar"
+   },
+   "2368": {
+      "Arabic_Name": "العويقلية",
+      "English_Name": "Aloayqlayah"
+   },
+   "2369": {
+      "Arabic_Name": "الصحن",
+      "English_Name": "Alsahan"
+   },
+   "2370": {
+      "Arabic_Name": "أم خنصر",
+      "English_Name": "Om Khonsor"
+   },
+   "2371": {
+      "Arabic_Name": "حزم الجلاميد",
+      "English_Name": "Hazm Aljlameed"
+   },
+   "2372": {
+      "Arabic_Name": "الدويد بالعويقلية",
+      "English_Name": "Aldaid in Aloayqlayah"
+   },
+   "2373": {
+      "Arabic_Name": "الكاسب بالعويقلية",
+      "English_Name": "Alkaseb in Aloayqlayah"
+   },
+   "2374": {
+      "Arabic_Name": "أبارواث بالعويقلية",
+      "English_Name": "Abarwath in Aloayqlayah"
+   },
+   "2375": {
+      "Arabic_Name": "رفحاء",
+      "English_Name": "Rafha"
+   },
+   "2376": {
+      "Arabic_Name": "لينة",
+      "English_Name": "Lena"
+   },
+   "2377": {
+      "Arabic_Name": "الشعبة",
+      "English_Name": "Alsha abah"
+   },
+   "2378": {
+      "Arabic_Name": "سماح",
+      "English_Name": "Samah"
+   },
+   "2379": {
+      "Arabic_Name": "نصاب",
+      "English_Name": "Nessab"
+   },
+   "2380": {
+      "Arabic_Name": "لوقة",
+      "English_Name": "Logah"
+   },
+   "2381": {
+      "Arabic_Name": "التمياط",
+      "English_Name": "Altemyat"
+   },
+   "2382": {
+      "Arabic_Name": "الشريم",
+      "English_Name": "Alshraim"
+   },
+   "2383": {
+      "Arabic_Name": "بن هباس",
+      "English_Name": "Bin Habbas"
+   },
+   "2384": {
+      "Arabic_Name": "أم رضمة بالشعبة",
+      "English_Name": "Om Rthmah in Alshea abah"
+   },
+   "2385": {
+      "Arabic_Name": "طريف",
+      "English_Name": "Traif"
+   },
+   "2386": {
+      "Arabic_Name": "الجراني",
+      "English_Name": "Aljarrani"
+   },
+   "2387": {
+      "Arabic_Name": "جازان",
+      "English_Name": "Jazan"
+   },
+   "2388": {
+      "Arabic_Name": "الموسم",
+      "English_Name": "Almawsem"
+   },
+   "2389": {
+      "Arabic_Name": "الحكامية",
+      "English_Name": "Alhekameyah"
+   },
+   "2390": {
+      "Arabic_Name": "صبياء",
+      "English_Name": "Sabya"
+   },
+   "2391": {
+      "Arabic_Name": "قوز الجعافرة",
+      "English_Name": "Goz Alja afrah"
+   },
+   "2392": {
+      "Arabic_Name": "الكدمي",
+      "English_Name": "Alkedmi"
+   },
+   "2393": {
+      "Arabic_Name": "القفل",
+      "English_Name": "Alqafel"
+   },
+   "2394": {
+      "Arabic_Name": "السهى",
+      "English_Name": "Alsoha"
+   },
+   "2395": {
+      "Arabic_Name": "الحرث",
+      "English_Name": "Alharth"
+   },
+   "2396": {
+      "Arabic_Name": "الخشل",
+      "English_Name": "Alkhashel"
+   },
+   "2397": {
+      "Arabic_Name": "ضمد",
+      "English_Name": "Thamd"
+   },
+   "2398": {
+      "Arabic_Name": "الشقيري",
+      "English_Name": "Alshqayri"
+   },
+   "2399": {
+      "Arabic_Name": "الريث",
+      "English_Name": "Alrayeth"
+   },
+   "2400": {
+      "Arabic_Name": "مقزع",
+      "English_Name": "Magzaa a"
+   },
+   "2401": {
+      "Arabic_Name": "وادي عمود",
+      "English_Name": "Wadi Amoud"
+   },
+   "2402": {
+      "Arabic_Name": "جبل القهر",
+      "English_Name": "Jabal Aghar"
+   },
+   "2403": {
+      "Arabic_Name": "بيش",
+      "English_Name": "Beesh"
+   },
+   "2404": {
+      "Arabic_Name": "الحقو",
+      "English_Name": "Alhako"
+   },
+   "2405": {
+      "Arabic_Name": "مسلية",
+      "English_Name": "Mesleh"
+   },
+   "2406": {
+      "Arabic_Name": "الخلاوية والنجوع",
+      "English_Name": "Alkhlweh and Alnajoa a"
+   },
+   "2407": {
+      "Arabic_Name": "فرسان",
+      "English_Name": "Farasan"
+   },
+   "2408": {
+      "Arabic_Name": "الدائر",
+      "English_Name": "Aldaa aer"
+   },
+   "2409": {
+      "Arabic_Name": "جبال الحشر",
+      "English_Name": "Jebal Alhasher"
+   },
+   "2410": {
+      "Arabic_Name": "آل زيدان",
+      "English_Name": "Al Zaydan"
+   },
+   "2411": {
+      "Arabic_Name": "وادي دفاء",
+      "English_Name": "Wadi Defa"
+   },
+   "2412": {
+      "Arabic_Name": "جبل عثوان",
+      "English_Name": "Jabal A athwan"
+   },
+   "2413": {
+      "Arabic_Name": "السلف",
+      "English_Name": "Alsalaf"
+   },
+   "2414": {
+      "Arabic_Name": "العيدابي",
+      "English_Name": "Aledabi"
+   },
+   "2415": {
+      "Arabic_Name": "منجد",
+      "English_Name": "Manjad"
+   },
+   "2416": {
+      "Arabic_Name": "بلغازي",
+      "English_Name": "Belgazi"
+   },
+   "2417": {
+      "Arabic_Name": "هروب",
+      "English_Name": "Horob"
+   },
+   "2418": {
+      "Arabic_Name": "سر",
+      "English_Name": "Ser"
+   },
+   "2419": {
+      "Arabic_Name": "الضيعة",
+      "English_Name": "Aldae ah"
+   },
+   "2420": {
+      "Arabic_Name": "قيس",
+      "English_Name": "Qees"
+   },
+   "2421": {
+      "Arabic_Name": "الحميراء",
+      "English_Name": "Alhomayra"
+   },
+   "2422": {
+      "Arabic_Name": "القياس",
+      "English_Name": "Alqyas"
+   },
+   "2423": {
+      "Arabic_Name": "الدرب",
+      "English_Name": "Aldarb"
+   },
+   "2424": {
+      "Arabic_Name": "عتود",
+      "English_Name": "A atod"
+   },
+   "2425": {
+      "Arabic_Name": "نجران",
+      "English_Name": "Najran"
+   },
+   "2426": {
+      "Arabic_Name": "الجربة",
+      "English_Name": "Aljarbah"
+   },
+   "2427": {
+      "Arabic_Name": "رجلا",
+      "English_Name": "Rajla"
+   },
+   "2428": {
+      "Arabic_Name": "الحظن",
+      "English_Name": "Alhathen"
+   },
+   "2429": {
+      "Arabic_Name": "المشعلية",
+      "English_Name": "Almasha alyah"
+   },
+   "2430": {
+      "Arabic_Name": "أبا السعود",
+      "English_Name": "Aba Alsaud"
+   },
+   "2431": {
+      "Arabic_Name": "الحرشف",
+      "English_Name": "Alharshaf"
+   },
+   "2432": {
+      "Arabic_Name": "بئر عسكر",
+      "English_Name": "Bea ar Askar"
+   },
+   "2433": {
+      "Arabic_Name": "عاكفة",
+      "English_Name": "A akefah"
+   },
+   "2434": {
+      "Arabic_Name": "أبا الرشاش",
+      "English_Name": "Aba Alrshash"
+   },
+   "2435": {
+      "Arabic_Name": "الجلدة",
+      "English_Name": "Aljeldah"
+   },
+   "2436": {
+      "Arabic_Name": "المراطة",
+      "English_Name": "Almratah"
+   },
+   "2437": {
+      "Arabic_Name": "شعب بران",
+      "English_Name": "Shea ab Barran"
+   },
+   "2438": {
+      "Arabic_Name": "العرج",
+      "English_Name": "Alaraj"
+   },
+   "2439": {
+      "Arabic_Name": "شرورة",
+      "English_Name": "Sharorah"
+   },
+   "2440": {
+      "Arabic_Name": "الوديعة",
+      "English_Name": "Alwadea ah"
+   },
+   "2441": {
+      "Arabic_Name": "تماني",
+      "English_Name": "Tmani"
+   },
+   "2442": {
+      "Arabic_Name": "شقة الكناور",
+      "English_Name": "Sheqat Alknawar"
+   },
+   "2443": {
+      "Arabic_Name": "حمراء نثيل",
+      "English_Name": "Hamra Nethel"
+   },
+   "2444": {
+      "Arabic_Name": "المنخلي",
+      "English_Name": "Almankhali"
+   },
+   "2445": {
+      "Arabic_Name": "قلمة خجيم",
+      "English_Name": "Kalmat Khjaim"
+   },
+   "2446": {
+      "Arabic_Name": "الأخاشيم",
+      "English_Name": "Alakhasheem"
+   },
+   "2447": {
+      "Arabic_Name": "المعاطيف",
+      "English_Name": "Alma aateef"
+   },
+   "2448": {
+      "Arabic_Name": "أم غارب",
+      "English_Name": "Om Ghareb"
+   },
+   "2449": {
+      "Arabic_Name": "أم غوير",
+      "English_Name": "Om Ghwair"
+   },
+   "2450": {
+      "Arabic_Name": "الحلاة",
+      "English_Name": "Alhlat"
+   },
+   "2451": {
+      "Arabic_Name": "مجه",
+      "English_Name": "Majah"
+   },
+   "2452": {
+      "Arabic_Name": "قلمة سلطان",
+      "English_Name": "Qalmat Sultan"
+   },
+   "2453": {
+      "Arabic_Name": "مسليه",
+      "English_Name": "Mesalyah"
+   },
+   "2454": {
+      "Arabic_Name": "منفذ الوديعة",
+      "English_Name": "Manfath Alwadea ah"
+   },
+   "2455": {
+      "Arabic_Name": "ام البراميل",
+      "English_Name": "Om Albrameel"
+   },
+   "2456": {
+      "Arabic_Name": "حبونا",
+      "English_Name": "Hbona"
+   },
+   "2457": {
+      "Arabic_Name": "الحصينية",
+      "English_Name": "Alhosainayah"
+   },
+   "2458": {
+      "Arabic_Name": "المجمع",
+      "English_Name": "Almejama a"
+   },
+   "2459": {
+      "Arabic_Name": "سلوة",
+      "English_Name": "Salwah"
+   },
+   "2460": {
+      "Arabic_Name": "بدر الجنوب",
+      "English_Name": "Bader Aljanob"
+   },
+   "2461": {
+      "Arabic_Name": "الخانق",
+      "English_Name": "Alkhanek"
+   },
+   "2462": {
+      "Arabic_Name": "هداده",
+      "English_Name": "Hadadah"
+   },
+   "2463": {
+      "Arabic_Name": "الرحاب",
+      "English_Name": "Alrehab"
+   },
+   "2464": {
+      "Arabic_Name": "لدمه",
+      "English_Name": "Ladmah"
+   },
+   "2465": {
+      "Arabic_Name": "سلطانة",
+      "English_Name": "Sultanah"
+   },
+   "2466": {
+      "Arabic_Name": "أبرق شرقة",
+      "English_Name": "Abraq Shaqah"
+   },
+   "2467": {
+      "Arabic_Name": "الوجيد",
+      "English_Name": "Alwahed"
+   },
+   "2468": {
+      "Arabic_Name": "السبيل",
+      "English_Name": "Alsabel"
+   },
+   "2469": {
+      "Arabic_Name": "منادي",
+      "English_Name": "Menadi"
+   },
+   "2470": {
+      "Arabic_Name": "المندفن",
+      "English_Name": "Almendfen"
+   },
+   "2471": {
+      "Arabic_Name": "نجد سهى",
+      "English_Name": "Najd Souha"
+   },
+   "2472": {
+      "Arabic_Name": "ثار",
+      "English_Name": "Thar"
+   },
+   "2473": {
+      "Arabic_Name": "حمى",
+      "English_Name": "Hema"
+   },
+   "2474": {
+      "Arabic_Name": "الصفاح",
+      "English_Name": "Alssfah"
+   },
+   "2475": {
+      "Arabic_Name": "ثجر",
+      "English_Name": "Thajer"
+   },
+   "2476": {
+      "Arabic_Name": "الجوشن",
+      "English_Name": "Aljoshan"
+   },
+   "2477": {
+      "Arabic_Name": "خباش",
+      "English_Name": "Khabbash"
+   },
+   "2478": {
+      "Arabic_Name": "الخضراء",
+      "English_Name": "Alkhadra"
+   },
+   "2479": {
+      "Arabic_Name": "هويمل",
+      "English_Name": "Howaimel"
+   },
+   "2480": {
+      "Arabic_Name": "النقيحاء",
+      "English_Name": "Alneqaiha"
+   },
+   "2481": {
+      "Arabic_Name": "أبو شداد",
+      "English_Name": "Abu Shaddad"
+   },
+   "2482": {
+      "Arabic_Name": "الخرعاء",
+      "English_Name": "Alkhara aa"
+   },
+   "2483": {
+      "Arabic_Name": "أم الوهط",
+      "English_Name": "Om Alwahat"
+   },
+   "2484": {
+      "Arabic_Name": "المحياش",
+      "English_Name": "Almehyash"
+   },
+   "2485": {
+      "Arabic_Name": "الخرخير",
+      "English_Name": "Alkherkher"
+   },
+   "2486": {
+      "Arabic_Name": "سرداب",
+      "English_Name": "Serdab"
+   },
+   "2487": {
+      "Arabic_Name": "أم الملح",
+      "English_Name": "Om Almelh"
+   },
+   "2488": {
+      "Arabic_Name": "بيضان",
+      "English_Name": "Baidan"
+   },
+   "2489": {
+      "Arabic_Name": "الفرعة",
+      "English_Name": "Alfara ah"
+   },
+   "2490": {
+      "Arabic_Name": "بني ظبيان",
+      "English_Name": "Bni Thabyan"
+   },
+   "2491": {
+      "Arabic_Name": "بالجرشي",
+      "English_Name": "Baljorashi"
+   },
+   "2492": {
+      "Arabic_Name": "بني كبير",
+      "English_Name": "Bani Kabeer"
+   },
+   "2493": {
+      "Arabic_Name": "بالشهم",
+      "English_Name": "Balhashem"
+   },
+   "2494": {
+      "Arabic_Name": "بادية بني كبير",
+      "English_Name": "Badyat Bani Kabeer"
+   },
+   "2495": {
+      "Arabic_Name": "وادي الرهوة",
+      "English_Name": "Wadi Alrhwah"
+   },
+   "2496": {
+      "Arabic_Name": "وادي شري",
+      "English_Name": "Wadi Sheri"
+   },
+   "2497": {
+      "Arabic_Name": "المندق",
+      "English_Name": "Almandaq"
+   },
+   "2498": {
+      "Arabic_Name": "بلخزمر",
+      "English_Name": "Balkhazmar"
+   },
+   "2499": {
+      "Arabic_Name": "بني حسن",
+      "English_Name": "bani Hasan"
+   },
+   "2500": {
+      "Arabic_Name": "دوس",
+      "English_Name": "Doos"
+   },
+   "2501": {
+      "Arabic_Name": "برحرح",
+      "English_Name": "Brahrah"
+   },
+   "2502": {
+      "Arabic_Name": "ودي الصدر",
+      "English_Name": "Wadi Alsadir"
+   },
+   "2503": {
+      "Arabic_Name": "ناوان",
+      "English_Name": "Nawan"
+   },
+   "2504": {
+      "Arabic_Name": "بطاط",
+      "English_Name": "Batat"
+   },
+   "2505": {
+      "Arabic_Name": "نصبة وجبال المسودة",
+      "English_Name": "Nassbah and Jebal Almeswadah"
+   },
+   "2506": {
+      "Arabic_Name": "نيرا",
+      "English_Name": "Nera"
+   },
+   "2507": {
+      "Arabic_Name": "يبس",
+      "English_Name": "Yabes"
+   },
+   "2508": {
+      "Arabic_Name": "العقيق",
+      "English_Name": "Aloqaiq"
+   },
+   "2509": {
+      "Arabic_Name": "جرب",
+      "English_Name": "Jarab"
+   },
+   "2510": {
+      "Arabic_Name": "كرا الحائط",
+      "English_Name": "Kara Alhayet"
+   },
+   "2511": {
+      "Arabic_Name": "وراخ",
+      "English_Name": "Wrakh"
+   },
+   "2512": {
+      "Arabic_Name": "الجاوه",
+      "English_Name": "Aljawah"
+   },
+   "2513": {
+      "Arabic_Name": "جرداء بني علي",
+      "English_Name": "Jarda Bani Ali"
+   },
+   "2514": {
+      "Arabic_Name": "الجرين",
+      "English_Name": "Algrain"
+   },
+   "2515": {
+      "Arabic_Name": "باللسود",
+      "English_Name": "Balasswad"
+   },
+   "2516": {
+      "Arabic_Name": "المحمديه",
+      "English_Name": "Almohamadea ah"
+   },
+   "2517": {
+      "Arabic_Name": "وادي رمى",
+      "English_Name": "Wadi Rama"
+   },
+   "2518": {
+      "Arabic_Name": "القرى",
+      "English_Name": "Alkra"
+   },
+   "2519": {
+      "Arabic_Name": "بيدة",
+      "English_Name": "Baydah"
+   },
+   "2520": {
+      "Arabic_Name": "بني حرير وبني عدوان",
+      "English_Name": "Bni Harer and Bani Adwan"
+   },
+   "2521": {
+      "Arabic_Name": "نخال",
+      "English_Name": "Nkhal"
+   },
+   "2522": {
+      "Arabic_Name": "معشوقة",
+      "English_Name": "Mea ashoqah"
+   },
+   "2523": {
+      "Arabic_Name": "صوير",
+      "English_Name": "Swair"
+   },
+   "2524": {
+      "Arabic_Name": "طبرجل",
+      "English_Name": "Tabarjal"
+   },
+   "2525": {
+      "Arabic_Name": "خوعاء",
+      "English_Name": "Khoa aa"
+   },
+   "2526": {
+      "Arabic_Name": "الفياض",
+      "English_Name": "Alfayad"
+   },
+   "2527": {
+      "Arabic_Name": "عذفاء",
+      "English_Name": "A athfa"
+   },
+   "2528": {
+      "Arabic_Name": "طلعة عمار بصوير",
+      "English_Name": "Tala at Ammar in Swair"
+   },
+   "2529": {
+      "Arabic_Name": "زلوم بصوير",
+      "English_Name": "Zloom in Swair"
+   },
+   "2530": {
+      "Arabic_Name": "أم إذن",
+      "English_Name": "Om Athen"
+   },
+   "2531": {
+      "Arabic_Name": "الشويحيطية بصوير",
+      "English_Name": "Alshwaihetyah in Swair"
+   },
+   "2532": {
+      "Arabic_Name": "الرفيعة بصوير",
+      "English_Name": "Alrfya ah in Swair"
+   },
+   "2533": {
+      "Arabic_Name": "هديب بصوير",
+      "English_Name": "Hedaib In Swair"
+   },
+   "2534": {
+      "Arabic_Name": "النبك أبو قصر بطبرجل",
+      "English_Name": "Alnabak Abu kaser in Tabarjal"
+   },
+   "2535": {
+      "Arabic_Name": "بسيطاء بطبرجل",
+      "English_Name": "Bsayta in Tabarjal"
+   },
+   "2536": {
+      "Arabic_Name": "الثنية بطبرجل",
+      "English_Name": "Althanyah in Tabarjal"
+   },
+   "2537": {
+      "Arabic_Name": "الحرة",
+      "English_Name": "Alharrah"
+   },
+   "2538": {
+      "Arabic_Name": "مغيراء بخوعاء",
+      "English_Name": "Meghaira in Khoa aa"
+   },
+   "2539": {
+      "Arabic_Name": "صبيحاء بطبرجل",
+      "English_Name": "Sobeha in Tabarjal"
+   },
+   "2540": {
+      "Arabic_Name": "غدير الخيل بصوير",
+      "English_Name": "Gadair Alkail in Swair"
+   },
+   "2541": {
+      "Arabic_Name": "القريات",
+      "English_Name": "Alqurayat"
+   },
+   "2542": {
+      "Arabic_Name": "الحديثة",
+      "English_Name": "Alhadythah"
+   },
+   "2543": {
+      "Arabic_Name": "العيساوية",
+      "English_Name": "Alaysawaih"
+   },
+   "2544": {
+      "Arabic_Name": "عين الحواس",
+      "English_Name": "Aen Alhwas"
+   },
+   "2545": {
+      "Arabic_Name": "الناصفة",
+      "English_Name": "Alnassfah"
+   },
+   "2546": {
+      "Arabic_Name": "الوادي",
+      "English_Name": "Alwadi"
+   },
+   "2547": {
+      "Arabic_Name": "قليب خضر",
+      "English_Name": "Qlaib Khadar"
+   },
+   "2548": {
+      "Arabic_Name": "رديفة الجماجم",
+      "English_Name": "Rdaifah Aljamajm"
+   },
+   "2549": {
+      "Arabic_Name": "دومة الجندل",
+      "English_Name": "Domat Aljandal"
+   },
+   "2550": {
+      "Arabic_Name": "أبو عجرم",
+      "English_Name": "Abu Ajram"
+   },
+   "2551": {
+      "Arabic_Name": "الأضارع",
+      "English_Name": "Alatharea a"
+   },
+   "2552": {
+      "Arabic_Name": "ميقوع",
+      "English_Name": "Meqwa a"
+   },
+   "2553": {
+      "Arabic_Name": "صفان",
+      "English_Name": "Safan"
+   },
+   "2554": {
+      "Arabic_Name": "الثنية أم نخيلة",
+      "English_Name": "Althanyah Om Nkailah"
+   },
+   "2555": {
+      "Arabic_Name": "الرديفة",
+      "English_Name": "Alrdaifah"
+   },
+   "2556": {
+      "Arabic_Name": "الكويت",
+      "English_Name": "Village Kuwait"
+   },
+   "2557": {
+      "Arabic_Name": "البحرين",
+      "English_Name": "Village Bahrain"
+   },
+   "2558": {
+      "Arabic_Name": "قطر",
+      "English_Name": "Village Qatar"
+   },
+   "2559": {
+      "Arabic_Name": "عمان",
+      "English_Name": "Village Oman"
+   },
+   "2560": {
+      "Arabic_Name": "الامارات العربية المتحدة",
+      "English_Name": "Village United Arab Emirates"
+   }
+}

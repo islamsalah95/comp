@@ -1,0 +1,67 @@
+.company_top .chosen-container .chosen-single {
+    /*background-color: #34495e;*/
+    background-color: #203b47;
+    color: #ffffff;
+}
+
+.company_top .chosen-container .chosen-single:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.company_top .chosen-container ul.chosen-results li {
+    /*background-color: #34495e;*/
+    background-color: #203b47;
+    color: #ffffff;
+}
+
+.company_top .chosen-container .chosen-drop {
+    /*background-color: #34495e;*/
+    background-color: #203b47;
+    color: #ffffff;
+}
+
+.logo {
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+}
+
+.navbar-brand-logo>img {
+   max-height: 100%;
+   height: 100%;
+   width: auto;
+   margin: 0 auto;
+
+   /* probably not needed anymore, but doesn't hurt */
+   -o-object-fit: contain;
+   object-fit: contain; 
+}
+
+form .error {
+    width: 100%;
+    color: #ff0000;
+}
+
+.freelancer_profile_tab > li {
+    min-width: 150px;
+    text-align: center;
+}
+
+.border {
+    border: 1px solid #d5d5d5;
+}
+
+.border-top {
+    border-top: 1px solid #d5d5d5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #d5d5d5;
+}
+.border-left {
+    border-left: 1px solid #d5d5d5;
+}
+.border-right {
+    border-right: 1px solid #d5d5d5;
+}

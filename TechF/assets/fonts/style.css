@@ -1,0 +1,10 @@
+@font-face {
+   font-family: 'Cairo-Regular';
+   font-display: swap;
+   src: url('Cairo-Regular/font.ttf');
+}
+@font-face {
+   font-family: 'Cairo-Light';
+   font-display: swap;
+   src: url('Cairo-Light/font.ttf');
+}

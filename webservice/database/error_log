@@ -1,0 +1,32 @@
+[11-Jul-2022 05:29:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/techsupflex/public_html/webservice/database/config.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/techsupflex/public_html/webservice/database/config.php on line 28
+[11-Jul-2022 05:29:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/techsupflex/public_html/webservice/database/config.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/techsupflex/public_html/webservice/database/config.php on line 28
+[11-Jul-2022 05:29:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/techsupflex/public_html/webservice/database/config.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/techsupflex/public_html/webservice/database/config.php on line 28
+[11-Jul-2022 05:29:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/techsupflex/public_html/webservice/database/config.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/techsupflex/public_html/webservice/database/config.php on line 28
+[11-Jul-2022 05:29:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/techsupflex/public_html/webservice/database/config.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/techsupflex/public_html/webservice/database/config.php on line 28
+[11-Jul-2022 05:30:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/techsupflex/public_html/webservice/database/config.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/techsupflex/public_html/webservice/database/config.php on line 28
+[11-Jul-2022 05:30:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/techsupflex/public_html/webservice/database/config.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/techsupflex/public_html/webservice/database/config.php on line 28
+[11-Jul-2022 05:30:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/techsupflex/public_html/webservice/database/config.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/techsupflex/public_html/webservice/database/config.php on line 28
