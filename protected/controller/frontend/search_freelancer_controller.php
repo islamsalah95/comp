@@ -15,22 +15,64 @@ $employee_id = $_SESSION['employee_id'];
 
 
 
-if (isset($_POST['submit_freelancer']) && $_POST['job_title'] !== '') {
-    $job_title=$_POST['job_title'];
+// if (isset($_POST['submit_freelancer']) && $_POST['job_title'] !== '') {
+//     $job_title=$_POST['job_title'];
+//     $sql = "
+//     SELECT DISTINCT
+//     e.*
+//     FROM employee e
+//     LEFT JOIN employee_company ec ON e.employee_id = ec.employee_id AND ec.company_id = $company_id
+//     LEFT JOIN company comp ON comp.id = ec.company_id
+//     WHERE e.department = '3'
+//     AND e.job_title LIKE '%$job_title%';";
+//     $freelancers = myQuery($sql);
+//     $is_search=true;
+//     if(!$freelancers){
+//         $is_search=false;
+//     }
+// }
+
+
+if (isset($_POST['submit_freelancer'])) 
+ {
+
+    $job_title = isset($_POST['job_title']) ? $_POST['job_title'] : '';
+    $emp_name = isset($_POST['emp_name']) ? $_POST['emp_name'] : '';
+    $experiences = isset($_POST['experiences']) ? $_POST['experiences'] : '';
+
     $sql = "
     SELECT DISTINCT
     e.*
     FROM employee e
     LEFT JOIN employee_company ec ON e.employee_id = ec.employee_id AND ec.company_id = $company_id
     LEFT JOIN company comp ON comp.id = ec.company_id
-    WHERE e.department = '3'
-    AND e.job_title LIKE '%$job_title%';";
+    WHERE e.department = '3'";
+
+    $conditions = array();
+
+    if (!empty($job_title)) {
+        $conditions[] = "e.job_title LIKE '%$job_title%'";
+    }
+    if (!empty($emp_name)) {
+        $conditions[] = "e.emp_name LIKE '%$emp_name%'";
+    }
+    if (!empty($experiences)) {
+        $conditions[] = "e.experiences = '$experiences'";
+    }
+
+    if (!empty($conditions)) {
+        $sql .= " AND " . implode(" AND ", $conditions);
+    }
+
     $freelancers = myQuery($sql);
+    
+    
     $is_search=true;
     if(!$freelancers){
         $is_search=false;
     }
 }
+
 
 
 

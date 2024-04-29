@@ -8,7 +8,14 @@ if (file_exists(SERVER_ROOT . '/uploads/cities.json')) {
 $cities = json_decode($cities, true);
 
 if (isset($_REQUEST['edit'])) {
-	$get_row = $db->get_row('employee', array('employee_id' => $load));
+	// $get_row = $db->get_row('employee', array('employee_id' => $load));
+	$get_row = myQuery("
+	SELECT employee.*, company.company_name, company.id as company_id
+	FROM employee 
+	INNER JOIN employee_company ON employee_company.employee_id = employee.employee_id
+	INNER JOIN company ON employee_company.company_id = company.id
+	WHERE employee.employee_id = $load
+	");
 	$freelancer_assigned_companies = $db->get('employee_company_map', array('employee_id' => $load));
 }
 if (isset($_REQUEST['tab'])) {
@@ -38,7 +45,7 @@ if (isset($_POST['submit_freelancer'])) {
 	echo $_REQUEST['freelancer_type'];
 
 	$freelancer_type = $_POST['freelancer_type'];
-	$freelancer_company = 1;
+    $freelancer_company = [1];
 	if (isset($_POST['freelancer_company']) && $_POST['freelancer_company'] != '') {
 		$freelancer_company = $_POST['freelancer_company'];
 	}
@@ -53,23 +60,7 @@ if (isset($_POST['submit_freelancer'])) {
 		$display_msg = '<div class="alert alert-danger">
 		<i class="lnr lnr-sad"></i> <button class="close" data-dismiss="alert" type="button">&times;</button>' . $lang["enter_employee_name"] . '
 		</div>';
-	}
-
-	// if (($fv->emptyfields(array('IdNumber' => $IdNumber), NULL))) {
-	// 	$display_msg = '<div class="alert alert-danger">
-	// 	<i class="lnr lnr-sad"></i> <button class="close" data-dismiss="alert" type="button">&times;</button>' . $lang["enter_your_IdNumber"] . '
-	// 	</div>';
-	// }
-	// if (($fv->emptyfields(array('EstLaborOfficeId' => $EstLaborOfficeId), NULL))) {
-	// 	$display_msg = '<div class="alert alert-danger">
-	// 	<i class="lnr lnr-sad"></i> <button class="close" data-dismiss="alert" type="button">&times;</button>' . $lang["enter_your_EstLaborOfficId"] . '
-	// 	</div>';
-	// }
-	// if (($fv->emptyfields(array('EstSequenceNumber' => $EstSequenceNumber), NULL))) {
-	// 	$display_msg = '<div class="alert alert-danger">
-	// 	<i class="lnr lnr-sad"></i> <button class="close" data-dismiss="alert" type="button">&times;</button>' . $lang["enter_your_EstSequenceNumber"] . '
-	// 	</div>';
-	// } 
+	} 
 	elseif (($fv->emptyfields(array('dob' => $dob), NULL))) {
 		$display_msg = '<div class="alert alert-danger">
         <i class="lnr lnr-sad"></i> <button class="close" data-dismiss="alert" type="button">&times;</button>' . $lang["required_field_error"] . '
@@ -86,15 +77,11 @@ if (isset($_POST['submit_freelancer'])) {
 		$update = $db->update(
 			'employee',
 			array(
-				// 'IdNumber' => $IdNumber,
-				// 'EstLaborOfficeId' => $EstLaborOfficeId,
-				// 'EstSequenceNumber' => $EstSequenceNumber,
-				// 'is_molTWC' => $is_molTWC,
 				'emp_name' => $emp_name,
 				'emp_surname' => $emp_surname,
 				'address' => $address,
 				'contact1' => $contact1,
-				'company_id' => $freelancer_company,
+				'company_id' => $freelancer_company[0],
 				'is_company' => $freelancer_type,
 				'create_date' => $create_on,
 				'ip_address' => $ip_address,
@@ -107,16 +94,19 @@ if (isset($_POST['submit_freelancer'])) {
 				'employee_id' => $load
 			)
 		);
-		if ($update) {
-			// $del_companies = $db->delete('employee_company_map', array('employee_id' => $load));
-			// if (!empty($freelancer_assigned_company)) {
-			// 	foreach ($freelancer_assigned_company as $k => $c_id) {
-			// 		$insert_map = $db->insert('employee_company_map', array('employee_id' => $load, 'company_id' => $c_id, 'working_hours' => $freelancer_working_hours[$k], 'hourly_rate' => $freelancer_hourly_rate[$k]));
-			// 	}
-			// }
-			$get_row = $db->get_row('employee', array('employee_id' => $load));
-			// $freelancer_assigned_companies = $db->get('employee_company_map', array('employee_id' => $load));
+		if($load){
+			$delete= $db->delete("employee_company", array('employee_id' => $load));
+			
+			if($delete){
+			foreach ($freelancer_company as  $value) {
+					$db->insert('employee_company',
+					array('employee_id' => $load, 'company_id' =>$value)
+				  );}
+		              }
 
+		}
+		if ($update) {
+			$get_row = $db->get_row('employee', array('employee_id' => $load));
 			$display_msg = '<div class="alert alert-success">
 								<i class="lnr lnr-smile"></i> <button class="close" data-dismiss="alert" type="button">&times;</button>' . $lang["update_success"] . '
 							</div>';

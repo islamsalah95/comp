@@ -44,9 +44,11 @@ $views_array = array(
     "tracker_chart1_i", "tracker_view_check_i", "tracker_view_activity_i",
     "tracker_preview_i", "tracker_project_i", "tracker_user_profile_i", "tracker_task_i",
     "tracker_chat_room_i", "tracker_token", "tracker_emails", "tracker_files",
-    "tracker_messages", "tracker_user_details","get_cities", 'user_validations',
-    "register_company",'register_company_request_service','register_freelancer', 'privacy_policy','main_page','contact_us_form','tracker_verify_i','tracker_add_check_i_projects','tracker_add_check_i_tasks','cron_reports','contracts_Info'
-);
+    "tracker_messages", "tracker_user_details", 'user_validations',
+    "register_company","register_company_request_service",'register_freelancer',
+     'privacy_policy','main_page','contact_us_form','tracker_verify_i','tracker_add_check_i_projects',
+     'tracker_add_check_i_tasks','cron_reports','contracts_Info','get_cities'
+    );
 if (in_array($query1ans, $views_array)) {
     if (file_exists($fview)) {
         if (file_exists($fcontroller))

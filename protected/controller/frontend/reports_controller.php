@@ -115,8 +115,6 @@ GROUP BY
     ecm.hourly_rate
 ORDER BY
     e.`emp_name` ASC");
-
-
 } else {
     // $report_details = $db->run("SELECT e.employee_id, e.emp_name, p.project_name, t.task_name, SUM(sc.check_out_time) as working_hours FROM `shift_check` sc left join `employee` e on e.employee_id = sc.employee_id left join projects p on p.project_id= sc.project_id left join to_do_list t on t.task_id = sc.task_id WHERE sc.company_id = '" . $_SESSION['company_id'] . "' and sc.current_dt BETWEEN '" . $start_date . "' AND '" . $end_date . "' and (e.`department` = 2 OR e.`department` = 3) GROUP by sc.employee_id,sc.project_id,sc.task_id ORDER BY e.`emp_name` ASC ")->fetchAll();
     // $report_details = $db->run("SELECT sc.id, sc.current_dt, sc.check_in, sc.check_out, sc.approved_time, e.employee_id, e.emp_name, p.project_name, t.task_name, sc.check_out_time as working_hours FROM `shift_check` sc left join `employee` e on e.employee_id = sc.employee_id left join projects p on p.project_id= sc.project_id left join to_do_list t on t.task_id = sc.task_id WHERE sc.company_id = '" . $_SESSION['company_id'] . "' and sc.current_dt BETWEEN '" . $start_date . "' AND '" . $end_date . "' and (e.`department` = 2 OR e.`department` = 3)  ORDER BY e.`emp_name` ASC ")->fetchAll();

@@ -50,7 +50,6 @@
 
 <body>
     <div id="container">
-
         <div class="boxed">
             <div id="content-container" style="padding-top: 15px;">
                 <div id="page-content">
@@ -358,9 +357,10 @@
             $('#country_id').on('change', function() {
                 var countryId = $(this).val();
                 if (countryId) {
+                   var url = '<?php echo $link->link("get_cities", frontend); ?>';
                     $.ajax({
                         type: 'POST',
-                        url: 'http://localhost/truck/index.php?user=get_cities',
+                        url: url,
                         data: {
                             country_id: countryId
                         },

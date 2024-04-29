@@ -24,7 +24,7 @@ if (isset($_POST['submit_freelancer'])) {
     // $is_molTWC = $_POST['is_molTWC'];
     $contact1 = $_POST['contact1'];
     $freelancer_type = $_POST['freelancer_type'];
-    $freelancer_company = 1;
+    $freelancer_company = [1];
     if (isset($_POST['freelancer_company']) && $_POST['freelancer_company'] != '') {
         $freelancer_company = $_POST['freelancer_company'];
     }
@@ -119,7 +119,7 @@ if (isset($_POST['submit_freelancer'])) {
                         'department' => $department,
                         'address' => $address,
                         'contact1' => $contact1,
-                        'company_id' => $freelancer_company,
+                        'company_id' => $freelancer_company[0],
                         'is_company' => $freelancer_type,
                         'email' => $email,
                         'password' => $encrypt_password,
@@ -130,6 +130,14 @@ if (isset($_POST['submit_freelancer'])) {
                         'employee_national_number' => $employee_national_number
                     ));
                     $emplast_id = $db->lastInsertId();
+                    if($emplast_id){
+                        foreach ($freelancer_company as  $value) {
+                            $db->insert('employee_company',
+                            array('employee_id' => $emplast_id, 'company_id' =>$value)
+                          );
+                        }
+                    }
+
                     if ($insert) {
 
 
@@ -175,7 +183,7 @@ if (isset($_POST['submit_freelancer'])) {
             'department' => $department,
             'address' => $address,
             'contact1' => $contact1,
-            'company_id' => $freelancer_company,
+            'company_id' => $freelancer_company[0],
             'is_company' => $freelancer_type,
             'email' => $email,
             'password' => $encrypt_password,
@@ -186,6 +194,13 @@ if (isset($_POST['submit_freelancer'])) {
             'employee_national_number' => $employee_national_number
         ));
         $emplast_id = $db->lastInsertId();
+        if($emplast_id){
+            foreach ($freelancer_company as  $value) {
+                $db->insert('employee_company',
+                array('employee_id' => $emplast_id, 'company_id' =>$value)
+              );
+            }
+        }
         if ($insert) {
 
             // if (!empty($freelancer_assigned_company)) {

@@ -62,8 +62,20 @@ $current_time = time();
 
 	if ($db->exists('company', array('id' => $company_id)))
 		if ($db->exists('employee', array('employee_id' => $employee_id))) {
-
-			if ($check_out == "") {
+			
+			$last_shift_task = myQuery( "
+			SELECT *
+			FROM shift_check
+			WHERE employee_id = '$employee_id'
+				AND company_id = '$company_id'
+				AND project_id = '$project_id'
+				AND task_id = '$task_id'
+				AND DATE(create_date) = CURDATE()
+			LIMIT 1
+		" );
+			
+		
+		if ($check_out == "") {
 				// if ($check_in >= ($current_time - (60 * 5)) && $check_in <= ($current_time + (60 * 5))) {
 					unset($requests['user']);
 					unset($requests['token']);
@@ -71,14 +83,31 @@ $current_time = time();
 					//note
 					$requests['check_in']= intval($requests['check_in']) ;
 
-					$insert = $db->insert('shift_check', $requests);
-					if ($insert) {
-						$sessions['last_id'] = $db->lastInsertId();
-						$sessions['status'] = true;
-					} else {
-						$sessions['last_id'] = false;
-						$sessions['status'] = false;
-					}
+
+					            //get last shift task within day and add new time
+								if ( $last_shift_task ) {
+									$sessions[ 'last_id' ] = $last_shift_task[ 0 ][ 'id' ];
+									$sessions[ 'status' ] = true;
+								} else {
+									$insert = $db->insert( 'shift_check', $requests );
+									if ( $insert ) {
+										$sessions[ 'last_id' ] = $db->lastInsertId();
+										$sessions[ 'status' ] = true;
+									} else {
+										$sessions[ 'last_id' ] = false;
+										$sessions[ 'status' ] = false;
+									}
+					
+								}
+
+					// $insert = $db->insert('shift_check', $requests);
+					// if ($insert) {
+					// 	$sessions['last_id'] = $db->lastInsertId();
+					// 	$sessions['status'] = true;
+					// } else {
+					// 	$sessions['last_id'] = false;
+					// 	$sessions['status'] = false;
+					// }
 				// } else {
 				// 	$sessions['last_id'] = false;
 				// 	$sessions['status'] = false;
@@ -88,15 +117,40 @@ $current_time = time();
                 $last_id= $_POST['last_id'] ?? '';
 
 				
-				// if ($check_out >= ($current_time - (60 * 5)) && $check_out <= ($current_time + (60 * 5))) {
-					$update = $db->update("shift_check", array('check_out_time' => intval($check_out_time), 'check_out' => intval($check_out)), array('id' => $last_id));
-					if ($update) {
-						$sessions['last_id'] = $last_id;
-						$sessions['status'] = true;
+
+
+				if ( $last_shift_task ) {
+					$totalCheck_out_time = $check_out_time + $last_shift_task[ 0 ][ 'check_out_time' ] ;
+					$update = $db->update( 'shift_check', array( 'check_out_time' => intval( $totalCheck_out_time ), 'check_out' => intval( $check_out ) ), array( 'id' => $last_shift_task[ 0 ][ 'id' ] ) );
+					if ( $update ) {
+						$sessions[ 'last_id' ] = $last_shift_task[ 0 ][ 'id' ];
+						$sessions[ 'status' ] = true;
 					} else {
-						$sessions['last_id'] = false;
-						$sessions['status'] = false;
+						$sessions[ 'last_id' ] = false;
+						$sessions[ 'status' ] = false;
 					}
+				} else {
+					$update = $db->update( 'shift_check', array( 'check_out_time' => intval( $check_out_time ), 'check_out' => intval( $check_out ) ), array( 'id' => $last_id ) );
+					if ( $update ) {
+						$sessions[ 'last_id' ] = $last_id;
+						$sessions[ 'status' ] = true;
+					} else {
+						$sessions[ 'last_id' ] = false;
+						$sessions[ 'status' ] = false;
+					}
+	
+				}
+
+
+				// if ($check_out >= ($current_time - (60 * 5)) && $check_out <= ($current_time + (60 * 5))) {
+					// $update = $db->update("shift_check", array('check_out_time' => intval($check_out_time), 'check_out' => intval($check_out)), array('id' => $last_id));
+					// if ($update) {
+					// 	$sessions['last_id'] = $last_id;
+					// 	$sessions['status'] = true;
+					// } else {
+					// 	$sessions['last_id'] = false;
+					// 	$sessions['status'] = false;
+					// }
 				// } else {
 				// 	$sessions['last_id'] = false;
 				// 	$sessions['status'] = false;

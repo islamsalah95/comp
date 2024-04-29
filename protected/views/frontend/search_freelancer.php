@@ -36,92 +36,64 @@
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-10 text-center">
-                <!-- <form action="<?php $link->link("edit_freelancer", frontend); ?>" id="freelancer_search_form" method="post">
-                   
-                <div class="col-md-12">
-        <div class="form-group">
-            <label for="job_title"><?= $lang['job_title'] ?> </label>
-            <select name="job_title" class="form-control select_job" required>
-                <option value=""><?= $lang['select_option'] ?></option>
-                <?php
-                foreach ($specialities2 as $specialityID => $speciality) {
-                ?>
-                    <option value="<?= $speciality[$_SESSION['site_lang'] . '_Title']; ?>"><?= $speciality[$_SESSION['site_lang'] . '_Title']; ?></option>
-                <?php
-                }
-                ?>
-            </select>
-        </div>
-        </div>
-    
-                
-                <div class="input-group input-group-lg">
-                        <span class="input-group-btn">
-                            <span class="btn btn-default">
-                                <i class="fa fa-search"></i>
-                            </span>
-                        </span>
-                        <input type="text" id="search_box" name="search_speciality" class="form-control" placeholder="<?= $lang['search_freelancer'] ?? '' ?>" value="<?= $_POST['search_speciality'] ?? ''; ?>" required>
-                        <div class="input-group-btn">
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fa fa-filter"></i>
-                                &nbsp;&nbsp;<?= $lang['filter']; ?>&nbsp;
-                                <span class="caret"></span>
-                            </button>
-                            <div class="dropdown-menu dropdown-menu-right">
-                                <div class="pad-5">
 
 
 
+                <form method="post" action="<?php $_SERVER['PHP_SELF']; ?>" id="freelancer_search_form">
+                    <div class="row">
 
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label for="search_price"><?= $lang['price'] ?></label>
-                                            <input type="text" class="form-control" id="search_price" name="search_price" value="<?= $_POST['search_price'] ?? ''; ?>">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 pad-btm border-bottom">
-                                        <div class="form-group">
-                                            <label for="search_work_exp"><?= $lang['year_exp'] ?></label>
-                                            <input type="text" class="form-control" id="search_work_exp" name="search_work_exp" value="<?= $_POST['search_work_exp'] ?? ''; ?>">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 pad-top">
-                                        <div class="form-group">
-                                            <button class="btn btn-success filter_data" type="submit"><?= $lang['done']; ?></button>
-                                            <button class="btn btn-default filter_clear" type="button"><?= $lang['cancel']; ?></button>
-                                        </div>
+
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="job_title"><?= $lang['job_title'] ?> </label>
+                                <select name="job_title" class="form-control select_job">
+                                    <option value=""><?= $lang['select_option'] ?></option>
+                                    <?php foreach ($specialities as $specialityID => $value) { ?>
+                                        <option value="<?= $value[$_SESSION['site_lang'] . '_Title']; ?>" <?php echo isset($job_title) && $value[$_SESSION['site_lang'] . '_Title'] == $job_title ? 'selected' : ''; ?>>
+                                            <?= $value[$_SESSION['site_lang'] . '_Title']; ?>
+                                        </option>
+                                    <?php } ?>
+                                </select>
+
+                            </div>
+                        </div>
+
+                        <div class="row" style="display: flex; justify-content: space-between;">
+
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <div class="text-left">
+                                        <label class="text-muted">First Name *</label>
+                                        <input class="form-control" value="<?php echo isset($emp_name) ? $emp_name : ''; ?>" type="text" placeholder="Enter your name" name="emp_name">
                                     </div>
                                 </div>
                             </div>
+
+
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <div class="text-left">
+                                        <label class="text-muted"> Experience *</label>
+                                        <input class="form-control" value="<?php echo isset($experiences) ? $experiences : ''; ?>" type="number" placeholder="Enter your experiences years" name="experiences">
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
+
                     </div>
-                </form> -->
+                    <button class="btn btn-success register_button" type="submit" name="submit_freelancer"><i class="fa fa-save"></i> Search</button>
+                </form>
 
 
-                <div>
-                    <form method="post" action="<?php $_SERVER['PHP_SELF']; ?>" id="freelancer_search_form">
 
-                        <div class="form-group">
-                            <label for="job_title"><?= $lang['job_title'] ?> </label>
-                            <select name="job_title" class="form-control select_job" required>
-                                <option value=""><?= $lang['select_option'] ?></option>
-                                <?php
-                                foreach ($specialities as $specialityID => $value) {
-                                ?>
-                                    <option value="<?= $value[$_SESSION['site_lang'] . '_Title']; ?>"><?= $value[$_SESSION['site_lang'] . '_Title']; ?></option> <?php
-                                                                                                                                                                }
-                                                                                                                                                                    ?>
-                            </select>
-                        </div>
 
-                        <button class="btn btn-success register_button" type="submit" name="submit_freelancer"><i class="fa fa-save"></i> Search</button>
-                    </form>
-                </div>
+
+
+
 
 
             </div>
-            <div class="col-md-1"></div>
         </div>
         <br />
         <?php

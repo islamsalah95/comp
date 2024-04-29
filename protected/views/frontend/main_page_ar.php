@@ -17,7 +17,7 @@
                         <div class="mbr-section-btn mt-3">
                             <a class="btn btn-success display-4" href="<?php echo $link->link('register_freelancer', frontend); ?>" target="_blank">تسجيل عامل مستقل</a> 
                             <a class="btn btn-success-outline display-4" href="<?php echo $link->link('register_company', frontend); ?>" target="_blank">تسجيل شركات</a> 
-                            <a class="btn btn-success-outline display-4" href="<?php echo $link->link('register_company_request_service', frontend); ?>" target="_blank">تسجيل مقدم خدمة</a> 
+                            <a class="btn btn-success-outline display-4" href="<?php echo $link->link('register_company_request_service', frontend); ?>" target="_blank">تسجيل طالب خدمة</a> 
 
                         </div>
                     </div>
@@ -206,7 +206,7 @@
         حملة الشهادات الجامعية و العليا<br></p>
     </div>
   </div>
-  <hr style="width:50%; border-top: 1px solid #efefe;">
+  <hr style="width: 50%; border-top: 1px solid #efefe;">
 
   <div class="row2-container align-center">
     <div class="box logo_color_5">

@@ -179,7 +179,7 @@
                                                             <input type="text" name="company_name" class="form-control" placeholder="<?php echo $lang['enter_your_company_name2']; ?> *" data-parsley-group="payment" data-parsley-required />
                                                         </div>
                                                         <div class="col-md-6">
-                                                            <label> <?php echo $lang['company_email']; ?> <span class="text-danger">*</span> : </label>
+                                                            <label> <?php echo $lang['company_email2']; ?> <span class="text-danger">*</span> : </label>
                                                             <input type="email" name="c_email" class="form-control" placeholder="<?php echo $lang['enter_your_company_email']; ?> *" data-parsley-group="payment" data-parsley-required />
                                                         </div>
                                                     </div>

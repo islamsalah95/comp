@@ -24,6 +24,8 @@
                             <div class="panel-control">
                                 <button class="btn btn-default" onclick="goBack()"><i class="fa fa-arrow-circle-left"></i> <?php echo $lang['go_back']; ?></button>
                             </div>
+                            $emplast_id  <?php var_dump($emplast_id) ?>
+                          $freelancer_company <?php var_dump($freelancer_company) ?>
                             <h3 class="panel-title"><?php echo $lang['add_freelancer']; ?></h3>
                         </div>
                         <form method="post" action="<?php $_SERVER['PHP_SELF']; ?>" enctype="multipart/form-data" id="addUserFrom">
@@ -166,7 +168,9 @@
                                                 <label class="text-muted"><?php echo $lang['freelancer'] . ' ' . $lang['company']; ?> : </label>
                                             </div>
                                             <div class="col-md-8">
-                                                <select id="freelancer_company" class="form-control selectpicker" name="freelancer_company">
+                                                <select
+                                                class="demo-cs-multiselect" id="freelancer_company" name="freelancer_company[]" multiple tabindex="4"
+                                                >
                                                     <?php if (is_array($company)) foreach ($company as $value) { ?>
                                                         <option value="<?php echo $value['id']; ?>" <?php if ($value['id'] == $_SESSION['company_id']) echo "selected"; ?>><?php echo $value['company_name']; ?></option>
                                                     <?php } ?>

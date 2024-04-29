@@ -54,58 +54,58 @@
                                                     <!-- <div class="form-group">
                                                         <div class="text-left">
                                                             <label class="text-muted"><?php echo $lang['IdNumber']; ?></label>
-                                                            <input class="form-control" type="text" placeholder="<?php echo $lang['enter_your_IdNumber']; ?> *" name="IdNumber" value="<?php echo $get_row['IdNumber']; ?>" required="required">
+                                                            <input class="form-control" type="text" placeholder="<?php echo $lang['enter_your_IdNumber']; ?> *" name="IdNumber" value="<?php echo $get_row[0]['IdNumber']; ?>" required="required">
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
                                                         <div class="text-left">
                                                             <label class="text-muted"><?php echo $lang['EstLaborOfficeId']; ?></label>
-                                                            <input class="form-control" type="text" placeholder="<?php echo $lang['enter_your_EstLaborOfficId']; ?> *" name="EstLaborOfficeId" value="<?php echo $get_row['EstLaborOfficeId']; ?>" required="required">
+                                                            <input class="form-control" type="text" placeholder="<?php echo $lang['enter_your_EstLaborOfficId']; ?> *" name="EstLaborOfficeId" value="<?php echo $get_row[0]['EstLaborOfficeId']; ?>" required="required">
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
                                                         <div class="text-left">
                                                             <label class="text-muted"><?php echo $lang['EstSequenceNumber']; ?></label>
-                                                            <input class="form-control" type="text" placeholder="<?php echo $lang['enter_your_EstSequenceNumber']; ?> *" name="EstSequenceNumber" value="<?php echo $get_row['EstSequenceNumber']; ?>" required="required">
+                                                            <input class="form-control" type="text" placeholder="<?php echo $lang['enter_your_EstSequenceNumber']; ?> *" name="EstSequenceNumber" value="<?php echo $get_row[0]['EstSequenceNumber']; ?>" required="required">
                                                         </div>
                                                     </div> -->
                                                     <div class="form-group">
                                                         <div class="text-left">
                                                             <label class="text-muted"><?php echo $lang['first_name']; ?></label>
-                                                            <input class="form-control" type="text" placeholder="<?php echo $lang['enter_your_name']; ?> *" name="emp_name" value="<?php echo $get_row['emp_name']; ?>">
+                                                            <input class="form-control" type="text" placeholder="<?php echo $lang['enter_your_name']; ?> *" name="emp_name" value="<?php echo $get_row[0]['emp_name']; ?>">
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
                                                         <div class="text-left">
                                                             <label class="text-muted"><?php echo $lang['last_name']; ?></label>
-                                                            <input class="form-control" type="text" placeholder="<?php echo $lang['enter_your_surname']; ?>" name="emp_surname" value="<?php echo $get_row['emp_surname']; ?>">
+                                                            <input class="form-control" type="text" placeholder="<?php echo $lang['enter_your_surname']; ?>" name="emp_surname" value="<?php echo $get_row[0]['emp_surname']; ?>">
                                                         </div>
                                                     </div>
 
                                                     <div class="form-group">
                                                         <div class="text-left">
                                                             <label class="text-muted"><?php echo $lang['phone_number']; ?></label>
-                                                            <input class="form-control" type="text" placeholder="<?php echo $lang['enter_your_phone_number']; ?>" name="contact1" value="<?php echo $get_row['contact1']; ?>">
+                                                            <input class="form-control" type="text" placeholder="<?php echo $lang['enter_your_phone_number']; ?>" name="contact1" value="<?php echo $get_row[0]['contact1']; ?>">
                                                         </div>
                                                     </div>
 
                                                     <div class="form-group text-left">
                                                         <label><?php echo $lang['date_of_birth']; ?> * : </label>
-                                                        <input type="text" placeholder="yyyy-mm-dd" id="dob" name="dob" class="form-control" value="<?php echo $get_row['dob']; ?>" required />
+                                                        <input type="text" placeholder="yyyy-mm-dd" id="dob" name="dob" class="form-control" value="<?php echo $get_row[0]['dob']; ?>" required />
                                                     </div>
 
                                                     <div class="form-group">
                                                         <div class="text-left">
                                                             <label class="text-muted"><?php echo $lang['address']; ?></label>
-                                                            <textarea class="form-control" name="address" placeholder="<?php echo $lang['enter_your_address']; ?>"><?php echo $get_row['address']; ?></textarea>
+                                                            <textarea class="form-control" name="address" placeholder="<?php echo $lang['enter_your_address']; ?>"><?php echo $get_row[0]['address']; ?></textarea>
                                                         </div>
                                                     </div>
 
                                                     <!-- <div class="form-group">
                                                         <label class="control-label"><?php echo $lang['is_mol_TWC']; ?></label>
                                                         <select class="form-control " name="is_molTWC">
-                                                            <option value="0" <?php if ($get_row['is_molTWC'] == 0) echo "selected"; ?>><?php echo $lang['no']; ?></option>
-                                                            <option value="1" <?php if ($get_row['is_molTWC'] == 1) echo "selected"; ?>><?php echo $lang['yes']; ?></option>
+                                                            <option value="0" <?php if ($get_row[0]['is_molTWC'] == 0) echo "selected"; ?>><?php echo $lang['no']; ?></option>
+                                                            <option value="1" <?php if ($get_row[0]['is_molTWC'] == 1) echo "selected"; ?>><?php echo $lang['yes']; ?></option>
                                                         </select>
                                                     </div> -->
                                                 </div>
@@ -114,7 +114,7 @@
 
                                                     <div class="form-group text-left">
                                                         <label><?php echo $lang['employee_national_number']; ?> * : </label>
-                                                        <input type="text" placeholder="<?php echo $lang['employee_national_number']; ?>" name="employee_national_number" class="form-control" value="<?php echo $get_row['employee_national_number']; ?>" required />
+                                                        <input type="text" placeholder="<?php echo $lang['employee_national_number']; ?>" name="employee_national_number" class="form-control" value="<?php echo $get_row[0]['employee_national_number']; ?>" required />
                                                     </div>
 
                                                     <div class="form-group text-left">
@@ -124,7 +124,7 @@
                                                             <?php
                                                             foreach ($cities as $city_id => $city) {
                                                             ?>
-                                                                <option value="<?= $city_id; ?>" <?php if ($city_id == $get_row['city_id']) {
+                                                                <option value="<?= $city_id; ?>" <?php if ($city_id == $get_row[0]['city_id']) {
                                                                                                         echo "selected";
                                                                                                     } ?>><?= $city['Arabic_Name']; ?></option>
                                                             <?php
@@ -136,14 +136,27 @@
                                                     <hr>
                                                     <div class="form-group">
                                                         <label class="control-label text-bold"><?php echo $lang['freelancer_company_details']; ?> </label>
+                                                        <ul>
+                                                            <?php 
+                                                            $comps=[];
+                                                            foreach ($get_row as $value) { ?>
+                                                                <li><?php echo $value['company_name']; ?></li>
+                                                            <?php
+                                                              $comps[]=$value['company_id'];
+                                                        } 
+                                                            
+                                                            ?>
+                                                        </ul>
+
+
                                                     </div>
 
                                                     <div class="form-group row">
                                                         <div class="col-md-4"><label class="text-muted"><?php echo $lang['freelancer_type']; ?> : </label></div>
                                                         <div class="col-md-8">
                                                             <select name="freelancer_type" class="form-control " id="freelancer_type">
-                                                                <option value="0" <?php if ($get_row['is_company'] == 0) echo "selected"; ?>><?php echo $lang['company']; ?></option>
-                                                                <option value="1" <?php if ($get_row['is_company'] == 1) echo "selected"; ?>><?php echo $lang['individual']; ?></option>
+                                                                <option value="0" <?php if ($get_row[0]['is_company'] == 0) echo "selected"; ?>><?php echo $lang['company']; ?></option>
+                                                                <option value="1" <?php if ($get_row[0]['is_company'] == 1) echo "selected"; ?>><?php echo $lang['individual']; ?></option>
                                                             </select>
                                                         </div>
                                                     </div>
@@ -153,12 +166,17 @@
                                                             <label class="text-muted"><?php echo $lang['freelancer'] . ' ' . $lang['company']; ?> : </label>
                                                         </div>
                                                         <div class="col-md-8">
-                                                            <select id="freelancer_company" class="form-control selectpicker" name="freelancer_company">
+                                                            <select class="demo-cs-multiselect" id="freelancer_company" name="freelancer_company[]" multiple tabindex="4">
                                                                 <?php if (is_array($company)) foreach ($company as $value) { ?>
-                                                                    <option value="<?php echo $value['id']; ?>" <?php if ($value['id'] == $get_row['company_id']) echo "selected"; ?>><?php echo $value['company_name']; ?></option>
+                                                                    <?php if (is_array($comps)) foreach ($comps as $compsValue) { ?>
+                                                                    <option value="<?php echo $value['id']; ?>" <?php if ($value['id'] == $compsValue) echo "selected"; ?>><?php echo $value['company_name']; ?></option>
+                                                                <?php } ?>
+
                                                                 <?php } ?>
                                                             </select>
                                                         </div>
+
+
                                                     </div>
 
                                                     <!-- <div class="form-group">
@@ -236,7 +254,7 @@
                                                         <div class="form-group">
                                                             <div class="text-left">
                                                                 <label class="text-muted"><?php echo $lang['email_id']; ?> *</label>
-                                                                <input class="form-control" type="text" placeholder="<?php echo $lang['enter_your_email_address']; ?> *" name="email" value="<?php echo $get_row['email']; ?>" disabled>
+                                                                <input class="form-control" type="text" placeholder="<?php echo $lang['enter_your_email_address']; ?> *" name="email" value="<?php echo $get_row[0]['email']; ?>" disabled>
                                                             </div>
                                                         </div>
                                                         <div class="form-group">
@@ -271,8 +289,8 @@
                                                         <div class="fileupload fileupload-new" data-provides="fileupload">
                                                             <div class="fileupload-new img-thumbnail">
                                                                 <?php
-                                                                if (file_exists(SERVER_ROOT . '/uploads/profile/' . $get_row['emp_photo_file']) && (($get_row['emp_photo_file']) != '')) { ?>
-                                                                    <img src="<?php echo SITE_URL . '/uploads/profile/' . $get_row['emp_photo_file']; ?>" style="width:200px;">
+                                                                if (file_exists(SERVER_ROOT . '/uploads/profile/' . $get_row[0]['emp_photo_file']) && (($get_row[0]['emp_photo_file']) != '')) { ?>
+                                                                    <img src="<?php echo SITE_URL . '/uploads/profile/' . $get_row[0]['emp_photo_file']; ?>" style="width:200px;">
                                                                 <?php } else { ?>
                                                                     <img src="<?php echo SITE_URL . '/uploads/noimage.png'; ?>" style="width:200px;">
                                                                 <?php } ?>
