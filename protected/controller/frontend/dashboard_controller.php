@@ -57,16 +57,23 @@ ORDER BY
 
 // echo "<pre>";print_r($report_details);exit();
 
-
-$fc_max_working_hourxx = $db->run("SELECT working_hours,start_date,end_date
-    from employee_company_map 
-    where employee_id = $employee_id 
-    and company_id = $company_id
-    and end_date = (
-        SELECT MAX(end_date) 
+$fc_max_working_hourxx = $db->run("
+    SELECT id ,
+    working_hours, 
+    start_date, 
+    created_on
+    FROM employee_company_map 
+    WHERE employee_id = $employee_id 
+    AND company_id = $company_id
+    AND created_on = (
+        SELECT MAX(created_on) 
         FROM employee_company_map 
-        WHERE employee_id = $employee_id
-    );")->fetchAll();
+        WHERE employee_id = $employee_id 
+        AND company_id = $company_id
+    )
+")->fetchAll();
+
+
     
     $fc_max_working_hourxx ? $isfc_max_working_hourxx=true : $isfc_max_working_hourxx=false;
 //  $month_start_date = date('Y-m-01');
@@ -79,6 +86,18 @@ if( $isfc_max_working_hourxx==false){
     $month_end_date = $fc_max_working_hourxx[0]['end_date'];
 }
 
+$test = myQuery("SELECT
+    employee.employee_id,
+    employee.emp_name,
+    SUM(shift_check.check_out_time) as total_duration
+FROM shift_check
+LEFT JOIN employee on employee.employee_id = shift_check.employee_id
+WHERE shift_check.company_id = '" . $company_id . "'
+    AND employee.employee_id = '" . $employee_id . "'
+    AND shift_check.current_dt BETWEEN '" . $month_start_date . "' AND '" . $month_end_date . "'
+    AND (employee.`department` = 2 OR employee.`department` = 3)
+GROUP BY employee.employee_id
+ORDER BY MIN(shift_check.id) DESC, employee.`emp_name` ASC");
 // $current_month_working_details = myQuery("SELECT employee.employee_id, employee.emp_name, SUM(shift_check.check_out_time) as total_duration from shift_check LEFT JOIN employee on employee.employee_id = shift_check.employee_id WHERE shift_check.company_id = '" . $company_id . "' and employee.employee_id = '" . $employee_id . "' and shift_check.current_dt BETWEEN '" . $month_start_date . "' AND '" . $month_end_date . "' and (employee.`department` = 2 or employee.`department` = 3) GROUP BY employee.employee_id  ORDER BY shift_check.`id` DESC, employee.`emp_name` ASC");
 // $current_month_working_duration = isset($current_month_working_details[0]) ? (int)$current_month_working_details[0]['total_duration'] : 0;
 $current_month_working_details = myQuery("SELECT
@@ -104,6 +123,7 @@ if ($_SESSION['department'] == 3) {
         SELECT MAX(end_date) 
         FROM employee_company_map 
         WHERE employee_id = $employee_id
+        and company_id = $company_id
     );")->fetchAll();
     $fc_monthly_max_working_duration = isset($fc_max_working_hour[0]) ? ($fc_max_working_hour[0]['working_hours'] * 3600) : 0;
     // echo "<pre>"; print_r($fc_max_working_hour); echo $fc_monthly_max_working_duration; exit;
@@ -115,20 +135,91 @@ if ($_SESSION['department'] == 2) {
     // echo "<pre>"; print_r($fc_max_working_hour); echo $fc_monthly_max_working_duration; exit;
 }
 
-$user_projects = $db->run("SELECT pa.project_id, p.project_name 
-FROM project_assign pa
- LEFT JOIN projects p 
- on p.project_id = pa.project_id
-  WHERE pa.employee_id = $employee_id
-   and
-    pa.company_id = $company_id 
-    and p.end_date >= '" . date('Y-m-d') . "' 
-    ")->fetchAll();
+
+
+    $user_projects = $db->run("
+    SELECT 
+        p.project_id,
+        p.project_name
+    FROM
+        projects p
+    WHERE 
+        p.company_id = $company_id 
+        AND p.end_date >= '" . date('Y-m-d') . "' 
+        AND p.project_type='public'
+        UNION
+    SELECT 
+        pa.project_id,
+        p.project_name
+    FROM
+        project_assign pa
+    LEFT JOIN
+        projects p ON p.project_id = pa.project_id
+    WHERE 
+        pa.employee_id = $employee_id 
+        AND pa.company_id = $company_id 
+        AND p.end_date >= '" . date('Y-m-d') . "' 
+        AND p.project_type='private'
+        ")->fetchAll();
+
+
+
+// $user_projects = $db->run("SELECT 
+// pa.project_id,
+// p.project_name
+//   FROM
+//  project_assign pa LEFT JOIN projects p on p.project_id = pa.project_id
+//   WHERE 
+//   pa.employee_id = $employee_id 
+//   and 
+//   pa.company_id = $company_id 
+//   and 
+//   p.end_date >= '" . date('Y-m-d') . "' 
+//   ")->fetchAll();
+
+
+    
 if (empty($user_projects)) {
     $user_projects = $db->run("SELECT project_id, project_name FROM projects WHERE project_id = 1")->fetchAll();
     // echo "<pre>"; print_r($user_projects); exit();
 }
-$user_tasks = $db->run("SELECT t.task_id, t.task_name, t.project_id FROM to_do_list t WHERE t.project_id in ( SELECT pa.project_id FROM project_assign pa LEFT JOIN projects p on p.project_id = pa.project_id WHERE pa.employee_id = $employee_id and pa.company_id = $company_id and p.end_date >= '" . date('Y-m-d') . "'  )")->fetchAll();
+
+
+
+$user_tasks = $db->run("
+    SELECT 
+        t.task_id,
+        t.task_name,
+        t.project_id
+    FROM 
+        to_do_list t 
+    WHERE 
+        t.project_id IN (
+            SELECT 
+                p.project_id
+            FROM 
+                projects p
+            WHERE 
+                p.company_id = $company_id 
+                AND p.end_date >= '" . date('Y-m-d') . "' 
+            UNION
+            SELECT 
+                pa.project_id 
+            FROM 
+                project_assign pa 
+            LEFT JOIN 
+                projects p ON p.project_id = pa.project_id 
+            WHERE 
+                pa.employee_id = $employee_id 
+                AND pa.company_id = $company_id 
+                AND p.end_date >= '" . date('Y-m-d') . "'
+        )
+")->fetchAll();
+
+
+
+
+// $user_tasks = $db->run("SELECT t.task_id, t.task_name, t.project_id FROM to_do_list t WHERE t.project_id in ( SELECT pa.project_id FROM project_assign pa LEFT JOIN projects p on p.project_id = pa.project_id WHERE pa.employee_id = $employee_id and pa.company_id = $company_id and p.end_date >= '" . date('Y-m-d') . "'  )")->fetchAll();
 if (empty($user_tasks)) {
     $user_tasks = $db->run("SELECT task_id, task_name, project_id FROM to_do_list WHERE task_id = 1")->fetchAll();
     // echo "<pre>"; print_r($user_tasks); exit();

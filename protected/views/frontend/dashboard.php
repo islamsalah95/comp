@@ -92,39 +92,39 @@
             opacity: 1
         }
     }
-    
-        .center-headline {
-      text-align: center;
+
+    .center-headline {
+        text-align: center;
     }
 </style>
 <link href="<?php echo SITE_URL; ?>/assets/frontend/js/report_buttons/buttons.dataTables.min.css" rel="stylesheet" type="text/css" />
 <div id="content-container">
-<?php
-// Get the end date from $fc_max_working_hour[0]['end_date']
-if(isset($fc_max_working_hour[0]['end_date'])){
-    $endDate = $fc_max_working_hour[0]['end_date'];
+    <?php
+    // Get the end date from $fc_max_working_hour[0]['end_date']
+    if (isset($fc_max_working_hour[0]['end_date'])) {
+        $endDate = $fc_max_working_hour[0]['end_date'];
 
-    // Convert the end date string to a DateTime object
-    $endDateObj = new DateTime($endDate);
-    
-    // Add one day to the end date
-    $endDateObj->modify('+1 day');
-    
-    // Get today's date
-    $today = new DateTime();
-    
-    // Compare today's date with the end date plus one day
-    if ($today > $endDateObj) {
-        // Today's date is after the end date plus one day
-        $result = false;
-    } else {
-        // Today's date is on or before the end date plus one day
-        $result = true;
+        // Convert the end date string to a DateTime object
+        $endDateObj = new DateTime($endDate);
+
+        // Add one day to the end date
+        $endDateObj->modify('+1 day');
+
+        // Get today's date
+        $today = new DateTime();
+
+        // Compare today's date with the end date plus one day
+        if ($today > $endDateObj) {
+            // Today's date is after the end date plus one day
+            $result = false;
+        } else {
+            // Today's date is on or before the end date plus one day
+            $result = true;
+        }
     }
-}
 
-?>
-<div class="pageheader">
+    ?>
+    <div class="pageheader">
         <h3><i><img src="<?php echo SITE_URL . '/uploads/logo/company_icons/icons_flex-01.png'; ?>" style="width:40px;height:40px" alt="Home Picture"></i> <?php echo ucfirst($company_details['company_name']); ?> - <?php echo $lang['dashboard']; ?></h3>
         <div class="breadcrumb-wrapper">
             <span class="label"><?php echo $lang['you_are_here']; ?>:</span>
@@ -136,94 +136,112 @@ if(isset($fc_max_working_hour[0]['end_date'])){
 
     <div id="page-content">
 
-        <?php if($isfc_max_working_hourxx ==  false  || isset($result) && $result == false){  ?>
-        
-          <div class="container">
-    <!-- Centered headline with danger style -->
-    <div class="center-headline">
-      <div class="alert alert-danger" role="alert">
-        <h1>Contract End</h1>
-      </div>
-    </div>
-  </div>
+    <?php 
+    print_r($user_tasks);
+
+    // print_r($current_month_working_details);
+    //  print_r($user_projects);
+
+
+    //   print('current_month_working_duration : '.$current_month_working_duration.'');
+
+    //   print('fc_monthly_max_working_duration in contract seconds:'.$fc_monthly_max_working_duration);
+
+    //   if ($current_month_working_duration <= $fc_monthly_max_working_duration) {
+    //     echo "true";
+    // } else {
+    //     echo "false";
+    // }
+
+     ?>
+
+        <?php if ($isfc_max_working_hourxx ==  false  || isset($result) && $result == false) {  ?>
+
+            <div class="container">
+                <div class="center-headline">
+                    <div class="alert alert-danger" role="alert">
+                        <h1>Contract End</h1>
+                    </div>
+                </div>
+            </div>
 
 
         <?php  } else { ?>
-        
 
-                <br>
-        <div class="row">
-            <div class="panel">
-                <div class="panel-body">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="message_container" style="display: none;">
+
+            <br>
+            <div class="row">
+                <div class="panel">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="message_container" style="display: none;">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="project"><?= $lang['project'] ?></label>
-                                <select name="project" id="project" class="form-control">
-                                    <option value=""><?= $lang['select_project'] ?></option>
-                                    <?php
-                                    if (isset($user_projects) && count($user_projects) > 0) {
-                                        foreach ($user_projects as $project) {
-                                    ?>
-                                            <option value="<?= $project['project_id'] ?>"><?= $project['project_name'] ?></option>
-                                    <?php
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="project"><?= $lang['project'] ?></label>
+                                    <select name="project" id="project" class="form-control">
+                                        <option value=""><?= $lang['select_project'] ?></option>
+                                        <?php
+                                        if (isset($user_projects) && count($user_projects) > 0) {
+                                            foreach ($user_projects as $project) {
+                                        ?>
+                                                <option value="<?= $project['project_id'] ?>"><?= $project['project_name'] ?></option>
+                                        <?php
+                                            }
                                         }
-                                    }
-                                    ?>
-                                </select>
+                                        ?>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="task"><?= $lang['task'] ?></label>
-                                <select name="task" id="task" class="form-control" disabled>
-                                </select>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="task"><?= $lang['task'] ?></label>
+                                    <select name="task" id="task" class="form-control" disabled>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
 
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <?php echo $display_msg ?? ''; ?>
-            <div class="col-md-12">
-                <div class="col-md-3">
-                    <div class="panel bg-success timer_container text-center start_time">
-                        <div class="panel-body">
-                            <i class="fa fa-play fa-3x"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="panel bg-danger timer_container text-center stop_time">
-                        <div class="panel-body">
-                            <i class="fa fa-stop fa-3x"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="panel text-center timer">
-                        <div class="panel-body">
-                            <span id="hour">00</span> :
-                            <span id="min">00</span> :
-                            <span id="sec">00</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <br>
+            <div class="row">
+                <?php echo $display_msg ?? ''; ?>
+                <div class="col-md-12">
+                    <div class="col-md-3">
+                        <div class="panel bg-success timer_container text-center start_time">
+                            <div class="panel-body">
+                                <i class="fa fa-play fa-3x"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="panel bg-danger timer_container text-center stop_time">
+                            <div class="panel-body">
+                                <i class="fa fa-stop fa-3x"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel text-center timer">
+                            <div class="panel-body">
+                                <span id="hour">00</span> :
+                                <span id="min">00</span> :
+                                <span id="sec">00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
         <?php  }  ?>
 
-        
+
         <div class="panel">
             <div class="panel-body">
                 <table id="company_report" class="table table-striped table-bordered">
@@ -269,11 +287,11 @@ if(isset($fc_max_working_hour[0]['end_date'])){
 
 
 
-                
 
 
 
-                    
+
+
                 </table>
             </div>
 
@@ -318,24 +336,25 @@ if(isset($fc_max_working_hour[0]['end_date'])){
         var last_check_id;
         var last_check_in;
         var last_check_out;
-        
-            $.ajax({
-                type: 'post',
-                 url: "https://techsupflex.com/index.php?user=contracts_Info",
-                data: {
-                    '_token': "{{csrf_token()}}",
-                    token: "qRl2t3vqv/5HN6uTpKW5CA==",
-                    employee_id :"468"
-                },
-                success: function (data) {
-                console.log("****data**")
-                  console.log(data.data)
-                }, error: function (reject) {
-                 console.log("****reject**")
-                    console.log(reject)
 
-                }
-            });
+        $.ajax({
+            type: 'post',
+            url: "https://techsupflex.com/index.php?user=contracts_Info",
+            data: {
+                '_token': "{{csrf_token()}}",
+                token: "qRl2t3vqv/5HN6uTpKW5CA==",
+                employee_id: "468"
+            },
+            success: function(data) {
+                console.log("****data**")
+                console.log(data.data)
+            },
+            error: function(reject) {
+                console.log("****reject**")
+                console.log(reject)
+
+            }
+        });
 
         var department = <?php echo json_encode($_SESSION['department']); ?>;
         var current_month_working_duration = <?php echo json_encode($current_month_working_duration); ?>;
@@ -368,7 +387,7 @@ if(isset($fc_max_working_hour[0]['end_date'])){
 
 
         $('.start_time').click(function() {
-            if (current_month_working_duration < fc_monthly_max_working_duration) {
+            if (current_month_working_duration <= fc_monthly_max_working_duration) {
                 if (selectedProject !== null && selectedTask !== null) {
                     if (!isStarted) {
                         sec = ++sec;

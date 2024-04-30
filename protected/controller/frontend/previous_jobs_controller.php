@@ -23,7 +23,20 @@ $employee_id = $_POST['employee_id'];
 //                     WHERE pa.employee_id = $employee_id AND pa.company_id = $company_id GROUP BY pa.project_id";
 // $previous_jobs = $db->run($sqlPrevious_jobs)->fetchAll();
 
-$previous_jobs = sqlPrevious_jobs( $employee_id ,  $company_id );
+$previous_jobs = sqlPrevious_jobs($employee_id, $company_id);
+$repatedTasks = [];
+$previous_jobsArray = [];
+
+// Filter out repeated tasks
+foreach ($previous_jobs as $job) {
+    $task_id = $job['task_id'];
+    if (!in_array($task_id, $repatedTasks)) {
+        $repatedTasks[] = $task_id;
+        $previous_jobsArray[] = $job;
+    }
+}
+
+
 
 
 $sql = "SELECT working_hours,

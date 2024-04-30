@@ -70,7 +70,6 @@ $current_time = time();
 				AND company_id = '$company_id'
 				AND project_id = '$project_id'
 				AND task_id = '$task_id'
-				AND DATE(create_date) = CURDATE()
 			LIMIT 1
 		" );
 			

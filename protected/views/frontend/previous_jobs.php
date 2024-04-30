@@ -23,8 +23,9 @@
                     <div class="col-md-12">
                         <h3 class="text-center">Jobs Evaluation</h3>
                     </div>
-                    <?php if (isset($previous_jobs) && count($previous_jobs) > 0) {
-                        foreach ($previous_jobs as $job) {
+                    <?php
+                      if (isset($previous_jobsArray) && count($previous_jobsArray) > 0) {
+                        foreach ($previous_jobsArray as $job) {
                     ?>
                             <div class="col-md-4">
                                 <div class="panel">
@@ -44,7 +45,7 @@
                                                 ?>
                                             </div>
                                             <div class="col-md-6">
-                                                <b><?= $lang['job_title'] ?></b>: <?= $job['titl']; ?>
+                                                <b><?= $lang['job_title'] ?></b>: <?= $job['title']; ?>
                                             </div>
                                             <div class="col-md-6">
                                                 <b><?= $lang['working_hours'] ?></b>: <?php if ($job['working_hours'] != '') echo gmdate("H:i:s", $job['working_hours']); ?>
