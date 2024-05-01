@@ -15,6 +15,9 @@
 //   return sprintf('%02d:%02d:%02d', ($t / 3600), ($t / 60 % 60), $t % 60);
 // }
 
+error_reporting(E_ALL);
+ini_set('display_errors', 1); 
+
 function sec2hms($secs)
 {
   $secs = round($secs);

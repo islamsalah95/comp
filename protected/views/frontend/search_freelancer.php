@@ -168,47 +168,13 @@
                                         <?php echo $freelancer['experiences']; ?>
                                     </td>
                                     <td style="display: flex; justify-content: flex-start;align-items: center;">
-                                        <!-- <a href="<?php echo $link->link("edit_freelancer", frontend, '&edit=' . $freelancer['employee_id']); ?>" class="btn btn-success fa fa-edit"></a> -->
-
-                                        <form method="post" action="<?= $link->link("edit_freelancer", frontend) ?>">
-                                            <input type="hidden" name="edit" value="<?= $freelancer['employee_id'] ?>">
-                                            <button type="submit" class="btn btn-success fa fa-edit" style="margin: 3px;"></button>
-                                        </form>
 
 
-                                        <form action="" method="post">
-                                            <input type="hidden" name="del_id" value="<?php echo $freelancer['employee_id']; ?>">
-                                            <button class="btn btn-danger fa fa-trash" style="margin: 3px;" type="submit" name="del"></button>
-                                        </form>
-
-
-                                        <!-- <a title="<?php echo $lang['add_contract']; ?>" href="<?php echo $link->link('add_contract', frontend, '&employee_id=' . $freelancer['employee_id']); ?>" class="btn btn-primary fa fa-plus"></a> -->
-
-                                        <form method="post" action="<?= $link->link('add_contract', frontend) ?>">
+                                        <form method="post" action="<?php echo $link->link('previous_jobs', frontend); ?>">
                                             <input type="hidden" name="employee_id" value="<?= $freelancer['employee_id'] ?>">
-                                            <button type="submit" class="btn btn-primary fa fa-plus" style="margin: 3px;"></button>
+                                            <input type="hidden" name="company_id" value="<?= $freelancer['company_id'] ?>">
+                                            <button type="submit" class="btn btn-info" style="margin: 3px;">Info</button>
                                         </form>
-
-
-                                        <?php
-                                        if ($freelancer['status'] != 0) { ?>
-                                            <form action="" method="post">
-                                                <input type="hidden" name="activate_id" value="<?php echo $freelancer['employee_id']; ?>">
-                                                <button class="btn btn-warning " type="submit" name="activateid" style="margin: 3px; padding-top: 3px;padding-bottom: 3px;"><?php echo $lang['activate']; ?></button>
-                                            </form>
-
-                                        <?php } else { ?>
-
-                                            <form action="" method="post">
-                                                <input type="hidden" name="deactivate_id" value="<?php echo $freelancer['employee_id']; ?>">
-                                                <button class="btn btn-warning" type="submit" name="deactivateid" style="margin: 3px; padding-top: 3px;padding-bottom: 3px;"><?php echo $lang['deactivate']; ?></button>
-                                            </form>
-
-
-                                        <?php }
-                                        ?>
-
-
 
                                     </td>
 

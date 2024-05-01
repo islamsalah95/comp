@@ -115,7 +115,7 @@ ORDER BY MIN(shift_check.id) DESC, employee.`emp_name` ASC");
 $current_month_working_duration = isset($current_month_working_details[0]) ? (int)$current_month_working_details[0]['total_duration'] : 0;
 
 if ($_SESSION['department'] == 3) {
-    $fc_max_working_hour = $db->run("SELECT working_hours,end_date
+    $fc_max_working_hour = $db->run("SELECT id,working_hours,end_date
     from employee_company_map 
     where employee_id = $employee_id 
     and company_id = $company_id

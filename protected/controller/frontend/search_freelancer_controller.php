@@ -44,9 +44,9 @@ if (isset($_POST['submit_freelancer']))
     SELECT DISTINCT
     e.*
     FROM employee e
-    LEFT JOIN employee_company ec ON e.employee_id = ec.employee_id AND ec.company_id = $company_id
+    LEFT JOIN employee_company ec ON e.employee_id = ec.employee_id 
     LEFT JOIN company comp ON comp.id = ec.company_id
-    WHERE e.department = '3'";
+    WHERE e.department IN (2,3)";
 
     $conditions = array();
 

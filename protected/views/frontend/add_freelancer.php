@@ -24,35 +24,16 @@
                             <div class="panel-control">
                                 <button class="btn btn-default" onclick="goBack()"><i class="fa fa-arrow-circle-left"></i> <?php echo $lang['go_back']; ?></button>
                             </div>
-                            $emplast_id  <?php var_dump($emplast_id) ?>
-                          $freelancer_company <?php var_dump($freelancer_company) ?>
                             <h3 class="panel-title"><?php echo $lang['add_freelancer']; ?></h3>
                         </div>
                         <form method="post" action="<?php $_SERVER['PHP_SELF']; ?>" enctype="multipart/form-data" id="addUserFrom">
                             <input type="hidden" name="profilesize" id="profilesize">
-                            
+
                             <div class="panel-body">
                                 <div class="row">
                                     <div class="col-sm-5">
 
-                                        <!-- <div class="form-group">
-                                            <div class="text-left">
-                                                <label class="text-muted"><?php echo $lang['IdNumber']; ?></label>
-                                                <input class="form-control" type="text" placeholder="<?php echo $lang['enter_your_IdNumber']; ?> *" name="IdNumber" required="required">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="text-left">
-                                                <label class="text-muted"><?php echo $lang['EstLaborOfficeId']; ?></label>
-                                                <input class="form-control" type="text" placeholder="<?php echo $lang['enter_your_EstLaborOfficId']; ?> *" name="EstLaborOfficeId" required="required">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="text-left">
-                                                <label class="text-muted"><?php echo $lang['EstSequenceNumber']; ?></label>
-                                                <input class="form-control" type="text" placeholder="<?php echo $lang['enter_your_EstSequenceNumber']; ?> *" name="EstSequenceNumber" required="required">
-                                            </div>
-                                        </div> -->
+
 
                                         <div class="form-group">
                                             <div class="text-left">
@@ -100,17 +81,55 @@
                                             </div>
                                         </div>
 
-                                        <!-- <div class="form-group">
-                                            <div><label class="text-muted"><?php echo $lang['is_mol_TWC']; ?> </label></div>
-                                            <ul class="list-inline">
-                                                <li class="mar-btm">
-                                                    <select name="is_molTWC" class="form-control " id="allowed">
-                                                        <option value="0"><?php echo $lang['no']; ?></option>
-                                                        <option value="1"><?php echo $lang['yes']; ?></option>
-                                                    </select>
-                                                </li>
-                                            </ul>
-                                        </div> -->
+                                        <div class="form-group">
+                                            <label for="job_title"><?= $lang['job_title'] ?> </label>
+                                            <select name="job_title" class="form-control select_job" required>
+                                                <option value=""><?= $lang['select_option'] ?></option>
+                                                <?php
+                                                foreach ($specialities as $specialityID => $speciality) {
+                                                ?>
+                                                    <option value="<?= $speciality[$_SESSION['site_lang'] . '_Title']; ?>"><?= $speciality[$_SESSION['site_lang'] . '_Title']; ?></option>
+                                                <?php
+                                                }
+                                                ?>
+                                            </select>
+                                        </div>
+
+
+
+
+
+
+
+                                        <div class="form-group">
+                                            <label class="text-muted text-capitalize"><?php echo 'النوع ' ?></label>
+                                            <select name="gender" class="form-control select_genderworking_type" required>
+                                                <option value="m"> ذكر </option>
+                                                <option value="f"> انثى </option>
+
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="text-muted text-capitalize"><?php echo "مستوى الخبرة" ?>:</label>
+                                            <select name="experience_years" class="form-control select_experience_years" required>
+                                                <option value="b"> مبتدِئ </option>
+                                                <option value="i"> متمرس </option>
+                                                <option value="s"> متمكن </option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="text-muted text-capitalize"><?php echo 'نوع العمل ' ?></label>
+                                            <select name="working_type" class="form-control select_working_type" required>
+                                                <option value="a"> حضور </option>
+                                                <option value="r"> عن بعد</option>
+                                            </select>
+                                        </div>
+
+
+
+
                                     </div>
                                     <div class="col-sm-1"></div>
                                     <div class="col-sm-6">
@@ -121,18 +140,73 @@
                                         </div>
 
                                         <div class="form-group text-left">
-                                            <label><?php echo $lang['city']; ?> * : </label>
-                                            <select name="city_id" id="select_city" placeholder="<?= $lang['select_city']; ?>" class="form-control">
-                                                <option value=""><?= $lang['select_city'] ?></option>
+                                            <label><?php echo "جنسية"; ?> : </label>
+                                            <select class="form-control selectpicker" name="nationality">
+                                                <option value=""><?= "جنسية" ?></option>
                                                 <?php
-                                                foreach ($cities as $city_id => $city) {
+                                                $nationalities = array();
+                                                if (file_exists(SERVER_ROOT . '/uploads/nationalities.json')) {
+                                                    $nationalities = file_get_contents(SERVER_ROOT . '/uploads/nationalities.json');
+                                                }
+                                                $nationalities = json_decode($nationalities, true);
+                                                foreach ($nationalities as $key => $value) {
                                                 ?>
-                                                    <option value="<?= $city_id; ?>"><?= $city['Arabic_Name']; ?></option>
+                                                    <option value="<?php echo $value['Arabic_Nationality']; ?>"><?php echo $value['Arabic_Nationality']; ?></option>
                                                 <?php
                                                 }
                                                 ?>
                                             </select>
                                         </div>
+
+
+
+
+                                        <div class="form-group text-left">
+                                            <label><?php echo $lang['country']; ?>:</label>
+                                            <select class="form-control selectpicker" name="country_id" id="country_id">
+                                                <option value=""><?php echo $lang['select_a_country']; ?></option>
+                                                <?php foreach ($countries as $country) { ?>
+                                                    <option value="<?php echo $country['id']; ?>"><?php echo $country['name']; ?></option>
+                                                <?php } ?>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group text-left">
+                                            <label><?php echo $lang['city']; ?>:</label>
+                                            <select class="form-control selectpicker" name="city_id" id="city_id">
+                                                <option value=""><?php echo $lang['select_city']; ?></option>
+                                            </select>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label class="text-muted text-capitalize"><?php echo "سنوات الخبرة " ?>:</label>
+                                            <select name="experiences" class="form-control select_experiences" required>
+                                                <?php for ($i = 0; $i < 60; $i++) { ?>
+                                                    <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
+                                                <?php } ?>
+                                            </select>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label class="text-muted text-capitalize"><?= $lang['baccalaureus'] ?></label>
+                                            <?php
+                                            $dropdown_arr = array($lang['nohighschool'], $lang['highschool'], $lang['bachelor'], $lang['master'], $lang['doctoral']);
+                                            ?>
+                                            <select name="baccalaureus" class="form-control select_baccalaureus" required>
+                                                <option value=""><?= $lang['select_option'] ?></option>
+                                                <?php
+                                                foreach ($dropdown_arr as $id => $deg_val) {
+                                                ?>
+                                                    <option value="<?= $deg_val; ?>"><?= $deg_val; ?></option>
+                                                <?php
+                                                }
+                                                ?>
+                                            </select>
+                                        </div>
+
+
 
                                         <div class="form-group">
                                             <label class="control-label"><?php echo $lang['upload_pic']; ?></label>
@@ -153,6 +227,10 @@
                                             <label class="control-label text-bold"><?php echo $lang['freelancer_company_details']; ?> </label>
                                         </div>
 
+
+
+
+
                                         <div class="form-group row">
                                             <div class="col-md-4"><label class="text-muted"><?php echo $lang['freelancer_type']; ?> : </label></div>
                                             <div class="col-md-8">
@@ -168,9 +246,7 @@
                                                 <label class="text-muted"><?php echo $lang['freelancer'] . ' ' . $lang['company']; ?> : </label>
                                             </div>
                                             <div class="col-md-8">
-                                                <select
-                                                class="demo-cs-multiselect" id="freelancer_company" name="freelancer_company[]" multiple tabindex="4"
-                                                >
+                                                <select class="demo-cs-multiselect" id="freelancer_company" name="freelancer_company[]" multiple tabindex="4">
                                                     <?php if (is_array($company)) foreach ($company as $value) { ?>
                                                         <option value="<?php echo $value['id']; ?>" <?php if ($value['id'] == $_SESSION['company_id']) echo "selected"; ?>><?php echo $value['company_name']; ?></option>
                                                     <?php } ?>
@@ -178,39 +254,14 @@
                                             </div>
                                         </div>
 
-                                        <!-- <div class="form-group">
-                                            <label class="control-label text-bold"><?php echo $lang['assign_company_add_work_hour']; ?> </label>
-                                        </div>
-
-                                        <div class="freelancer_cw_container">
-                                            <div class="form-group row">
-                                                <label class="control-label col-md-4 text-bold"><?php echo $lang['company']; ?> </label>
-                                                <label class="control-label col-md-4 text-right text-bold"><?php echo $lang['working_hours']; ?> </label>
-                                                <label class="control-label col-md-4 text-bold"><?php echo $lang['hour_rate']; ?> </label>
-                                            </div>
-                                            <div class="form-group row">
-                                                <div class="col-md-5">
-                                                    <select class="form-control selectpicker freelancer_company_select" name="freelancer_assigned_company[]" required>
-                                                        <?php if (is_array($company)) foreach ($company as $value) { ?>
-                                                            <option value="<?php echo $value['id']; ?>"><?php echo $value['company_name']; ?></option>
-                                                        <?php } ?>
-                                                    </select>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <input class="form-control freelancer_wh" type="text" placeholder="<?php echo $lang['working_hours']; ?>" name="freelancer_working_hours[]" required>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <input class="form-control freelancer_hr" type="text" placeholder="<?php echo $lang['hour_rate']; ?>" name="freelancer_hourly_rate[]" required>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="text-center">
-                                            <button type="button" class="btn btn-primary freelancer_assign_company"><i class="fa fa-plus"></i> <?php echo $lang['add_more'] ?></button>
-                                        </div> -->
 
                                     </div>
-
+                                    <div class="col-sm-12">
+                                        <div class="form-group text-left">
+                                            <label><?php echo "مهارات" ?>:</label>
+                                            <textarea type="text" placeholder="<?php echo "مهارات" ?>" name="skills" class="big-box-textarea form-control" rows="5" cols="50"></textarea>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
@@ -228,6 +279,73 @@
 
     </div>
 </div>
+
+<script src="<?php echo SITE_URL . '/assets/frontend/js/jquery-2.1.1.min.js'; ?>"></script>
+<script src="<?php echo SITE_URL . '/assets/frontend/js/bootstrap.min.js'; ?>"></script>
+<script src="<?php echo SITE_URL . '/assets/frontend/plugins/chosen/chosen.jquery.min.js'; ?>"></script>
+<!-- jQuery-Vaildation -->
+<script src="<?php echo SITE_URL . '/assets/frontend/plugins/jquery-validation/jquery.validate.min.js'; ?>"></script>
+<script src="<?php echo SITE_URL . '/assets/frontend/plugins/jquery-validation/additional-methods.min.js'; ?>"></script>
+<script src="<?php echo SITE_URL . '/assets/frontend/js/form-validation.js'; ?>"></script>
+
+<script src="<?php echo SITE_URL . '/assets/frontend/plugins/bootstrap-datepicker/bootstrap-datepicker.js'; ?>"></script>
+<script src="<?php echo SITE_URL . '/assets/frontend/plugins/bootstrap-datepicker/moment.js'; ?>" type="text/javascript"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
+<script src="<?php echo SITE_URL . '/assets/frontend/plugins/bootstrap-hijridate/js/bootstrap-hijri-datetimepicker.min.js'; ?>"></script>
+<script>
+    $(document).ready(function() {
+        $('#country_id').on('change', function() {
+            var countryId = $(this).val();
+            if (countryId) {
+                var url = '<?php echo $link->link("get_cities", frontend); ?>';
+                $.ajax({
+                    type: 'POST',
+                    url: url,
+                    data: {
+                        country_id: countryId
+                    },
+                    success: function(data) {
+                        $('#city_id').html(data);
+                    }
+                });
+            } else {
+                $('#city_id').html('<option value=""><?php echo $lang['select_city']; ?></option>');
+            }
+        });
+    });
+</script>
+
+
+<script>
+    $(document).ready(function() {
+        $('.select_job').chosen();
+        $('#select_city').chosen();
+
+        $('#privacy_container').show();
+        $('.privacy_checkbox').click(function() {
+            $(".register_button").attr('disabled', 'disabled');
+            if ($(this).is(":checked")) {
+                $(".register_button").removeAttr('disabled');
+            }
+        });
+
+        $('.birthdate').datepicker({
+            format: "yyyy-mm-dd",
+            autoclose: true,
+            endDate: '+0d',
+            todayHighlight: true,
+            startView: 2
+        });
+
+        $("#dob").hijriDatePicker({
+            showTodayButton: true,
+            showClear: true,
+            hijri: true,
+            format: 'YYYY-MM-DD'
+        });
+    });
+</script>
 
 <script>
     $(document).ready(function() {

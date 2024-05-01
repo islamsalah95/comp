@@ -136,24 +136,6 @@
 
     <div id="page-content">
 
-    <?php 
-    print_r($user_tasks);
-
-    // print_r($current_month_working_details);
-    //  print_r($user_projects);
-
-
-    //   print('current_month_working_duration : '.$current_month_working_duration.'');
-
-    //   print('fc_monthly_max_working_duration in contract seconds:'.$fc_monthly_max_working_duration);
-
-    //   if ($current_month_working_duration <= $fc_monthly_max_working_duration) {
-    //     echo "true";
-    // } else {
-    //     echo "false";
-    // }
-
-     ?>
 
         <?php if ($isfc_max_working_hourxx ==  false  || isset($result) && $result == false) {  ?>
 

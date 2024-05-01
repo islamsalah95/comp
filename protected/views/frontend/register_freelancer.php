@@ -150,7 +150,6 @@
                                                                 <option value="b"> مبتدِئ  </option>
                                                                 <option value="i"> متمرس </option>
                                                                 <option value="s"> متمكن </option>
-                                                                ?>
                                                             </select>
                                                         </div>
 
@@ -159,7 +158,6 @@
                                                             <select name="gender" class="form-control select_genderworking_type" required>
                                                                 <option value="m"> ذكر </option>
                                                                 <option value="f"> انثى </option>
-                                                                ?>
                                                             </select>
                                                         </div>
 
@@ -274,7 +272,6 @@
                                                             <select name="working_type" class="form-control select_working_type" required>
                                                                 <option value="a"> حضور </option>
                                                                 <option value="r"> عن بعد</option>
-                                                                ?>
                                                             </select>
                                                         </div>
 

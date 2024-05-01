@@ -11,15 +11,27 @@ define("DB_PASSWORD", "");
     // Set PDO error mode to exception
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    // $sql = "SELECT * FROM `employee`";
-    $user_id = 464;
+    $user_id=464;
     $sql = "
-        SELECT company.* 
-        FROM company
-        INNER JOIN employee_company ON employee_company.company_id = company.id 
-        INNER JOIN employee ON employee.employee_id = employee_company.employee_id  
-        WHERE employee.employee_id =$user_id;
-    ";
+    SELECT employee_company_map.* , company.* 
+    FROM employee_company_map 
+    left join company on  company.id = employee_company_map.company_id
+    WHERE employee_id = $user_id 
+    AND created_on = (
+        SELECT MAX(created_on) 
+        FROM employee_company_map 
+        WHERE employee_id = $user_id
+    );";
+
+    $sql = "
+    SELECT employee_company_map.* , company.* 
+    FROM employee_company_map 
+    left join company on  company.id = employee_company_map.company_id
+    WHERE employee_id = $user_id 
+    groub by 
+    company.company_id
+    );";
+
     // Prepare the SQL statement
     $stmt = $db->prepare($sql);
     // Execute the statement
@@ -27,7 +39,7 @@ define("DB_PASSWORD", "");
     // Fetch the result as an array
     $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
     // Print the result array
-             print_r( $results);
+    print_r( $results[0]['company_id']);
   
 //     try {
 
