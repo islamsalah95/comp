@@ -1,7 +1,7 @@
 <?php
 
 $users = $db->run("SELECT * from `employee` where `department`='1' AND `company_id` ='" . $_SESSION['company_id'] . "'")->fetchAll();
-// $users = myQuery("SELECT * from `employee` where `department`='1' AND `company_id` ='" . $_SESSION['company_id'] . "'");
+// $users = $db->myQuery("SELECT * from `employee` where `department`='1' AND `company_id` ='" . $_SESSION['company_id'] . "'");
 
 $load = isset($_REQUEST['del_id']) ? $_REQUEST['del_id'] : '';
 

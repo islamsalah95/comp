@@ -64,14 +64,8 @@
   </div>
 
   <div id="page-content">
-    <!-- <div class="panel-heading">
-      <span class="pull-right">
-        <a class="btn btn-primary" href="<?php echo $link->link('add_user', frontend); ?>"><i class="fa fa-plus"></i> Add User</a>
-      </span>
-    </div> -->
     <?php echo $display_msg ?? ''; ?>
     <?php
-    // echo "<pre>"; print_r($_SESSION); exit();
     if (($_SESSION['department'] == 5 || $_SESSION['department'] == 1 || $_SESSION['department'] == 4 || $_SESSION['department'] == 6) && (!isset($_REQUEST['employee_id']) || $_REQUEST['employee_id'] = '')) {
     ?>
       <div class="row">
@@ -103,8 +97,7 @@
                     <?php
                     $message_notification = 0;
                     $user_messages = array();
-               $user_messages = $db->run("SELECT * from `messages` where `employee_id`= '" . $user['employee_id'] . "' AND `company_id` = '" . $_SESSION['company_id'] . "' and admin_status = 0 ")->fetchAll();
-
+                    $user_messages = $db->run("SELECT * from `messages` where `employee_id`= '" . $user['employee_id'] . "' AND `company_id` = '" . $_SESSION['company_id'] . "' and admin_status = 0 ")->fetchAll();
                     $message_notification = count($user_messages);
                     if ($message_notification > 0) {
                     ?>
@@ -177,7 +170,6 @@
               <div style="clear: both;"></div>
           <?php
             }
-            // echo "<pre>"; print_r($messages); echo "</pre>";
           }
           ?>
         </div>
@@ -186,15 +178,11 @@
           <form method="post" class="form-inline" action="<?php $_SERVER['PHP_SELF']; ?>" enctype="multipart/form-data">
             <div class="form-group" style="width: 100%;">
               <input class="form-control" rows="2" style="width: 90%;" id="message" name="message" type="text">
-              <input type="hidden" name="employee_id" value="<?=$_POST['employee_id'] ?>">
+              <input type="hidden" name="employee_id" value="<?= $_POST['employee_id'] ?>">
               <button class="btn btn-info" type="submit" name="send_message"><?php echo $lang['send']; ?></button>
             </div>
           </form>
         </div>
-        
-        <!-- <textarea id="screen" cols="40" rows="10"> </textarea> <br>   -->
-        <!-- <input id="message" size="40">
-        <button id="button"> Send </button> -->
       </div>
     <?php
     }
@@ -202,89 +190,8 @@
   </div>
 </div>
 
-
-
-<?php
-
-if (isset($_POST['message']) && $_POST['message'] != '') {
-	$message_data = $_POST['message'];
-	$company_id = $_SESSION['company_id'];
-	$manager_id = 0;
-	$emp_status = 0;
-	$admin_status = 0;
-	if ($_SESSION['department'] == 5 || $_SESSION['department'] == 1 || $_SESSION['department'] == 4 || $_SESSION['department'] == 6) {
-		$manager_id = $_SESSION['employee_id'];
-	}
-	$employee_id = $_POST['employee_id'];
-	$ip_address = $_SERVER['REMOTE_ADDR'];
-	$create_on = date('y-m-d h:i:s');
-
-	$insert = $db->insert('messages', array(
-		'company_id' => $company_id,
-		'manager_id' => $manager_id,
-		'employee_id' => $employee_id,
-		'message_data' => $message_data,
-		'admin_status' => $admin_status,
-		'emp_status' => $emp_status,
-		'ip_address' => $ip_address,
-		'created_date' => $create_on
-	));
-
-  $_POST['message']='';
-	$_POST['employee_id']='';
-	// $db->debug();
-}
-
-if (isset($_REQUEST['view']) && $_REQUEST['view'] == 'getChat' && isset($_REQUEST['employee_id']) && $_REQUEST['employee_id'] != '') {
-	$extra_sql = '';
-	$user_status = '';
-	if ($_SESSION['department'] == 5 || $_SESSION['department'] == 1 || $_SESSION['department'] == 4 || $_SESSION['department'] == 6) {
-		$extra_sql = 'and admin_status = 0';
-		$user_status = 'admin_status';
-	}
-	if ($_SESSION['department'] == 2 || $_SESSION['department'] == 3) {
-		$extra_sql = 'and emp_status = 0';
-		$user_status = 'emp_status';
-	}
-	$messages = $db->run("SELECT * from `messages` where `employee_id`= '" . $_REQUEST['employee_id'] . "' AND `company_id` = '" . $_SESSION['company_id'] . "' " . $extra_sql)->fetchAll();
-
-	$msg_html = '';
-	if (isset($messages) && count($messages) > 0) {
-		foreach ($messages as $msg) {
-
-			$update = $db->update('messages', array($user_status => 1), array('message_id' => $msg['message_id']));
-
-			$is_my_msg = '';
-			if (($_SESSION['department'] == 2 || $_SESSION['department'] == 3) && $msg['manager_id'] == 0) {
-				$is_my_msg = 'my_msg';
-			}
-			if (($_SESSION['department'] == 5 || $_SESSION['department'] == 1 || $_SESSION['department'] == 4 || $_SESSION['department'] == 6) && $msg['manager_id'] != 0) {
-				$is_my_msg = 'my_msg';
-			}
-?>
-			<div class="s_msg_container <?php echo $is_my_msg; ?>">
-				<div class="msg_data"><?php echo $msg['message_data']; ?>
-					<span class="msg_time"><?php echo $msg['timestamp']; ?></span>
-				</div>
-			</div>
-			<div style="clear: both;"></div>
-<?php
-		}
-	}
-	// echo json_encode($messages);
-	echo $msg_html;
-	die();
-}
-
-?>
-
-<script>
-var msg_container = $(".messages_container");
-msg_container.scrollTop(msg_container.prop("scrollHeight"))
-</script>
-<!-- 
 <script type="text/javascript">
-  var employee_id = "<?php echo $_GET['employee_id']; ?>";
+  var employee_id = "<?php echo $_POST['employee_id']; ?>";
   var url = '<?php echo $link->link("get_messages", frontend); ?>';
   var view = '';
   if (employee_id > 0) {
@@ -313,40 +220,26 @@ msg_container.scrollTop(msg_container.prop("scrollHeight"))
 
     msg_container.scrollTop(msg_container.prop("scrollHeight"));
 
-    // $("form").submit(function(e) {
-    //   e.preventDefault();
-    //   $.post(
-    //     url, {
-    //       message: $('#message').val(),
-    //       view: view,
-    //       employee_id: employee_id
-    //     },
-    //     function(data) {
-    //       $('.messages_container').append(data);
-    //       msg_container.scrollTop(msg_container.prop("scrollHeight"));
-    //       $("#message").val("");
-    //     }
-    //   );
-    // });
+    $("form").submit(function(e) {
+      e.preventDefault();
+      $.post(
+        url, {
+          message: $('#message').val(),
+          view: view,
+          employee_id: employee_id
+        },
+        function(data) {
+          $('.messages_container').append(data);
+          msg_container.scrollTop(msg_container.prop("scrollHeight"));
+          $("#message").val("");
+        }
+      );
+    });
 
-    // if (view == 'getChat') {
-    //   update();
-    // }
-    // $('#button').click(function(){
-    //   $.post(
-    //     url,
-    //     {
-    //       message : $('#message').val(),
-    //       view : view,
-    //       employee_id : employee_id
-    //     },
-    //     function(data){
-    //       // $("#screen").val(data);
-    //       $('.messages_container').append(data);
-    //       $("#message").val("");
-    //     }
-    //   );
-    // });
+    if (view == 'getChat') {
+      update();
+    }
+
 
     $('#demo-dt-basic1').DataTable({
       "dom": "<'row'<'col-md-4'l><'col-md-8'Bf>>" + "<'row'<'col-md-6'><'col-md-6'>>" + "<'row'<'col-md-12't>><'row'<'col-md-6'i><'col-md-6'p>>",
@@ -380,4 +273,4 @@ msg_container.scrollTop(msg_container.prop("scrollHeight"))
       }
     });
   });
-</script> -->
+</script>

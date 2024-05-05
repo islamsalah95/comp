@@ -324,13 +324,13 @@ function sendEmailWithCurl($body,$to,$title) {
 // }
 //   $date_format = "DD-MM-YYYY";
 //     $user_companies = array($company_id);
-//     $companies = myQuery("SELECT emp.company_id, c.company_name FROM employee_company_map emp LEFT JOIN company c on c.id = emp.company_id WHERE employee_id  IN (SELECT e.employee_id FROM employee e LEFT JOIN employee_company_map m on m.employee_id = e.employee_id WHERE m.company_id = " .$company_id. " and e.department = 3)");
+//     $companies = $db->myQuery("SELECT emp.company_id, c.company_name FROM employee_company_map emp LEFT JOIN company c on c.id = emp.company_id WHERE employee_id  IN (SELECT e.employee_id FROM employee e LEFT JOIN employee_company_map m on m.employee_id = e.employee_id WHERE m.company_id = " .$company_id. " and e.department = 3)");
 //     if (!empty($companies)) {
 //         foreach ($companies as $c) {
 //             $user_companies[] = $c['company_id'];
 //         }
 //     }
-//     $report_details = myQuery("SELECT e.employee_id, e.emp_name,
+//     $report_details = $db->myQuery("SELECT e.employee_id, e.emp_name,
 //     SUM(case
 //         when sc.manual_edit = 1
 //         then sc.check_out_time else 0
@@ -363,7 +363,7 @@ function sendEmailWithCurl($body,$to,$title) {
 
 
 // // all companies
-// $companies = myQuery("
+// $companies = $db->myQuery("
 // SELECT id, company_name, daily_report, weekly_report, monthly_report
 // FROM company
 // WHERE is_valid = 1");

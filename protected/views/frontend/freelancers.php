@@ -99,7 +99,7 @@ $sql = "
 ";
 
 
-$freelancers = myQuery($sql);
+$freelancers = $db->myQuery($sql);
 
 // $freelancers = $db->run("SELECT `e`.* from `employee` e left join `employee_company_map` ecm on e.employee_id = ecm.employee_id where e.`department`='3' and e.`company_id` = " . $_SESSION['company_id'] . " and ecm.employee_id is NULL")->fetchAll();
 // $freelancers = $db->run("SELECT `e`.* from `employee` e left join `employee_company_map` ecm on e.employee_id = ecm.employee_id where e.`department`='3' and e.`company_id` = " . $_SESSION['company_id'] . " and ecm.employee_id is NULL")->fetchAll();

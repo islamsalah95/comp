@@ -86,7 +86,7 @@ if (isset($_POST['approve_time_submit'])) {
 
 if ($_SESSION['department'] == 2 || $_SESSION['department'] == 3) {
 
-    $report_details = myQuery(" SELECT 
+    $report_details = $db->myQuery(" SELECT 
     sc.id, 
     sc.current_dt,
     sc.check_in,
@@ -136,7 +136,7 @@ ORDER BY
 
 } else {
 
-$report_details = myQuery(" SELECT 
+$report_details = $db->myQuery(" SELECT 
     sc.id, 
     sc.current_dt,
     sc.check_in,

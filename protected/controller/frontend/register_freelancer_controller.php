@@ -9,7 +9,7 @@ $specialities = json_decode($specialities, true);
 
 
 /* countries */
-$countries = myQuery("SELECT id, name, phone_code FROM countries;");
+$countries = $db->myQuery("SELECT id, name, phone_code FROM countries;");
 /* countries*/
 
 
@@ -58,74 +58,74 @@ if (isset($_POST['submit_freelancer'])) {
 
 
 
+    $errors = [];
+    $validation = true;
 
+    if ($emp_name == '') {
+        $errors['emp_name'] = 'emp name is required';
+        $validation = false;
+    } 
+    if ($emp_surname == '') {
+        $errors['emp_surname'] = 'surname name is required';
+        $validation = false;
+    } 
+    
+    if ($email == '') {
+        $errors['email'] = 'email is required';
+        $validation = false;
+    } 
+    
+    if ($password == '') {
+        $errors['password'] = 'Password is required';
+        $validation = false;
+    } 
+    // else if (!preg_match('/^(?=.*\d)(?=.*[A-Za-z])[A-Za-z\d]{8,}$/', $password)) {
+    //     $errors['password'] = 'Password must be at least 8 characters long and contain at least one letter and one number';
+    // }
 
-    if (($fv->emptyfields(array('emp_name' => $emp_name), NULL))) {
-        $display_msg = '<div class="alert alert-danger">
-                        <i class="lnr lnr-sad"></i> <button class="close" data-dismiss="alert" type="button">&times;</button>' . $lang["enter_employee_name"] . '
-                        </div>';
-    } elseif (($fv->emptyfields(array('email' => $email), NULL))) {
-        $display_msg = '<div class="alert alert-danger">
-                        <i class="lnr lnr-sad"></i> <button class="close" data-dismiss="alert" type="button">&times;</button>' . $lang["enter_your_email_address"] . '
-                        </div>';
-    } elseif (!$fv->check_email($email)) {
-        $display_msg = '<div class="alert alert-danger">
-                        <i class="lnr lnr-sad"></i> <button class="close" data-dismiss="alert" type="button">&times;</button>' . $lang["enter_valid_email"] . '
-                        </div>';
-    } elseif ($db->exists('employee', array('email' => $email))) {
-        $display_msg = '<div class="alert alert-danger">
-                        <i class="lnr lnr-sad"></i> <button class="close" data-dismiss="alert" type="button">&times;</button>' . $lang["email_exists"] . '
-                        </div>';
-    } elseif ($fv->emptyfields(array('password' => $pass), NULL)) {
-        $display_msg = '<div class="alert alert-danger">
-                        <i class="lnr lnr-sad"></i> <button class="close" data-dismiss="alert" type="button">&times;</button>' . $lang["empty_password"] . '
-                        </div>';
-    } elseif ($nationality == '') {
-        $display_msg = '<div class="alert alert-danger">
-                        <i class="lnr lnr-sad"></i> <button class="close" data-dismiss="alert" type="button">&times;</button>' . 'nationality' . '
-                        </div>';
-    } elseif ($country = '') {
-        $display_msg = '<div class="alert alert-danger">
-                        <i class="lnr lnr-sad"></i> <button class="close" data-dismiss="alert" type="button">&times;</button>' . 'country' . '
-                        </div>';
-    } elseif ($city_id == '') {
-        $display_msg = '<div class="alert alert-danger">
-                        <i class="lnr lnr-sad"></i> <button class="close" data-dismiss="alert" type="button">&times;</button>' . $lang["required_field_error"] . '
-                        </div>';
-    } elseif ($skills == '') {
-        $display_msg = '<div class="alert alert-danger">
-                        <i class="lnr lnr-sad"></i> <button class="close" data-dismiss="alert" type="button">&times;</button>' . 'skills' . '
-                        </div>';
-    } elseif ($nationality == '') {
-        $display_msg = '<div class="alert alert-danger">
-                        <i class="lnr lnr-sad"></i> <button class="close" data-dismiss="alert" type="button">&times;</button>' . 'experiences' . '
-                        </div>';
-    } elseif ($working_type == '') {
-        $display_msg = '<div class="alert alert-danger">
-                        <i class="lnr lnr-sad"></i> <button class="close" data-dismiss="alert" type="button">&times;</button>' . 'working_type' . '
-                        </div>';
-    } elseif ($gender == '') {
-        $display_msg = '<div class="alert alert-danger">
-                        <i class="lnr lnr-sad"></i> <button class="close" data-dismiss="alert" type="button">&times;</button>' . 'gender' . '
-                        </div>';
-    } elseif ($account_type == '') {
-        $display_msg = '<div class="alert alert-danger">
-                        <i class="lnr lnr-sad"></i> <button class="close" data-dismiss="alert" type="button">&times;</button>' . 'account_type' . '
-                        </div>';
-    } elseif ($experience_years == '') {
-        $display_msg = '<div class="alert alert-danger">
-                        <i class="lnr lnr-sad"></i> <button class="close" data-dismiss="alert" type="button">&times;</button>' . 'experience_years' . '
-                        </div>';
-    } elseif ($dob == '') {
-        $display_msg = '<div class="alert alert-danger">
-                        <i class="lnr lnr-sad"></i> <button class="close" data-dismiss="alert" type="button">&times;</button>' . $lang["required_field_error"] . '
-                        </div>';
-    } elseif ($employee_national_number == '') {
-        $display_msg = '<div class="alert alert-danger">
-                        <i class="lnr lnr-sad"></i> <button class="close" data-dismiss="alert" type="button">&times;</button>' . $lang["required_field_error"] . '
-                        </div>';
-    } else {
+    if ($contact1 == '') {
+        $errors['phone_number'] = 'phone number is required';
+        $validation = false;
+    }
 
+    if ($dob == '') {
+        $errors['birtday'] = 'dob  is required';
+        $validation = false;
+    }
+
+    if ($employee_national_number == '') {
+        $errors['employee_national_number'] = 'employee national numberis required';
+        $validation = false;
+    }
+
+    if ($country == '') {
+        $errors['country'] = 'country  is required';
+        $validation = false;
+    } 
+    if ($city_id == '') {
+        $errors['city'] = 'city is required';
+        $validation = false;
+    } 
+    if ($skills == '') {
+        $errors['skills'] = 'skills is required';
+        $validation = false;
+    } 
+    if ($nationality == '') {
+        $errors['nationality'] = 'nationality is required';
+        $validation = false;
+    }
+     
+    if ($dob == '') {
+        $errors['birtday'] = 'dob  is required';
+        $validation = false;
+    }
+
+        if ($job_title == '') {
+        $errors['job_title'] = 'job  is required';
+        $validation = false;
+    }
+
+    if ($validation ) {        
         $encrypt_password = password_hash($pass, PASSWORD_BCRYPT, ['cost' => 10]);
         $insert = $db->insert('employee', array(
             'emp_name' => $emp_name,
@@ -155,9 +155,6 @@ if (isset($_POST['submit_freelancer'])) {
             'experiences' => $experiences,
             'emp_salary' => $emp_salary,
             'address' => $address,
-
-
-
         ));
         $emplast_id = $db->lastInsertId();
         if ($insert &&  $emplast_id) {
@@ -165,17 +162,12 @@ if (isset($_POST['submit_freelancer'])) {
                 'employee_company',
                 array('employee_id' => $emplast_id, 'company_id' => 1)
             );
+            $_SESSION[ 'msg' ] ='success register';
         }
 
 
-        if ($insert) {
-            echo '<div style="text-align: center; margin-top: 100px;">
-            <div class="alert alert-success" style="display: inline-block;">
-                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                '  . 'success register' . '
-            </div>
-            </div>';
 
+        if ($insert) {
             /////////////////////////////send user and passowrd/////////////////
             require SERVER_ROOT . '/protected/controller/frontend/send_user_pass.php';
             ///////////////////////////////////////////////////////////////////

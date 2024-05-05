@@ -96,26 +96,48 @@
                                                         <div class="form-group">
                                                             <div class="text-left">
                                                                 <label class="text-muted"><?php echo $lang['first_name']; ?></label>
-                                                                <input class="form-control" type="text" placeholder="<?php echo $lang['enter_your_name']; ?> *" name="emp_name">
+                                                                <input class="form-control" type="text"  value="<?php echo isset($emp_name) ? $emp_name : '' ?>"  placeholder="<?php echo $lang['enter_your_name']; ?> *" name="emp_name">
+                                                                <?php if (isset($errors) && isset($errors['emp_name'])) { ?>
+                                                                    <div class="alert alert-danger">
+                                                                        <?php echo $errors['emp_name']; ?>
+                                                                    </div>
+                                                                <?php } ?>
                                                             </div>
                                                         </div>
                                                         <div class="form-group">
                                                             <div class="text-left">
                                                                 <label class="text-muted"><?php echo $lang['last_name']; ?></label>
-                                                                <input class="form-control" type="text" placeholder="<?php echo $lang['enter_your_surname']; ?>" name="emp_surname">
+                                                                <input class="form-control" type="text" value="<?php echo isset($emp_surname) ? $emp_surname : '' ?>"  placeholder="<?php echo $lang['enter_your_surname']; ?>" name="emp_surname">
+                                                                <?php if (isset($errors) && isset($errors['emp_surname'])) { ?>
+                                                                    <div class="alert alert-danger">
+                                                                        <?php echo $errors['emp_surname']; ?>
+                                                                    </div>
+                                                                <?php } ?>
+                                                           
                                                             </div>
                                                         </div>
 
                                                         <div class="form-group">
                                                             <div class="text-left">
                                                                 <label class="text-muted"><?php echo $lang['email_id']; ?></label>
-                                                                <input class="form-control" type="text" placeholder="<?php echo $lang['enter_your_email_address']; ?> *" name="email">
+                                                                <input class="form-control" type="text" value="<?php echo isset($email) ? $email : '' ?>"  placeholder="<?php echo $lang['enter_your_email_address']; ?> *" name="email">
+                                                                <?php if (isset($errors) && isset($errors['email'])) { ?>
+                                                                    <div class="alert alert-danger">
+                                                                        <?php echo $errors['email']; ?>
+                                                                    </div>
+                                                                <?php } ?>
+                                                           
                                                             </div>
                                                         </div>
                                                         <div class="form-group">
                                                             <div class="text-left">
                                                                 <label class="text-muted"><?php echo $lang['password']; ?></label>
-                                                                <input class="form-control" type="password" placeholder="<?php echo $lang['enter_password']; ?> *" name="password">
+                                                                <input class="form-control" type="password" value="<?php echo isset($pass) ? $pass : '' ?>"  placeholder="<?php echo $lang['enter_password']; ?> *" name="password">
+                                                                <?php if (isset($errors) && isset($errors['password'])) { ?>
+                                                                    <div class="alert alert-danger">
+                                                                        <?php echo $errors['password']; ?>
+                                                                    </div>
+                                                                <?php } ?>
                                                             </div>
                                                         </div>
 
@@ -123,14 +145,19 @@
                                                         <div class="form-group hidden">
                                                             <div class="text-left">
                                                                 <label class="text-muted"><?php echo $lang['address']; ?></label>
-                                                                <textarea class="form-control" name="address" placeholder="<?php echo $lang['enter_your_address']; ?>"></textarea>
+                                                                <textarea class="form-control" name="address" value="<?php echo isset($address) ? $address : '' ?>"  placeholder="<?php echo $lang['enter_your_address']; ?>"></textarea>
                                                             </div>
                                                         </div>
                                                         <div class="form-group">
                                                             <div class="text-left">
                                                                 <label class="text-muted"><?php echo $lang['phone_number']; ?></label>
-                                                                <input class="form-control" type="text" placeholder="<?php echo $lang['enter_your_phone_number']; ?>" name="contact1">
+                                                                <input class="form-control" type="number" value="<?php echo isset($contact1) ? $contact1 : '' ?>"  placeholder="<?php echo $lang['enter_your_phone_number']; ?>" name="contact1">
                                                             </div>
+                                                            <?php if (isset($errors) && isset($errors['phone_number'])) { ?>
+                                                                    <div class="alert alert-danger">
+                                                                        <?php echo $errors['phone_number']; ?>
+                                                                    </div>
+                                                                <?php } ?>
                                                         </div>
 
 
@@ -147,7 +174,7 @@
                                                         <div class="form-group">
                                                             <label class="text-muted text-capitalize"><?php echo "مستوى الخبرة" ?>:</label>
                                                             <select name="experience_years" class="form-control select_experience_years" required>
-                                                                <option value="b"> مبتدِئ  </option>
+                                                                <option value="b"> مبتدِئ </option>
                                                                 <option value="i"> متمرس </option>
                                                                 <option value="s"> متمكن </option>
                                                             </select>
@@ -162,11 +189,11 @@
                                                         </div>
 
                                                         <div class="form-group">
-                                                        <div class="text-left">
-                                                            <label class="text-muted">الراتب المتوقع</label>
-                                                            <input class="form-control" name="emp_salary" value="0"></input>
+                                                            <div class="text-left">
+                                                                <label class="text-muted">الراتب المتوقع</label>
+                                                                <input type="number" class="form-control" name="emp_salary" value="0"></input>
+                                                            </div>
                                                         </div>
-                                                       </div>
 
 
                                                     </div>
@@ -183,12 +210,24 @@
 
                                                         <div class="form-group text-left">
                                                             <label><?php echo $lang['date_of_birth']; ?> * : </label>
-                                                            <input type="text" placeholder="yyyy-mm-dd" name="dob" id="dob" class="form-control" required />
+                                                            <input type="date" value="<?php echo isset($dob) ? $dob : '' ?>"  placeholder="yyyy-mm-dd" name="dob" id="dob" class="form-control" required />
+                                                            <?php if (isset($errors) && isset($errors['birtday'])) { ?>
+                                                                    <div class="alert alert-danger">
+                                                                        <?php echo $errors['birtday']; ?>
+                                                                    </div>
+                                                                <?php } ?>
+                                                        
                                                         </div>
 
                                                         <div class="form-group text-left">
                                                             <label><?php echo $lang['employee_national_number']; ?> * : </label>
-                                                            <input type="text" placeholder="<?php echo $lang['employee_national_number']; ?>" name="employee_national_number" class="form-control" required />
+                                                            <input type="number" value="<?php echo isset($employee_national_number) ? $employee_national_number : '' ?>"  placeholder="<?php echo $lang['employee_national_number']; ?>" name="employee_national_number" class="form-control" required />
+                                                     
+                                                            <?php if (isset($errors) && isset($errors['employee_national_number'])) { ?>
+                                                                    <div class="alert alert-danger">
+                                                                        <?php echo $errors['employee_national_number']; ?>
+                                                                    </div>
+                                                                <?php } ?>
                                                         </div>
 
 
@@ -210,6 +249,13 @@
                                                                 }
                                                                 ?>
                                                             </select>
+
+                                                            <?php if (isset($errors) && isset($errors['nationality'])) { ?>
+                                                                    <div class="alert alert-danger">
+                                                                        <?php echo $errors['nationality']; ?>
+                                                                    </div>
+                                                                <?php } ?>
+
                                                         </div>
 
 
@@ -223,6 +269,11 @@
                                                                     <option value="<?php echo $country['id']; ?>"><?php echo $country['name']; ?></option>
                                                                 <?php } ?>
                                                             </select>
+                                                            <?php if (isset($errors) && isset($errors['country'])) { ?>
+                                                                    <div class="alert alert-danger">
+                                                                        <?php echo $errors['country']; ?>
+                                                                    </div>
+                                                                <?php } ?>
                                                         </div>
 
                                                         <div class="form-group text-left">
@@ -230,6 +281,11 @@
                                                             <select class="form-control selectpicker" name="city_id" id="city_id">
                                                                 <option value=""><?php echo $lang['select_city']; ?></option>
                                                             </select>
+                                                            <?php if (isset($errors) && isset($errors['city'])) { ?>
+                                                                    <div class="alert alert-danger">
+                                                                        <?php echo $errors['city']; ?>
+                                                                    </div>
+                                                                <?php } ?>
                                                         </div>
 
 
@@ -272,6 +328,12 @@
                                                                 }
                                                                 ?>
                                                             </select>
+
+                                                            <?php if (isset($errors) && isset($errors['job_title'])) { ?>
+                                                                    <div class="alert alert-danger">
+                                                                        <?php echo $errors['job_title']; ?>
+                                                                    </div>
+                                                                <?php } ?>
                                                         </div>
 
                                                         <div class="form-group">
@@ -302,11 +364,11 @@
                                                         </div>
 
                                                         <div class="form-group">
-                                                        <div class="text-left">
-                                                            <label class="text-muted"><?php echo $lang['address']; ?></label>
-                                                            <input class="form-control" name="address" placeholder="<?php echo $lang['enter_your_address']; ?>"></input>
+                                                            <div class="text-left">
+                                                                <label class="text-muted"><?php echo $lang['address']; ?></label>
+                                                                <input class="form-control" name="address" value="<?php echo isset($address) ? $address : '' ?>"  placeholder="<?php echo $lang['enter_your_address']; ?>"></input>
+                                                            </div>
                                                         </div>
-                                                    </div>
 
 
 
@@ -316,9 +378,14 @@
 
 
                                                     <div class="col-sm-12">
-                                                    <div class="form-group text-left">
+                                                        <div class="form-group text-left">
                                                             <label><?php echo "مهارات" ?>:</label>
-                                                            <textarea type="text" placeholder="<?php echo "مهارات" ?>" name="skills" class="big-box-textarea form-control" rows="5" cols="50"></textarea>
+                                                            <textarea type="text" value="<?php echo isset($skills) ? $skills : '' ?>"  placeholder="<?php echo "مهارات" ?>" name="skills" class="big-box-textarea form-control" rows="5" cols="50"></textarea>
+                                                            <?php if (isset($errors) && isset($errors['skills'])) { ?>
+                                                                    <div class="alert alert-danger">
+                                                                        <?php echo $errors['skills']; ?>
+                                                                    </div>
+                                                                <?php } ?>
                                                         </div>
                                                     </div>
 
@@ -368,7 +435,7 @@
             $('#country_id').on('change', function() {
                 var countryId = $(this).val();
                 if (countryId) {
-                   var url = '<?php echo $link->link("get_cities", frontend); ?>';
+                    var url = '<?php echo $link->link("get_cities", frontend); ?>';
                     $.ajax({
                         type: 'POST',
                         url: url,

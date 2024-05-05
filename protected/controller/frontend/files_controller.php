@@ -95,12 +95,12 @@ $files = array();
 $file_list = array();
 if ($_SESSION['department'] == 5 || $_SESSION['department'] == 6 || $_SESSION['department'] == 1 || $_SESSION['department'] == 4) {
 	// $files = $db->run("SELECT * from `files` where `company_id` = '" . $_SESSION['company_id'] . "' ORDER BY `files`.`message_id` DESC ")->fetchAll();
-	$files = myQuery("SELECT * from `files` where `company_id` = '" . $_SESSION['company_id'] . "' ORDER BY `files`.`message_id` DESC ");
+	$files = $db->myQuery("SELECT * from `files` where `company_id` = '" . $_SESSION['company_id'] . "' ORDER BY `files`.`message_id` DESC ");
 
 	// $file_list = $db->run("SELECT * from `employee` where `department` = 2 AND `company_id` = '". $_SESSION['company_id']."' ")->fetchAll();
 	$user_companies = array($_SESSION['company_id']);
 	// $companies = $db->run("SELECT emp.company_id, c.company_name FROM employee_company_map emp LEFT JOIN company c on c.id = emp.company_id WHERE employee_id  IN (SELECT e.employee_id FROM employee e LEFT JOIN employee_company_map m on m.employee_id = e.employee_id WHERE m.company_id = " . $_SESSION['company_id'] . " and e.department = 3)")->fetchAll();
-	$companies = myQuery("SELECT emp.company_id, c.company_name FROM employee_company_map emp LEFT JOIN company c on c.id = emp.company_id WHERE employee_id  IN (SELECT e.employee_id FROM employee e LEFT JOIN employee_company_map m on m.employee_id = e.employee_id WHERE m.company_id = " . $_SESSION['company_id'] . " and e.department = 3)");
+	$companies = $db->myQuery("SELECT emp.company_id, c.company_name FROM employee_company_map emp LEFT JOIN company c on c.id = emp.company_id WHERE employee_id  IN (SELECT e.employee_id FROM employee e LEFT JOIN employee_company_map m on m.employee_id = e.employee_id WHERE m.company_id = " . $_SESSION['company_id'] . " and e.department = 3)");
 
 	if (!empty($companies)) {
 		foreach ($companies as $c) {
@@ -108,7 +108,7 @@ if ($_SESSION['department'] == 5 || $_SESSION['department'] == 6 || $_SESSION['d
 		}
 	}
 	// $file_list = $db->run("SELECT * from `employee` where (`department` = 2 AND `company_id` = '" . $_SESSION['company_id'] . "') or (`department` = 3 AND `company_id` in (" . implode(',', $user_companies) . ")) ")->fetchAll();
-	$file_list = myQuery("SELECT * from `employee` where (`department` = 2 AND `company_id` = '" . $_SESSION['company_id'] . "') or (`department` = 3 AND `company_id` in (" . implode(',', $user_companies) . ")) ");
+	$file_list = $db->myQuery("SELECT * from `employee` where (`department` = 2 AND `company_id` = '" . $_SESSION['company_id'] . "') or (`department` = 3 AND `company_id` in (" . implode(',', $user_companies) . ")) ");
 
 
 
@@ -116,8 +116,8 @@ if ($_SESSION['department'] == 5 || $_SESSION['department'] == 6 || $_SESSION['d
 	// $files = $db->run("SELECT * from `files` where `employee_id`= '" . $_SESSION['employee_id'] . "' AND `company_id` = '" . $_SESSION['company_id'] . "' ORDER BY `files`.`message_id` DESC ")->fetchAll();
 	// $file_list = $db->run("SELECT * from `employee` where `department` = 4 AND `company_id` = '" . $_SESSION['company_id'] . "' ")->fetchAll();
 
-	$files = myQuery("SELECT * from `files` where `employee_id`= '" . $_SESSION['employee_id'] . "' AND `company_id` = '" . $_SESSION['company_id'] . "' ORDER BY `files`.`message_id` DESC ");
-	$file_list = myQuery("SELECT * from `employee` where `department` = 4 AND `company_id` = '" . $_SESSION['company_id'] . "' ");
+	$files = $db->myQuery("SELECT * from `files` where `employee_id`= '" . $_SESSION['employee_id'] . "' AND `company_id` = '" . $_SESSION['company_id'] . "' ORDER BY `files`.`message_id` DESC ");
+	$file_list = $db->myQuery("SELECT * from `employee` where `department` = 4 AND `company_id` = '" . $_SESSION['company_id'] . "' ");
 
 }
 

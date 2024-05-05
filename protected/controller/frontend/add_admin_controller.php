@@ -80,9 +80,9 @@ if (isset($_POST['submit_user'])) {
                                 $display_msg = '<div class="alert alert-success">
                                     <i class="lnr lnr-sad"></i> <button class="close" data-dismiss="alert" type="button">&times;</button>' . $lang["add_success"] . '
                                 </div>';
-                                 /////////////////////////////send user and passowrd
-require SERVER_ROOT . '/protected/controller/frontend/send_user_pass.php';
-///////////////////////////////////////////////////////////////////
+                                /////////////////////////////send user and passowrd
+                                require SERVER_ROOT . '/protected/controller/frontend/send_user_pass.php';
+                                ///////////////////////////////////////////////////////////////////
                             }
                         }
                     }
@@ -119,12 +119,11 @@ require SERVER_ROOT . '/protected/controller/frontend/send_user_pass.php';
                     $display_msg = '<div class="alert alert-success">
                         <i class="lnr lnr-sad"></i> <button class="close" data-dismiss="alert" type="button">&times;</button>' . $lang["add_success"] . '
                     </div>';
- /////////////////////////////send user and passowrd
-require SERVER_ROOT . '/protected/controller/frontend/send_user_pass.php';
-///////////////////////////////////////////////////////////////////
+                    /////////////////////////////send user and passowrd
+                    require SERVER_ROOT . '/protected/controller/frontend/send_user_pass.php';
+                    ///////////////////////////////////////////////////////////////////
                 }
             }
         }
     }
 }
-?>

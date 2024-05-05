@@ -10,6 +10,7 @@
         </div>
     </div>
 
+
     <div id="page-content">
         <div class="panel-heading">
             <span class="pull-right">
@@ -27,7 +28,9 @@
                         <th><?php echo $lang['id']; ?></th>
                         <th><?php echo $lang['name']; ?></th>
                         <th><?php echo $lang['email']; ?></th>
-                        
+                        <th><?php echo $lang['city']; ?></th>
+                        <th><?php echo $lang['country']; ?></th>
+
                         <th><?php echo isset($lang['gender']) ? $lang['gender'] : 'النوع'; ?></th>
                         <th><?php echo isset($lang['nationality']) ? $lang['nationality'] : 'الجنسية'; ?></th>
                         <th><?php echo isset($lang['job_title']) ? $lang['job_title'] : 'تخصص'; ?></th>
@@ -53,6 +56,15 @@
                                 <td>
                                     <?php echo $freelancer['email']; ?>
                                 </td>
+
+                                <td>
+                                    <?php echo $freelancer['city_name']; ?>
+                                </td>
+
+                                <td>
+                                    <?php echo $freelancer['country_name']; ?>
+                                </td>
+
                                                                 <td>
                                   <?php echo $freelancer['gender']=='m' ? 
                                     'ذكر'

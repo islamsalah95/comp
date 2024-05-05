@@ -25,7 +25,7 @@ $employee_id = $_SESSION['employee_id'];
 //     LEFT JOIN company comp ON comp.id = ec.company_id
 //     WHERE e.department = '3'
 //     AND e.job_title LIKE '%$job_title%';";
-//     $freelancers = myQuery($sql);
+//     $freelancers = $db->myQuery($sql);
 //     $is_search=true;
 //     if(!$freelancers){
 //         $is_search=false;
@@ -64,7 +64,7 @@ if (isset($_POST['submit_freelancer']))
         $sql .= " AND " . implode(" AND ", $conditions);
     }
 
-    $freelancers = myQuery($sql);
+    $freelancers = $db->myQuery($sql);
     
     
     $is_search=true;

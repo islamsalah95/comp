@@ -8,7 +8,7 @@ $user_name=$db->get_var('employee',array('employee_id'=>$emp),'emp_name');
 //     where projects.`company_id` ='". $_SESSION['company_id']."' 
 //     GROUP BY projects.project_id ORDER by projects.project_id DESC")->fetchAll();
 
-$projects_details=myQuery("SELECT projects.*, COUNT( project_assign.id ) 
+$projects_details= $db->myQuery("SELECT projects.*, COUNT( project_assign.id ) 
     AS project_assign_count FROM projects LEFT JOIN project_assign 
     ON projects.project_id=project_assign.project_id  
     where projects.`company_id` ='". $_SESSION['company_id']."' 

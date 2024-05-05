@@ -75,7 +75,7 @@ if (isset($_REQUEST['twc'])) {
 }
 
 if ($_SESSION['department'] == 5 || $_SESSION['department'] == 1 || $_SESSION['department'] == 4 || $_SESSION['department'] == 6) {
-    $employees = myQuery($sql);
+    $employees = $db->myQuery($sql);
 }
 
 if (SITE_DATE_FORMAT == 1) {

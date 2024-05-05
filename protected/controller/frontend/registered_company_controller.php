@@ -5,7 +5,7 @@ if ($_SESSION['department'] != 5 && $_SESSION['department'] != 4 && $_SESSION['d
 }
 
 $company = $db->run("SELECT * from `company` WHERE `is_valid` = 0")->fetchAll();
-//$company = myQuery("SELECT * from `company` WHERE `is_valid` = 0");
+//$company = $db->myQuery("SELECT * from `company` WHERE `is_valid` = 0");
 
 $company_count = count($company);
 

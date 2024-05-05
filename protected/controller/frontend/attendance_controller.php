@@ -41,8 +41,8 @@ if (isset($_POST['show_data'])) {
 
 // $report_details = $db->run("SELECT employee.emp_name, shift_check.current_dt, MIN(shift_check.check_in) as check_in, MAX(shift_check.check_out) as check_out, SUM(shift_check.check_out_time) as working_hours from shift_check LEFT JOIN employee on employee.employee_id = shift_check.employee_id WHERE shift_check.company_id = '". $_SESSION['company_id']."' and shift_check.current_dt BETWEEN '".$start_date."' AND '".$end_date."' GROUP BY shift_check.employee_id, shift_check.current_dt ORDER BY employee.`emp_name` ASC, shift_check.`current_dt` DESC")->fetchAll();
 if ($_SESSION['department'] == 2 || $_SESSION['department'] == 3) {
-    // $report_details = myQuery("SELECT employee.employee_id, concat(employee.emp_name, ' ',employee.emp_surname) as emp_name, shift_check.current_dt, MIN(shift_check.check_in) as check_in, MAX(shift_check.check_out) as check_out, SUM(shift_check.check_out_time) as working_hours, count(*) as checkin_count, manual_edit, cron_edit from shift_check LEFT JOIN employee on employee.employee_id = shift_check.employee_id WHERE shift_check.company_id = '" . $_SESSION['company_id'] . "' and shift_check.employee_id = '" . $_SESSION['employee_id'] . "' and shift_check.current_dt BETWEEN '" . $start_date . "' AND '" . $end_date . "' GROUP BY shift_check.employee_id, shift_check.current_dt ORDER BY employee.`emp_name` ASC, shift_check.`current_dt` DESC");
-    $report_details = myQuery("SELECT
+    // $report_details = $db->myQuery("SELECT employee.employee_id, concat(employee.emp_name, ' ',employee.emp_surname) as emp_name, shift_check.current_dt, MIN(shift_check.check_in) as check_in, MAX(shift_check.check_out) as check_out, SUM(shift_check.check_out_time) as working_hours, count(*) as checkin_count, manual_edit, cron_edit from shift_check LEFT JOIN employee on employee.employee_id = shift_check.employee_id WHERE shift_check.company_id = '" . $_SESSION['company_id'] . "' and shift_check.employee_id = '" . $_SESSION['employee_id'] . "' and shift_check.current_dt BETWEEN '" . $start_date . "' AND '" . $end_date . "' GROUP BY shift_check.employee_id, shift_check.current_dt ORDER BY employee.`emp_name` ASC, shift_check.`current_dt` DESC");
+    $report_details = $db->myQuery("SELECT
     employee.employee_id,
     CONCAT(employee.emp_name, ' ', employee.emp_surname) as emp_name,
     shift_check.current_dt,
@@ -69,7 +69,7 @@ ORDER BY
     shift_check.`current_dt` DESC");
 
 
-    // $report_details = myQuery("SELECT employee.employee_id, concat(employee.emp_name, ' ',employee.emp_surname) as emp_name, shift_check.current_dt, MIN(shift_check.check_in) as check_in, MAX(shift_check.check_out) as check_out, SUM(shift_check.check_out_time) as working_hours, count(*) as checkin_count, manual_edit, cron_edit from shift_check LEFT JOIN employee on employee.employee_id = shift_check.employee_id WHERE shift_check.company_id = '" . $_SESSION['company_id'] . "' and shift_check.employee_id = '" . $_SESSION['employee_id'] . "' and shift_check.current_dt BETWEEN '" . $start_date . "' AND '" . $end_date . "' GROUP BY shift_check.employee_id, shift_check.current_dt ORDER BY employee.`emp_name` ASC, shift_check.`current_dt` DESC");
+    // $report_details = $db->myQuery("SELECT employee.employee_id, concat(employee.emp_name, ' ',employee.emp_surname) as emp_name, shift_check.current_dt, MIN(shift_check.check_in) as check_in, MAX(shift_check.check_out) as check_out, SUM(shift_check.check_out_time) as working_hours, count(*) as checkin_count, manual_edit, cron_edit from shift_check LEFT JOIN employee on employee.employee_id = shift_check.employee_id WHERE shift_check.company_id = '" . $_SESSION['company_id'] . "' and shift_check.employee_id = '" . $_SESSION['employee_id'] . "' and shift_check.current_dt BETWEEN '" . $start_date . "' AND '" . $end_date . "' GROUP BY shift_check.employee_id, shift_check.current_dt ORDER BY employee.`emp_name` ASC, shift_check.`current_dt` DESC");
 
 
 } else {
@@ -91,7 +91,7 @@ $query = "SELECT employee.employee_id, concat(employee.emp_name, ' ',employee.em
 
 
 
-    // $report_details = myQuery("SELECT employee.employee_id, concat(employee.emp_name, ' ',employee.emp_surname) as emp_name, shift_check.current_dt, MIN(shift_check.check_in) as check_in, MAX(shift_check.check_out) as check_out, SUM(shift_check.check_out_time) as working_hours, count(*) as checkin_count, manual_edit, cron_edit from shift_check LEFT JOIN employee on employee.employee_id = shift_check.employee_id WHERE shift_check.company_id = '" . $_SESSION['company_id'] . "' and shift_check.current_dt BETWEEN '" . $start_date . "' AND '" . $end_date . "' and (employee.`department` = 2 OR employee.`department` = 3) GROUP BY shift_check.employee_id, shift_check.current_dt ORDER BY employee.`emp_name` ASC, shift_check.`current_dt` DESC");
+    // $report_details = $db->myQuery("SELECT employee.employee_id, concat(employee.emp_name, ' ',employee.emp_surname) as emp_name, shift_check.current_dt, MIN(shift_check.check_in) as check_in, MAX(shift_check.check_out) as check_out, SUM(shift_check.check_out_time) as working_hours, count(*) as checkin_count, manual_edit, cron_edit from shift_check LEFT JOIN employee on employee.employee_id = shift_check.employee_id WHERE shift_check.company_id = '" . $_SESSION['company_id'] . "' and shift_check.current_dt BETWEEN '" . $start_date . "' AND '" . $end_date . "' and (employee.`department` = 2 OR employee.`department` = 3) GROUP BY shift_check.employee_id, shift_check.current_dt ORDER BY employee.`emp_name` ASC, shift_check.`current_dt` DESC");
 
 
 }

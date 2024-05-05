@@ -32,7 +32,7 @@ $end_date = date('Y-m-d');
 $start_date = date('Y-m-d', strtotime("-1 months"));
 // $report_details = $db->run("SELECT shift_check.id, employee.emp_name, shift_check.current_dt, shift_check.check_in, shift_check.check_out, shift_check.check_out_time as working_hours, manual_edit, cron_edit from shift_check LEFT JOIN employee on employee.employee_id = shift_check.employee_id WHERE shift_check.company_id = '" . $company_id . "' and employee.employee_id = '" . $employee_id . "' and shift_check.current_dt BETWEEN '" . $start_date . "' AND '" . $end_date . "' and (employee.`department` = 2 or employee.`department` = 3)  ORDER BY shift_check.`id` DESC, employee.`emp_name` ASC")->fetchAll();
 
-$report_details = myQuery("SELECT
+$report_details = $db->myQuery("SELECT
     employee.employee_id,
     CONCAT(employee.emp_name, ' ', employee.emp_surname) as emp_name,
     shift_check.current_dt,
@@ -89,7 +89,7 @@ if( $isfc_max_working_hourxx==false){
     $month_end_date = $fc_max_working_hourxx[0]['end_date'];
 }
 
-$test = myQuery("SELECT
+$test = $db->myQuery("SELECT
     employee.employee_id,
     employee.emp_name,
     SUM(shift_check.check_out_time) as total_duration
@@ -101,9 +101,9 @@ WHERE shift_check.company_id = '" . $company_id . "'
     AND (employee.`department` = 2 OR employee.`department` = 3)
 GROUP BY employee.employee_id
 ORDER BY MIN(shift_check.id) DESC, employee.`emp_name` ASC");
-// $current_month_working_details = myQuery("SELECT employee.employee_id, employee.emp_name, SUM(shift_check.check_out_time) as total_duration from shift_check LEFT JOIN employee on employee.employee_id = shift_check.employee_id WHERE shift_check.company_id = '" . $company_id . "' and employee.employee_id = '" . $employee_id . "' and shift_check.current_dt BETWEEN '" . $month_start_date . "' AND '" . $month_end_date . "' and (employee.`department` = 2 or employee.`department` = 3) GROUP BY employee.employee_id  ORDER BY shift_check.`id` DESC, employee.`emp_name` ASC");
+// $current_month_working_details = $db->myQuery("SELECT employee.employee_id, employee.emp_name, SUM(shift_check.check_out_time) as total_duration from shift_check LEFT JOIN employee on employee.employee_id = shift_check.employee_id WHERE shift_check.company_id = '" . $company_id . "' and employee.employee_id = '" . $employee_id . "' and shift_check.current_dt BETWEEN '" . $month_start_date . "' AND '" . $month_end_date . "' and (employee.`department` = 2 or employee.`department` = 3) GROUP BY employee.employee_id  ORDER BY shift_check.`id` DESC, employee.`emp_name` ASC");
 // $current_month_working_duration = isset($current_month_working_details[0]) ? (int)$current_month_working_details[0]['total_duration'] : 0;
-$current_month_working_details = myQuery("SELECT
+$current_month_working_details = $db->myQuery("SELECT
     employee.employee_id,
     employee.emp_name,
     SUM(shift_check.check_out_time) as total_duration

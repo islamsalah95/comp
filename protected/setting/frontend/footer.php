@@ -192,12 +192,12 @@
                         $messages = array();
                         if ($_SESSION['department'] == 5 || $_SESSION['department'] == 1 || $_SESSION['department'] == 4 || $_SESSION['department'] == 6) {
                             // $messages = $db->run("SELECT * from `messages` where  `company_id` = '" . $_SESSION['company_id'] . "' and admin_status = 0 ")->fetchAll();
-                            $messages = myQuery("SELECT * from `messages` where  `company_id` = '" . $_SESSION['company_id'] . "' and admin_status = 0 ");
+                            $messages = $db->myQuery("SELECT * from `messages` where  `company_id` = '" . $_SESSION['company_id'] . "' and admin_status = 0 ");
                         }
 
                         if ($_SESSION['department'] == 2 || $_SESSION['department'] == 3) {
                             // $messages = $db->run("SELECT * from `messages` where `employee_id`= '" . $_SESSION['employee_id'] . "' AND `company_id` = '" . $_SESSION['company_id'] . "' and emp_status = 0 ")->fetchAll();
-                            $messages = myQuery("SELECT * from `messages` where `employee_id`= '" . $_SESSION['employee_id'] . "' AND `company_id` = '" . $_SESSION['company_id'] . "' and emp_status = 0 ");
+                            $messages = $db->myQuery("SELECT * from `messages` where `employee_id`= '" . $_SESSION['employee_id'] . "' AND `company_id` = '" . $_SESSION['company_id'] . "' and emp_status = 0 ");
                         }
                         $message_notification = count($messages);
                         ?>
@@ -252,12 +252,12 @@
                         $emails = array();
                         if ($_SESSION['department'] == 5 || $_SESSION['department'] == 1 || $_SESSION['department'] == 4 || $_SESSION['department'] == 6) {
                             // $emails = $db->run("SELECT * from `emails` where  `company_id` = '" . $_SESSION['company_id'] . "' and admin_status = 0 ")->fetchAll();
-                            $emails = myQuery("SELECT * from `emails` where  `company_id` = '" . $_SESSION['company_id'] . "' and admin_status = 0 ");
+                            $emails = $db->myQuery("SELECT * from `emails` where  `company_id` = '" . $_SESSION['company_id'] . "' and admin_status = 0 ");
                         }
 
                         if ($_SESSION['department'] == 2 || $_SESSION['department'] == 3) {
                             // $emails = $db->run("SELECT * from `emails` where `employee_id`= '" . $_SESSION['employee_id'] . "' AND `company_id` = '" . $_SESSION['company_id'] . "' and emp_status = 0 ")->fetchAll();
-                            $emails = myQuery("SELECT * from `emails` where `employee_id`= '" . $_SESSION['employee_id'] . "' AND `company_id` = '" . $_SESSION['company_id'] . "' and emp_status = 0 ");
+                            $emails = $db->myQuery("SELECT * from `emails` where `employee_id`= '" . $_SESSION['employee_id'] . "' AND `company_id` = '" . $_SESSION['company_id'] . "' and emp_status = 0 ");
                         }
                         $email_notification = count($emails);
                         ?>
@@ -301,12 +301,12 @@
                         $files = array();
                         if ($_SESSION['department'] == 5 || $_SESSION['department'] == 1 || $_SESSION['department'] == 4 || $_SESSION['department'] == 6) {
                             // $files = $db->run("SELECT * from `files` where  `company_id` = '" . $_SESSION['company_id'] . "' and admin_status = 0 ")->fetchAll();
-                            $files = myQuery("SELECT * from `files` where  `company_id` = '" . $_SESSION['company_id'] . "' and admin_status = 0 ");
+                            $files = $db->myQuery("SELECT * from `files` where  `company_id` = '" . $_SESSION['company_id'] . "' and admin_status = 0 ");
                         }
 
                         if ($_SESSION['department'] == 2 || $_SESSION['department'] == 3) {
                             // $files = $db->run("SELECT * from `files` where `employee_id`= '" . $_SESSION['employee_id'] . "' AND `company_id` = '" . $_SESSION['company_id'] . "' and emp_status = 0 ")->fetchAll();
-                            $files = myQuery("SELECT * from `files` where `employee_id`= '" . $_SESSION['employee_id'] . "' AND `company_id` = '" . $_SESSION['company_id'] . "' and emp_status = 0 ");
+                            $files = $db->myQuery("SELECT * from `files` where `employee_id`= '" . $_SESSION['employee_id'] . "' AND `company_id` = '" . $_SESSION['company_id'] . "' and emp_status = 0 ");
                         }
                         $file_notification = count($files);
                         ?>

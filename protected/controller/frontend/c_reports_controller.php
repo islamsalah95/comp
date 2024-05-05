@@ -51,7 +51,7 @@ if ($_SESSION['department'] == 2 || $_SESSION['department'] == 3) {
     //     GROUP by sc.employee_id 
     //     ORDER BY e.`emp_name` ASC")->fetchAll();
 
-    $report_details = myQuery("SELECT e.employee_id, e.emp_name,  
+    $report_details = $db->myQuery("SELECT e.employee_id, e.emp_name,  
     SUM(case
         when sc.manual_edit = 1
         then sc.check_out_time else 0
@@ -66,7 +66,7 @@ if ($_SESSION['department'] == 2 || $_SESSION['department'] == 3) {
 
     $user_companies = array($_SESSION['company_id']);
     // $companies = $db->run("SELECT emp.company_id, c.company_name FROM employee_company_map emp LEFT JOIN company c on c.id = emp.company_id WHERE employee_id  IN (SELECT e.employee_id FROM employee e LEFT JOIN employee_company_map m on m.employee_id = e.employee_id WHERE m.company_id = " . $_SESSION['company_id'] . " and e.department = 3)")->fetchAll();
-    $companies = myQuery("SELECT emp.company_id, c.company_name FROM employee_company_map emp LEFT JOIN company c on c.id = emp.company_id WHERE employee_id  IN (SELECT e.employee_id FROM employee e LEFT JOIN employee_company_map m on m.employee_id = e.employee_id WHERE m.company_id = " . $_SESSION['company_id'] . " and e.department = 3)");
+    $companies = $db->myQuery("SELECT emp.company_id, c.company_name FROM employee_company_map emp LEFT JOIN company c on c.id = emp.company_id WHERE employee_id  IN (SELECT e.employee_id FROM employee e LEFT JOIN employee_company_map m on m.employee_id = e.employee_id WHERE m.company_id = " . $_SESSION['company_id'] . " and e.department = 3)");
 
     
     if (!empty($companies)) {
@@ -87,7 +87,7 @@ if ($_SESSION['department'] == 2 || $_SESSION['department'] == 3) {
     //     or (e.company_id in (" . implode(',', $user_companies) . ") and e.department = 3) 
     //     GROUP by e.employee_id
     //     ORDER BY e.`emp_name` ASC")->fetchAll();
-    $report_details = myQuery("SELECT e.employee_id, e.emp_name,
+    $report_details = $db->myQuery("SELECT e.employee_id, e.emp_name,
     SUM(case
         when sc.manual_edit = 1
         then sc.check_out_time else 0
@@ -103,7 +103,7 @@ if ($_SESSION['department'] == 2 || $_SESSION['department'] == 3) {
 
 $iasql = "SELECT e.employee_id FROM `employee` e LEFT JOIN shift_check sc on sc.employee_id = e.employee_id WHERE e.company_id = " . $_SESSION['company_id'] . " and e.department = 2 and sc.employee_id is null group by e.employee_id";
 // $inactive_employees = $db->run($iasql)->fetchAll();
-$inactive_employees =  myQuery($iasql);
+$inactive_employees =  $db->myQuery($iasql);
 
 $inactive_emp = array();
 if (count($inactive_employees) > 0) {

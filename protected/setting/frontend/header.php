@@ -76,7 +76,6 @@
                 </div>
 
                 <div class="navbar-content clearfix">
-                <?php echo 'company_id='  . $_SESSION[ 'company_id' ]  . 'emplye_id=' . $_SESSION[ 'employee_id' ]    ?>
 
                     <ul class="nav navbar-top-links pull-left">
 

@@ -3,12 +3,12 @@
 // $freelancers = $db->run("SELECT * from `employee` where `department`='3' AND `company_id` ='" . $_SESSION['company_id'] . "'")->fetchAll();
 if ($_SESSION['department'] == 5){
      $freelancers = $db->run("SELECT * from `employee` where `department`='3'")->fetchAll();
-    // $freelancers = myQuery("SELECT * from `employee` where `department`='3'");
+    // $freelancers = $db->myQuery("SELECT * from `employee` where `department`='3'");
 
 }
 else{
     $freelancers = $db->run("SELECT * from `employee` e left join `employee_company_map` ecm on e.employee_id = ecm.employee_id where e.`department`='3' and ecm.company_id in (" . implode(',', $user_companies) . ") ")->fetchAll();
-    // $freelancers = myQuery("SELECT * from `employee` e left join `employee_company_map` ecm on e.employee_id = ecm.employee_id where e.`department`='3' and ecm.company_id in (" . implode(',', $user_companies) . ") ");
+    // $freelancers = $db->myQuery("SELECT * from `employee` e left join `employee_company_map` ecm on e.employee_id = ecm.employee_id where e.`department`='3' and ecm.company_id in (" . implode(',', $user_companies) . ") ");
 
 }
 
@@ -63,7 +63,7 @@ if (isset($_POST['yes'])) {
 
             $message_data = str_replace(array_keys($replacements), array_values($replacements), $templates);
             // $email_list = $db->run("SELECT email from `employee` where (company_id = " . $_SESSION['company_id'] . " and department = 1 ) || (department in (5,6) ) and status = 0 ")->fetchAll();
-            $email_list = myQuery("SELECT email from `employee` where (company_id = " . $_SESSION['company_id'] . " and department = 1 ) || (department in (5,6) ) and status = 0 ");
+            $email_list = $db->myQuery("SELECT email from `employee` where (company_id = " . $_SESSION['company_id'] . " and department = 1 ) || (department in (5,6) ) and status = 0 ");
 
             $mail = new PHPMailer;
             $mail->SMTPDebug = 2;

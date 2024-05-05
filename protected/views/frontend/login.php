@@ -57,45 +57,52 @@
             text-underline-offset: 7px;
         }
 
-        .lock-main{margin:6% auto;background:#fff; width:90%;}
-        
-            .text-primary {
-        color: #007bff; /* Adjust the color to match your theme */
-        text-decoration: none;
-    }
+        .lock-main {
+            margin: 6% auto;
+            background: #fff;
+            width: 90%;
+        }
+
+        .text-primary {
+            color: #007bff;
+            /* Adjust the color to match your theme */
+            text-decoration: none;
+        }
 
 
 
-    .login-button {
-        /* Apply the same style as the "text-primary" class */
-        color: #007bff;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        padding: 0;
-        font: inherit;
-        text-align: left; /* Adjust as needed */
-        display: inline; /* Adjust as needed */
-    }
-        
+        .login-button {
+            /* Apply the same style as the "text-primary" class */
+            color: #007bff;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            font: inherit;
+            text-align: left;
+            /* Adjust as needed */
+            display: inline;
+            /* Adjust as needed */
+        }
     </style>
 </head>
 
 <body>
-<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#codeModal">
-    Open Code Modal
-</button> -->
 
-
-
-
-
+    <?php if (isset($_SESSION['msg']) && $_SESSION['msg']  !== '') { ?>
+        <div style="text-align: center; margin-top: 100px;">
+            <div class="alert alert-success" style="display: inline-block;">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <?php echo $_SESSION['msg']; ?>
+            </div>
+        </div>
+    <?php unset($_SESSION['msg']); } ?>
 
     <div id="container" class="cls-container">
-         <div class="row"> 
-             <!--<div class="col-md-8 col-sm-12 col-xs-12 m-auto" style="margin: 0 auto;float: none;"> -->
+        <div class="row">
+            <!--<div class="col-md-8 col-sm-12 col-xs-12 m-auto" style="margin: 0 auto;float: none;"> -->
             <div class="col-md-8 col-sm-12 col-xs-12 m-auto" style="margin: 0 auto; float: none; width: 100%;">
-                           <div class="row">
+                <div class="row">
                     <div class="lock-main clearfix">
                         <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12" style="border-right: 1px dotted #e7eaeb;">
                             <img style="padding:10% 0 0 0;" src="<?php echo SITE_URL . '/uploads/icon-viewN.png'; ?>" class="img-responsive" />
@@ -192,31 +199,31 @@
                                 <?php
                                 if ($query1ans == 'login' && $db->get_count('company') < com_number) {
                                 ?>
-                                    <div class="registration"> Don't have an account ! <a href="<?php echo $link->link('signup', frontend); ?>"> <span class="text-primary"> Sign Up </span> </a> 
-                                
-                                
-                                    
-                                
-                                <form method="post" action="<?php $_SERVER['PHP_SELF']; ?>">
-                                    <input type="hidden" id="return_Login" name="return_Login">
-                                    <button type="submit" class="login-button">login</button>
-                    
-                                </form>
+                                    <div class="registration"> Don't have an account ! <a href="<?php echo $link->link('signup', frontend); ?>"> <span class="text-primary"> Sign Up </span> </a>
 
-                                <?php
+
+
+
+                                        <form method="post" action="<?php $_SERVER['PHP_SELF']; ?>">
+                                            <input type="hidden" id="return_Login" name="return_Login">
+                                            <button type="submit" class="login-button">login</button>
+
+                                        </form>
+
+                                    <?php
                                 } ?>
 
+                                    </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+
             </div>
-            
-            
-            </div>
-         </div> 
+        </div>
     </div>
-    
+
 
     <script src="<?php echo SITE_URL . '/assets/frontend/js/bootstrap.min.js'; ?>"></script>
     <!-- jQuery-Vaildation -->

@@ -5,7 +5,7 @@
 $countryId = isset($_POST['country_id']) ? $_POST['country_id'] : 1 ;
 
 // Query to fetch cities based on the selected country
-$cities = myQuery("SELECT id, name FROM cities WHERE country_id = $countryId");
+$cities = $db->myQuery("SELECT id, name FROM cities WHERE country_id = $countryId");
 
 // Render options for cities dropdown
 $options = '<option value=""></option>';

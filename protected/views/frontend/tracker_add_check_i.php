@@ -63,7 +63,7 @@ $current_time = time();
 	if ($db->exists('company', array('id' => $company_id)))
 		if ($db->exists('employee', array('employee_id' => $employee_id))) {
 			
-			$last_shift_task = myQuery( "
+			$last_shift_task = $db->myQuery( "
 			SELECT *
 			FROM shift_check
 			WHERE employee_id = '$employee_id'

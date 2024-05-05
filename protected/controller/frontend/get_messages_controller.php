@@ -62,7 +62,6 @@ if (isset($_REQUEST['view']) && $_REQUEST['view'] == 'getChat' && isset($_REQUES
 <?php
 		}
 	}
-	// echo json_encode($messages);
 	echo $msg_html;
 	die();
 }

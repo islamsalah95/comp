@@ -10,7 +10,7 @@ $specialities = json_decode($specialities, true);
 
 
 /* countries */
-$countries = myQuery("SELECT id, name, phone_code FROM countries;");
+$countries = $db->myQuery("SELECT id, name, phone_code FROM countries;");
 /* countries*/
 
 $emplast_id = 0;

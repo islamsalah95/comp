@@ -5,7 +5,8 @@
 // }
 // $users = $db->run("SELECT * from `employee` where `department`='6' " . $where . "  ")->fetchAll();
 // $users = $db->run("SELECT * from `employee` where `department`='6' AND `company_id` ='" . $_SESSION['company_id'] . "'")->fetchAll();
-$users = myQuery("SELECT * from `employee` where `department`='6' AND `company_id` ='" . $_SESSION['company_id'] . "'");
+$sql="SELECT * from `employee` where `department`='6' AND `company_id` ='" . $_SESSION['company_id'] . "'";
+$users = $db->myQuery($sql);
 
 $load = $_REQUEST['del_id'] ?? '';
 

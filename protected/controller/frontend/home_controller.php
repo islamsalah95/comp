@@ -8,7 +8,7 @@ $total_tasks = $db->get_count('to_do_list', array('company_id' => $_SESSION['com
 
 $total_companies = $db->get_count('company');
 $total_users = count($db->run('select * from employee where department in (2, 3)')->fetchAll());
-  $total_online_users = count(myQuery("SELECT employee_id, COUNT(*) AS total_online_users
+  $total_online_users = count($db->myQuery("SELECT employee_id, COUNT(*) AS total_online_users
 FROM `shift_check`
 WHERE current_dt = '".date('Y-m-d')."' and (check_out = '' or check_out IS NULL)
 GROUP BY employee_id;
@@ -57,7 +57,7 @@ GROUP BY
 
 
 
-$active_employees = myQuery($asql);
+$active_employees = $db->myQuery($asql);
 
 $employee_current_working_details = array();
 foreach ($active_employees as $emp) {

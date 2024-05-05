@@ -12,7 +12,7 @@ $load = $_REQUEST['edit'];
 
 if (isset($_REQUEST['edit'])) {
     // $get_row = $db->get_row( 'employee', array( 'employee_id' => $load ) );
-    $get_row = myQuery("
+    $get_row = $db->myQuery("
 	SELECT employee.*, company.company_name, company.id as company_id
 	FROM employee 
 	INNER JOIN employee_company ON employee_company.employee_id = employee.employee_id

@@ -5,7 +5,7 @@ echo $user_name=$db->get_var('employee',array('employee_id'=>$emp),'emp_name');
 $tasks_details=$db->run("select to_do_list.*, projects.project_name from to_do_list 
     LEFT JOIN projects ON to_do_list.project_id = projects.project_id where to_do_list.company_id = ".$_SESSION['company_id']."
     order by to_do_list.task_id DESC")->fetchAll();
-//$tasks_details=myQuery("select to_do_list.*, projects.project_name from to_do_list 
+//$tasks_details= $db->myQuery("select to_do_list.*, projects.project_name from to_do_list 
 //    LEFT JOIN projects ON to_do_list.project_id = projects.project_id where to_do_list.company_id = ".$_SESSION['company_id']."
 //    order by to_do_list.task_id DESC");
 //$db->debug();

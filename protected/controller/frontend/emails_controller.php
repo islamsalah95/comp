@@ -163,12 +163,12 @@ $emails = array();
 $email_list = array();
 if ($_SESSION['department'] == 5 || $_SESSION['department'] == 6 || $_SESSION['department'] == 1 || $_SESSION['department'] == 4) {
 	// $emails = $db->run("SELECT * from `emails` where `company_id` = '" . $_SESSION['company_id'] . "' ORDER BY `emails`.`message_id` DESC ")->fetchAll();
-	$emails = myQuery("SELECT * from `emails` where `company_id` = '" . $_SESSION['company_id'] . "' ORDER BY `emails`.`message_id` DESC ");
+	$emails = $db->myQuery("SELECT * from `emails` where `company_id` = '" . $_SESSION['company_id'] . "' ORDER BY `emails`.`message_id` DESC ");
 
 	// $email_list = $db->run("SELECT * from `employee` where `department` = 2 AND `company_id` = '" . $_SESSION['company_id'] . "' ")->fetchAll();
 	$user_companies = array($_SESSION['company_id']);
 	// $companies = $db->run("SELECT emp.company_id, c.company_name FROM employee_company_map emp LEFT JOIN company c on c.id = emp.company_id WHERE employee_id  IN (SELECT e.employee_id FROM employee e LEFT JOIN employee_company_map m on m.employee_id = e.employee_id WHERE m.company_id = " . $_SESSION['company_id'] . " and e.department = 3)")->fetchAll();
-	$companies = myQuery("SELECT emp.company_id, c.company_name FROM employee_company_map emp LEFT JOIN company c on c.id = emp.company_id WHERE employee_id  IN (SELECT e.employee_id FROM employee e LEFT JOIN employee_company_map m on m.employee_id = e.employee_id WHERE m.company_id = " . $_SESSION['company_id'] . " and e.department = 3)");
+	$companies = $db->myQuery("SELECT emp.company_id, c.company_name FROM employee_company_map emp LEFT JOIN company c on c.id = emp.company_id WHERE employee_id  IN (SELECT e.employee_id FROM employee e LEFT JOIN employee_company_map m on m.employee_id = e.employee_id WHERE m.company_id = " . $_SESSION['company_id'] . " and e.department = 3)");
 
 	if (!empty($companies)) {
 		foreach ($companies as $c) {
@@ -176,12 +176,12 @@ if ($_SESSION['department'] == 5 || $_SESSION['department'] == 6 || $_SESSION['d
 		}
 	}
 	// $email_list = $db->run("SELECT * from `employee` where (`department` = 2 AND `company_id` = '" . $_SESSION['company_id'] . "') or (`department` = 3 AND `company_id` in (" . implode(',', $user_companies) . ")) ")->fetchAll();
-	$email_list = myQuery("SELECT * from `employee` where (`department` = 2 AND `company_id` = '" . $_SESSION['company_id'] . "') or (`department` = 3 AND `company_id` in (" . implode(',', $user_companies) . ")) ");
+	$email_list = $db->myQuery("SELECT * from `employee` where (`department` = 2 AND `company_id` = '" . $_SESSION['company_id'] . "') or (`department` = 3 AND `company_id` in (" . implode(',', $user_companies) . ")) ");
 } else {
 	// $emails = $db->run("SELECT * from `emails` where `employee_id`= '" . $_SESSION['employee_id'] . "' AND `company_id` = '" . $_SESSION['company_id'] . "' ORDER BY `emails`.`message_id` DESC ")->fetchAll();
 	// $email_list = $db->run("SELECT * from `employee` where `department` = 4 AND `company_id` = '" . $_SESSION['company_id'] . "' ")->fetchAll();
-	$emails = myQuery("SELECT * from `emails` where `employee_id`= '" . $_SESSION['employee_id'] . "' AND `company_id` = '" . $_SESSION['company_id'] . "' ORDER BY `emails`.`message_id` DESC ");
-	$email_list = myQuery("SELECT * from `employee` where `department` = 4 AND `company_id` = '" . $_SESSION['company_id'] . "' ");
+	$emails = $db->myQuery("SELECT * from `emails` where `employee_id`= '" . $_SESSION['employee_id'] . "' AND `company_id` = '" . $_SESSION['company_id'] . "' ORDER BY `emails`.`message_id` DESC ");
+	$email_list = $db->myQuery("SELECT * from `employee` where `department` = 4 AND `company_id` = '" . $_SESSION['company_id'] . "' ");
 
 
 

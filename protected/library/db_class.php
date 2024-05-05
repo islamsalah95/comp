@@ -28,7 +28,7 @@ class db extends PDO
 	 * Database Host.
 	 * @var string
 	 */
-	private $db_host = '';
+	public $db_host = '';
 
 	/**
 	 * Database Name.
@@ -164,88 +164,46 @@ class db extends PDO
 	 */
 	public function run(string $sql = null, $bind = array()): mixed
 	{
-    // Flush the stored values.
-    $this->flush();
+		// Flush the stored values.
+		$this->flush();
 
-    // Override arguments if supplied.
-    $this->sql = $sql ?? $this->sql;
-    $this->bind = $bind ?? $this->bind;
+		// Override arguments if supplied.
+		$this->sql = $sql ?? $this->sql;
+		$this->bind = $bind ?? $this->bind;
 
-    // Stop if we don't have a query to execute.
-    if (empty($this->sql)) {
-        $this->error = 'No query to execute!';
-        $this->result = false;
-        return false;
-    }
+		// Stop if we don't have a query to execute.
+		if (empty($this->sql)) {
+			$this->error = 'No query to execute!';
+			$this->result = false;
+			return false;
+		}
 
-    // Try executing the query.
-    try {
-        $stmt = $this->prepare($this->sql);
-        if (false === $stmt->execute($this->bind)) {
-            // Query failed.
-            $this->result = false;
-        } else if (preg_match("/^(insert|delete|update|replace|drop|create)\s+/i", $this->sql)) {
-            if (preg_match("/^(insert|replace)\s+/i", $this->sql)) {
-                // Query was an INSERT. Store the last insert id.
-                $this->insert_id = @$this->lastInsertId();
-            }
-            // Store the number of rows affected.
-            $this->num_rows = @$stmt->rowCount();
-            $this->result = $this->num_rows;
-        } else {
-            // Query was a SELECT, return a PDO object to allow fetching.
-            return $stmt;
-        }
-    } catch (PDOException $e) {
-        // Store the error message thrown.
-        $this->error = $e->getMessage();
-        $this->result = false;
-    }
-    return $this->result;
-}
+		// Try executing the query.
+		try {
+			$stmt = $this->prepare($this->sql);
+			if (false === $stmt->execute($this->bind)) {
+				// Query failed.
+				$this->result = false;
+			} else if (preg_match("/^(insert|delete|update|replace|drop|create)\s+/i", $this->sql)) {
+				if (preg_match("/^(insert|replace)\s+/i", $this->sql)) {
+					// Query was an INSERT. Store the last insert id.
+					$this->insert_id = @$this->lastInsertId();
+				}
+				// Store the number of rows affected.
+				$this->num_rows = @$stmt->rowCount();
+				$this->result = $this->num_rows;
+			} else {
+				// Query was a SELECT, return a PDO object to allow fetching.
+				return $stmt;
+			}
+		} catch (PDOException $e) {
+			// Store the error message thrown.
+			$this->error = $e->getMessage();
+			$this->result = false;
+		}
+		return $this->result;
+	}
 
-	// public function run($sql = null, $bind = array())
-	// {
-
-	// 	// Flush the stored values.
-	// 	$this->flush();
-
-	// 	// Override arguments if supplied.
-	// 	if (!empty($sql)) $this->sql = $sql;
-	// 	if (!empty($bind)) $this->bind = $bind;
-
-	// 	// Stop if we don't have a query to execute.
-	// 	if (empty($this->sql)) {
-	// 		$this->error = 'No query to execute!';
-	// 		$this->result = false;
-	// 		return false;
-	// 	}
-
-	// 	// Try executing the query.
-	// 	try {
-	// 		$stmt = $this->prepare($this->sql);
-	// 		if (false === $stmt->execute($this->bind)) {
-	// 			// Query failed.
-	// 			$this->result = false;
-	// 		} else if (preg_match("/^(insert|delete|update|replace|drop|create)\s+/i", $this->sql)) {
-	// 			if (preg_match("/^(insert|replace)\s+/i", $this->sql)) {
-	// 				// Query was an INSERT. Store the last insert id.
-	// 				$this->insert_id = @$this->lastInsertId();
-	// 			}
-	// 			// Store the number of rows affected.
-	// 			$this->num_rows = @$stmt->rowCount();
-	// 			$this->result = $this->num_rows;
-	// 		} else {
-	// 			// Query was a SELECT, return a PDO object to allow fetching.
-	// 			return $stmt;
-	// 		}
-	// 	} catch (PDOException $e) {
-	// 		// Store the error message thrown.
-	// 		$this->error = $e->getMessage();
-	// 		$this->result = false;
-	// 	}
-	// 	return $this->result;
-	// }
 
 	/**
 	 * Shorthand INSERT method. 
@@ -613,4 +571,44 @@ class db extends PDO
 		$this->insert_id = null;
 		$this->num_rows = 0;
 	}
+
+
+	function myQuery($query)
+	{
+		$mysqli = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+		$result = $mysqli->query($query);
+		$result = $result->fetch_all(MYSQLI_ASSOC);
+		return $result;
+	}
+
+
+	function sqlPrevious_jobs($employee_id, $company_id , $sql){
+    try {
+        // Create a new PDO instance
+        $db = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASSWORD);
+
+        // Set PDO error mode to exception
+        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+
+        // Prepare the SQL statement
+        $stmt = $db->prepare($sql);
+
+        // Bind parameters
+        $stmt->bindParam(':employee_id', $employee_id, PDO::PARAM_INT);
+        $stmt->bindParam(':company_id', $company_id, PDO::PARAM_INT);
+
+        // Execute the statement
+        $stmt->execute();
+
+        // Fetch the result as an array
+        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        // Return the result array
+        return $result;
+
+    } catch (PDOException $e) {
+        return $e->getMessage();
+    }
+}
 }

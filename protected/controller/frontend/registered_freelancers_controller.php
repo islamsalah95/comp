@@ -1,16 +1,17 @@
 <?php
 $myCompany_id =$_SESSION['company_id'] ;
 
-// $freelancers = $db->run("SELECT `e`.* from `employee` e left join `employee_company_map` ecm on e.employee_id = ecm.employee_id where e.`department`='3' and e.`company_id` = " . $_SESSION['company_id'] . " and ecm.employee_id is NULL")->fetchAll();
-$freelancers = myQuery("
-    SELECT e.*
+
+$freelancers = $db->myQuery("
+SELECT e.*,cities.name as city_name,countries.name as country_name
     FROM employee e
+    left join  cities cities ON cities.id  = e.city_id 
+    left join  countries countries ON countries.id  = e.country 
     INNER JOIN employee_company ec ON e.employee_id = ec.employee_id AND ec.company_id = $myCompany_id
     LEFT JOIN employee_company_map ecm ON ec.employee_id = ecm.employee_id AND ecm.company_id = $myCompany_id
     WHERE e.department = '3'
     AND ecm.employee_id IS NULL
 ");
-
 
 
 // $freelancers = $db->run(
