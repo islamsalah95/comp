@@ -100,20 +100,20 @@
                                                             <textarea class="form-control" name="address" placeholder="<?php echo $lang['enter_your_address']; ?>"><?php echo $get_row[0]['address']; ?></textarea>
                                                         </div>
                                                     </div>
-                                                    
-                                                        <div class="form-group">
-                                                            <label for="job_title"><?= $lang['job_title'] ?> </label> : (<?php  echo $get_row[0]['job_title']; ?>)
-                                                            <select name="job_title"  class="form-control select_job" required>
-                                                                <option value=""><?= $lang['select_option'] ?></option>
-                                                                <?php
-                                                                foreach ($specialities as $specialityID => $speciality) {
-                                                                ?>
-                                                                    <option value="<?= $speciality[$_SESSION['site_lang'] . '_Title']; ?>"><?= $speciality[$_SESSION['site_lang'] . '_Title']; ?></option>
-                                                                <?php
-                                                                }
-                                                                ?>
-                                                            </select>
-                                        </div>
+
+                                                    <div class="form-group">
+                                                        <label for="job_title"><?= $lang['job_title'] ?> </label> : (<?php echo $get_row[0]['job_title']; ?>)
+                                                        <select name="job_title" class="form-control select_job" required>
+                                                            <option value=""><?= $lang['select_option'] ?></option>
+                                                            <?php
+                                                            foreach ($specialities as $specialityID => $speciality) {
+                                                            ?>
+                                                                <option value="<?= $speciality[$_SESSION['site_lang'] . '_Title']; ?>"   <?php if ($speciality[$_SESSION['site_lang'] . '_Title']==$get_row[0]['job_title']) echo "selected"; ?>><?= $speciality[$_SESSION['site_lang'] . '_Title']; ?></option>
+                                                            <?php
+                                                            }
+                                                            ?>
+                                                        </select>
+                                                    </div>
 
                                                     <!-- <div class="form-group">
                                                         <label class="control-label"><?php echo $lang['is_mol_TWC']; ?></label>
@@ -131,36 +131,18 @@
                                                         <input type="text" placeholder="<?php echo $lang['employee_national_number']; ?>" name="employee_national_number" class="form-control" value="<?php echo $get_row[0]['employee_national_number']; ?>" required />
                                                     </div>
 
-                                                    <div class="form-group text-left">
-                                                        <label><?php echo $lang['city']; ?> * : </label>
-                                                        <select name="city_id" id="select_city" placeholder="<?= $lang['select_city']; ?>" class="form-control">
-                                                            <option value=""><?= $lang['select_city'] ?></option>
-                                                            <?php
-                                                            foreach ($cities as $city_id => $city) {
-                                                            ?>
-                                                                <option value="<?= $city_id; ?>" <?php if ($city_id == $get_row[0]['city_id']) {
-                                                                                                        echo "selected";
-                                                                                                    } ?>><?= $city['Arabic_Name']; ?></option>
-                                                            <?php
-                                                            }
-                                                            ?>
-                                                        </select>
-                                                    </div>
+
 
                                                     <hr>
                                                     <div class="form-group">
                                                         <label class="control-label text-bold"><?php echo $lang['freelancer_company_details']; ?> </label>
                                                         <ul>
-                                                            <?php 
-                                                            $comps=[];
-                                                            foreach ($get_row as $value) { ?>
-                                                                <li><?php echo $value['company_name']; ?></li>
                                                             <?php
-                                                              $comps[]=$value['company_id'];
-                                                        } 
-                                                            
+                                                            $comps = [];
+                                                            foreach ($get_row as $value) {
+                                                                $comps[] = $value['company_id'];
+                                                            }
                                                             ?>
-                                                        </ul>
 
 
                                                     </div>
@@ -181,10 +163,8 @@
                                                         </div>
                                                         <div class="col-md-8">
                                                             <select class="demo-cs-multiselect" id="freelancer_company" name="freelancer_company[]" multiple tabindex="4">
-                                                                <?php if (is_array($company)) foreach ($company as $value) { ?>
-                                                                    <?php if (is_array($comps)) foreach ($comps as $compsValue) { ?>
-                                                                    <option value="<?php echo $value['id']; ?>" <?php if ($value['id'] == $compsValue) echo "selected"; ?>><?php echo $value['company_name']; ?></option>
-                                                                <?php } ?>
+                                                                <?php foreach ($company as $value) { ?>
+                                                                    <option value="<?php echo $value['id']; ?>" <?php if (in_array($value['id'], $comps)) echo "selected"; ?>><?php echo $value['company_name']; ?></option>
 
                                                                 <?php } ?>
                                                             </select>
@@ -334,48 +314,48 @@
 </div>
 
 
-    <script src="<?php echo SITE_URL . '/assets/frontend/js/jquery-2.1.1.min.js'; ?>"></script>
-    <script src="<?php echo SITE_URL . '/assets/frontend/js/bootstrap.min.js'; ?>"></script>
-    <script src="<?php echo SITE_URL . '/assets/frontend/plugins/chosen/chosen.jquery.min.js'; ?>"></script>
-    <!-- jQuery-Vaildation -->
-    <script src="<?php echo SITE_URL . '/assets/frontend/plugins/jquery-validation/jquery.validate.min.js'; ?>"></script>
-    <script src="<?php echo SITE_URL . '/assets/frontend/plugins/jquery-validation/additional-methods.min.js'; ?>"></script>
-    <script src="<?php echo SITE_URL . '/assets/frontend/js/form-validation.js'; ?>"></script>
+<script src="<?php echo SITE_URL . '/assets/frontend/js/jquery-2.1.1.min.js'; ?>"></script>
+<script src="<?php echo SITE_URL . '/assets/frontend/js/bootstrap.min.js'; ?>"></script>
+<script src="<?php echo SITE_URL . '/assets/frontend/plugins/chosen/chosen.jquery.min.js'; ?>"></script>
+<!-- jQuery-Vaildation -->
+<script src="<?php echo SITE_URL . '/assets/frontend/plugins/jquery-validation/jquery.validate.min.js'; ?>"></script>
+<script src="<?php echo SITE_URL . '/assets/frontend/plugins/jquery-validation/additional-methods.min.js'; ?>"></script>
+<script src="<?php echo SITE_URL . '/assets/frontend/js/form-validation.js'; ?>"></script>
 
-    <script src="<?php echo SITE_URL . '/assets/frontend/plugins/bootstrap-datepicker/bootstrap-datepicker.js'; ?>"></script>
-    <script src="<?php echo SITE_URL . '/assets/frontend/plugins/bootstrap-datepicker/moment.js'; ?>" type="text/javascript"></script>
+<script src="<?php echo SITE_URL . '/assets/frontend/plugins/bootstrap-datepicker/bootstrap-datepicker.js'; ?>"></script>
+<script src="<?php echo SITE_URL . '/assets/frontend/plugins/bootstrap-datepicker/moment.js'; ?>" type="text/javascript"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
-    <script src="<?php echo SITE_URL . '/assets/frontend/plugins/bootstrap-hijridate/js/bootstrap-hijri-datetimepicker.min.js'; ?>"></script>
-        <script>
-        $(document).ready(function() {
-            $('.select_job').chosen();
-            $('#select_city').chosen();
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
+<script src="<?php echo SITE_URL . '/assets/frontend/plugins/bootstrap-hijridate/js/bootstrap-hijri-datetimepicker.min.js'; ?>"></script>
+<script>
+    $(document).ready(function() {
+        $('.select_job').chosen();
+        $('#select_city').chosen();
 
-            $('#privacy_container').show();
-            $('.privacy_checkbox').click(function() {
-                $(".register_button").attr('disabled', 'disabled');
-                if ($(this).is(":checked")) {
-                    $(".register_button").removeAttr('disabled');
-                }
-            });
-
-            $('.birthdate').datepicker({
-                format: "yyyy-mm-dd",
-                autoclose: true,
-                endDate: '+0d',
-                todayHighlight: true,
-                startView: 2
-            });
-
-            $("#dob").hijriDatePicker({
-                showTodayButton: true,
-                showClear: true,
-                hijri: true,
-                format: 'YYYY-MM-DD'
-            });
+        $('#privacy_container').show();
+        $('.privacy_checkbox').click(function() {
+            $(".register_button").attr('disabled', 'disabled');
+            if ($(this).is(":checked")) {
+                $(".register_button").removeAttr('disabled');
+            }
         });
-    </script>
+
+        $('.birthdate').datepicker({
+            format: "yyyy-mm-dd",
+            autoclose: true,
+            endDate: '+0d',
+            todayHighlight: true,
+            startView: 2
+        });
+
+        $("#dob").hijriDatePicker({
+            showTodayButton: true,
+            showClear: true,
+            hijri: true,
+            format: 'YYYY-MM-DD'
+        });
+    });
+</script>
 
 <script>
     $(document).ready(function() {

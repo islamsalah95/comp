@@ -53,6 +53,8 @@ if (isset($_POST['submit_freelancer'])) {
     $account_type = 'p';
     $experience_years = $_POST['experience_years'];
     $experiences = $_POST['experiences'];
+    $emp_salary = $_POST['emp_salary'];
+    $address = $_POST['address'];
 
 
 
@@ -82,43 +84,43 @@ if (isset($_POST['submit_freelancer'])) {
         $display_msg = '<div class="alert alert-danger">
                         <i class="lnr lnr-sad"></i> <button class="close" data-dismiss="alert" type="button">&times;</button>' . 'nationality' . '
                         </div>';
-    } elseif ($country ='') {
+    } elseif ($country = '') {
         $display_msg = '<div class="alert alert-danger">
                         <i class="lnr lnr-sad"></i> <button class="close" data-dismiss="alert" type="button">&times;</button>' . 'country' . '
                         </div>';
-    } elseif ($city_id =='') {
+    } elseif ($city_id == '') {
         $display_msg = '<div class="alert alert-danger">
                         <i class="lnr lnr-sad"></i> <button class="close" data-dismiss="alert" type="button">&times;</button>' . $lang["required_field_error"] . '
                         </div>';
-    } elseif ($skills=='') {
+    } elseif ($skills == '') {
         $display_msg = '<div class="alert alert-danger">
                         <i class="lnr lnr-sad"></i> <button class="close" data-dismiss="alert" type="button">&times;</button>' . 'skills' . '
                         </div>';
-    } elseif ($nationality=='') {
+    } elseif ($nationality == '') {
         $display_msg = '<div class="alert alert-danger">
                         <i class="lnr lnr-sad"></i> <button class="close" data-dismiss="alert" type="button">&times;</button>' . 'experiences' . '
                         </div>';
-    } elseif ($working_type=='') {
+    } elseif ($working_type == '') {
         $display_msg = '<div class="alert alert-danger">
                         <i class="lnr lnr-sad"></i> <button class="close" data-dismiss="alert" type="button">&times;</button>' . 'working_type' . '
                         </div>';
-    } elseif ($gender=='') {
+    } elseif ($gender == '') {
         $display_msg = '<div class="alert alert-danger">
                         <i class="lnr lnr-sad"></i> <button class="close" data-dismiss="alert" type="button">&times;</button>' . 'gender' . '
                         </div>';
-    } elseif ($account_type=='') {
+    } elseif ($account_type == '') {
         $display_msg = '<div class="alert alert-danger">
                         <i class="lnr lnr-sad"></i> <button class="close" data-dismiss="alert" type="button">&times;</button>' . 'account_type' . '
                         </div>';
-    } elseif ($experience_years=='') {
+    } elseif ($experience_years == '') {
         $display_msg = '<div class="alert alert-danger">
                         <i class="lnr lnr-sad"></i> <button class="close" data-dismiss="alert" type="button">&times;</button>' . 'experience_years' . '
                         </div>';
-    } elseif ($dob=='') {
+    } elseif ($dob == '') {
         $display_msg = '<div class="alert alert-danger">
                         <i class="lnr lnr-sad"></i> <button class="close" data-dismiss="alert" type="button">&times;</button>' . $lang["required_field_error"] . '
                         </div>';
-    } elseif ($employee_national_number=='') {
+    } elseif ($employee_national_number == '') {
         $display_msg = '<div class="alert alert-danger">
                         <i class="lnr lnr-sad"></i> <button class="close" data-dismiss="alert" type="button">&times;</button>' . $lang["required_field_error"] . '
                         </div>';
@@ -150,13 +152,28 @@ if (isset($_POST['submit_freelancer'])) {
             'gender' => $gender,
             'account_type' => $account_type,
             'experience_years' => $experience_years,
-            'experiences' => $experiences
+            'experiences' => $experiences,
+            'emp_salary' => $emp_salary,
+            'address' => $address,
+
+
 
         ));
         $emplast_id = $db->lastInsertId();
+        if ($insert &&  $emplast_id) {
+            $db->insert(
+                'employee_company',
+                array('employee_id' => $emplast_id, 'company_id' => 1)
+            );
+        }
+
+
         if ($insert) {
-            $display_msg = '<div class="alert alert-success">
-            <i class="lnr lnr-sad"></i> <button class="close" data-dismiss="alert" type="button">&times;</button>add success.
+            echo '<div style="text-align: center; margin-top: 100px;">
+            <div class="alert alert-success" style="display: inline-block;">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                '  . 'success register' . '
+            </div>
             </div>';
 
             /////////////////////////////send user and passowrd/////////////////

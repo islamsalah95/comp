@@ -176,6 +176,15 @@
                                             <button type="submit" class="btn btn-info" style="margin: 3px;">Info</button>
                                         </form>
 
+                                        <?php
+                                        if (in_array($_SESSION['department'], [5])) { ?>
+                                            <form method="post" action="<?= $link->link("edit_freelancer", frontend) ?>">
+                                                <input type="hidden" name="edit" value="<?= $freelancer['employee_id'] ?>">
+                                                <button type="submit" class="btn btn-success fa fa-edit" style="margin: 3px;"></button>
+                                            </form>
+                                        <?php } ?>
+
+
                                     </td>
 
                                 </tr>

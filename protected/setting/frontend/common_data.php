@@ -27,14 +27,27 @@ if ($_SESSION['department'] == 5) {
 }
 
 if ($_SESSION['department'] == 1 || $_SESSION['department'] == 4 || $_SESSION['department'] == 3) {
-    $user_id2 = 464;
-    $sql2 = "
+   
+    $user_id2=$_SESSION[ 'employee_id' ];
+    if ( $_SESSION['department'] == 2 || $_SESSION['department'] == 3) {
+        $sql2 = "
+        SELECT company.* 
+        FROM company
+        INNER JOIN employee_company ON employee_company.company_id = company.id 
+        INNER JOIN employee ON employee.employee_id = employee_company.employee_id  
+        INNER JOIN employee_company_map ON employee_company_map.employee_id = employee.employee_id AND employee_company_map.company_id = company.id 
+        WHERE employee.employee_id = $user_id2 
+        GROUP BY company.id;
+    ";
+    }else{
+        $sql2 = "
         SELECT company.* 
         FROM company
         INNER JOIN employee_company ON employee_company.company_id = company.id 
         INNER JOIN employee ON employee.employee_id = employee_company.employee_id  
         WHERE employee.employee_id =$user_id2;
     ";
+    }
  $company =$db->run($sql2)->fetchAll();
 
 

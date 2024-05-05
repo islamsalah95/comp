@@ -248,7 +248,7 @@
 //                         if (isset($_SESSION['department']) && ($_SESSION['department'] == 2)) {
 //                             $session->redirect('profile', frontend);
 //                         } else if (isset($_SESSION['department']) && ($_SESSION['department'] == 3)) {
-//                             $session->redirect('freelancer_profile', frontend);
+//                             $session->redirect('profile', frontend);
 //                         } else {
 //                             $session->redirect('home', frontend);
 //                         }

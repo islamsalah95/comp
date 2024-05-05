@@ -161,6 +161,13 @@
                                                             </select>
                                                         </div>
 
+                                                        <div class="form-group">
+                                                        <div class="text-left">
+                                                            <label class="text-muted">الراتب المتوقع</label>
+                                                            <input class="form-control" name="emp_salary" value="0"></input>
+                                                        </div>
+                                                       </div>
+
 
                                                     </div>
 
@@ -293,6 +300,13 @@
                                                                 ?>
                                                             </select>
                                                         </div>
+
+                                                        <div class="form-group">
+                                                        <div class="text-left">
+                                                            <label class="text-muted"><?php echo $lang['address']; ?></label>
+                                                            <input class="form-control" name="address" placeholder="<?php echo $lang['enter_your_address']; ?>"></input>
+                                                        </div>
+                                                    </div>
 
 
 
