@@ -16,7 +16,7 @@
 // }
 
 error_reporting(E_ALL);
-ini_set('display_errors', 1); 
+ini_set('display_errors', 1);
 
 function sec2hms($secs)
 {
@@ -34,11 +34,11 @@ function sec2hms($secs)
 function sec2hms_new($seconds)
 {
 
-    $hours = floor($seconds / 3600);
-    $minutes = floor(($seconds % 3600) / 60);
-    $seconds = $seconds % 60;
+  $hours = floor($seconds / 3600);
+  $minutes = floor(($seconds % 3600) / 60);
+  $seconds = $seconds % 60;
 
-    return sprintf('%02d:%02d:%02d', $hours, $minutes, $seconds);
+  return sprintf('%02d:%02d:%02d', $hours, $minutes, $seconds);
 }
 
 
@@ -46,7 +46,7 @@ function sec2hms_new($seconds)
 <!-- <link href="<?php echo SITE_URL; ?>/assets/frontend/js/report_buttons/buttons.dataTables.min.css" rel="stylesheet" type="text/css" /> -->
 <div id="content-container">
   <div class="pageheader">
-    <h3><i><img src="uploads/logo/company_icons/icons_flex-14.png" style ="width:40px;height:40px;"></i> <?php echo ucfirst($company_details['company_name']); ?> - <?php echo $lang['report']; ?></h3>
+    <h3><i><img src="uploads/logo/company_icons/icons_flex-14.png" style="width:40px;height:40px;"></i> <?php echo ucfirst($company_details['company_name']); ?> - <?php echo $lang['report']; ?></h3>
     <div class="breadcrumb-wrapper">
       <span class="label"><?php echo $lang['you_are_here']; ?>:</span>
       <ol class="breadcrumb">
@@ -58,7 +58,7 @@ function sec2hms_new($seconds)
   <div id="page-content">
     <br>
     <div class="row">
-      <?php echo $display_msg ?? '' ; ?>
+      <?php echo $display_msg ?? ''; ?>
       <div class="col-lg-12">
         <form method="POST" class="form-horizontal" action="">
           <input type="hidden" name="today" value="none">
@@ -71,12 +71,12 @@ function sec2hms_new($seconds)
               <div class="col-md-8">
                 <div class="input-group date datepicker">
                   <input class="form-control" type="text" name="start_date" value="<?php
-                                                                                    if ($start_date != '') {
-                                                                                      echo $start_date;
-                                                                                    } else {
-                                                                                      echo  $feature->convertTimeZone(date("Y-m-d"), 'appdate');
-                                                                                    }
-                                                                                    ?>">
+                  if ($start_date != '') {
+                    echo $start_date;
+                  } else {
+                    echo  $feature->convertTimeZone(date("Y-m-d"), 'appdate');
+                  }
+                  ?>">
                   <span class="input-group-addon">
                     <i class="fa fa-calendar fa-lg"></i></span>
                 </div>
@@ -90,12 +90,12 @@ function sec2hms_new($seconds)
               <div class="col-md-8">
                 <div class="input-group date datepicker">
                   <input class="form-control" type="text" name="end_date" value="<?php
-                                                                                  if ($end_date != '') {
-                                                                                    echo $end_date;
-                                                                                  } else {
-                                                                                    echo  $feature->convertTimeZone(date("Y-m-d"), 'appdate');
-                                                                                  }
-                                                                                  ?>">
+                  if ($end_date != '') {
+                    echo $end_date;
+                  } else {
+                    echo  $feature->convertTimeZone(date("Y-m-d"), 'appdate');
+                  }
+                  ?>">
                   <span class="input-group-addon">
                     <i class="fa fa-calendar fa-lg"></i></span>
                 </div>
@@ -116,21 +116,21 @@ function sec2hms_new($seconds)
           <!-- <a href="<?php echo $link->link("reports", frontend, '&today'); ?>">
             <button class="btn btn-primary" <?php if (isset($_REQUEST['today']) && $_REQUEST['today'] != "none") { ?>disabled<?php } ?> style="padding: 6px 55px;margin: 0 5px 5px 0;"><?php echo $lang['today']; ?></button>
           </a> -->
-         
+
           <form method="post" action="<?= $link->link('reports', frontend) ?>">
-           <input type="hidden" name="today" value="<?= $_REQUEST['today'] ?? '' ?>">
-            <button type="submit"  class="btn btn-primary" <?php if (isset($_REQUEST['today']) && $_REQUEST['today'] != "none") { ?>disabled<?php } ?> style="padding: 6px 55px;margin: 0 5px 5px 0;"><?php echo $lang['today']; ?></button>
+            <input type="hidden" name="today" value="<?= $_REQUEST['today'] ?? '' ?>">
+            <button type="submit" class="btn btn-primary" <?php if (isset($_REQUEST['today']) && $_REQUEST['today'] != "none") { ?>disabled<?php } ?> style="padding: 6px 55px;margin: 0 5px 5px 0;"><?php echo $lang['today']; ?></button>
           </form>
-         
-         
+
+
           <!-- <a href="<?php echo $link->link("reports", frontend, '&seven_day'); ?>">
             <button class="btn btn-primary" <?php if (isset($_REQUEST['seven_day']) && $_REQUEST['seven_day'] != "none") { ?>disabled<?php } ?> style="padding: 6px 55px;margin: 0 5px 5px 0;"><?php echo $lang['last_7_days']; ?></button>
           </a> -->
 
 
           <form method="post" action="<?= $link->link('reports', frontend) ?>">
-           <input type="hidden" name="seven_day" value="<?= $_REQUEST['seven_day'] ?? '' ?>">
-            <button type="submit"  class="btn btn-primary" <?php if (isset($_REQUEST['seven_day']) && $_REQUEST['seven_day'] != "none") { ?>disabled<?php } ?> style="padding: 6px 55px;margin: 0 5px 5px 0;"><?php echo $lang['last_7_days']; ?></button>
+            <input type="hidden" name="seven_day" value="<?= $_REQUEST['seven_day'] ?? '' ?>">
+            <button type="submit" class="btn btn-primary" <?php if (isset($_REQUEST['seven_day']) && $_REQUEST['seven_day'] != "none") { ?>disabled<?php } ?> style="padding: 6px 55px;margin: 0 5px 5px 0;"><?php echo $lang['last_7_days']; ?></button>
           </form>
 
 
@@ -141,8 +141,8 @@ function sec2hms_new($seconds)
 
 
           <form method="post" action="<?= $link->link('reports', frontend) ?>">
-           <input type="hidden" name="thirty_day" value="<?= $_REQUEST['thirty_day']  ?? '' ?>">
-            <button type="submit"  class="btn btn-primary" <?php if (isset($_REQUEST['thirty_day']) && $_REQUEST['thirty_day'] != "none") { ?>disabled<?php } ?> style="padding: 6px 55px;margin: 0 5px 5px 0;"><?php echo $lang['last_30_days']; ?></button>
+            <input type="hidden" name="thirty_day" value="<?= $_REQUEST['thirty_day']  ?? '' ?>">
+            <button type="submit" class="btn btn-primary" <?php if (isset($_REQUEST['thirty_day']) && $_REQUEST['thirty_day'] != "none") { ?>disabled<?php } ?> style="padding: 6px 55px;margin: 0 5px 5px 0;"><?php echo $lang['last_30_days']; ?></button>
           </form>
 
           <!-- <a href="<?php echo $link->link("reports", frontend, '&sixty_day'); ?>">
@@ -151,8 +151,8 @@ function sec2hms_new($seconds)
 
 
           <form method="post" action="<?= $link->link('reports', frontend) ?>">
-           <input type="hidden" name="sixty_day" value="<?= $_REQUEST['sixty_day'] ?? '' ?>">
-            <button type="submit"  class="btn btn-primary" <?php if (isset($_REQUEST['sixty_day']) && $_REQUEST['sixty_day'] != "none") { ?>disabled<?php } ?> style="padding: 6px 55px;margin: 0 5px 5px 0;"><?php echo $lang['last_60_days']; ?></button>
+            <input type="hidden" name="sixty_day" value="<?= $_REQUEST['sixty_day'] ?? '' ?>">
+            <button type="submit" class="btn btn-primary" <?php if (isset($_REQUEST['sixty_day']) && $_REQUEST['sixty_day'] != "none") { ?>disabled<?php } ?> style="padding: 6px 55px;margin: 0 5px 5px 0;"><?php echo $lang['last_60_days']; ?></button>
           </form>
 
         </div>
@@ -171,6 +171,7 @@ function sec2hms_new($seconds)
           <thead>
             <tr>
               <th> <?php echo $lang['employee']; ?> </th>
+              <th> <?php echo $lang['company']; ?> </th>
               <th> <?php echo $lang['project']; ?> </th>
               <th> <?php echo $lang['task']; ?> </th>
 
@@ -184,7 +185,7 @@ function sec2hms_new($seconds)
               <th> <?php echo $lang['approved_hours']; ?> </th>
               <th> <?php echo $lang['rejected_hours']; ?> </th>
 
-                <th class="text-right"> <?php echo $lang['compute_wages']; ?> </th>
+              <th class="text-right"> <?php echo $lang['compute_wages']; ?> </th>
 
               <?php if ($_SESSION['department'] == 4 || $_SESSION['department'] == 5) { ?>
                 <th> <?php echo $lang['action']; ?> </th>
@@ -194,10 +195,11 @@ function sec2hms_new($seconds)
           </thead>
           <tbody>
             <?php
-             if (is_array($report_details) && isset($report_details)  ) {
+            if (is_array($report_details) && isset($report_details)) {
               foreach ($report_details as $task) { ?>
-                <tr class="entry_id_<?php echo $task['id'] ?? ''; ?>" >
+                <tr class="entry_id_<?php echo $task['id'] ?? ''; ?>">
                   <td><?php echo $task['emp_name']; ?></td>
+                  <td><?php echo $task['company_name']; ?></td>
                   <?php
                   if ($task['project_name'] == '') {
                     $default_project = $db->run("SELECT p.project_id, p.project_name, t.task_name FROM projects p LEFT JOIN project_assign pa on (pa.project_id = p.project_id) LEFT JOIN to_do_list t on t.project_id = p.project_id WHERE p.company_id = '" . $_SESSION['company_id'] . "' and p.project_type != 'public' and (p.employee_id = '" . $task['employee_id'] . "' or p.share_project_to = '" . $task['employee_id'] . "' or pa.employee_id = '" . $task['employee_id'] . "') ORDER BY p.created_date DESC")->fetchAll();
@@ -216,21 +218,21 @@ function sec2hms_new($seconds)
                     <td><?php echo $feature->convertTimeZone(date("Y-m-d H:i:s", $task['check_in']), 'time'); ?></td>
                     <td><?php if ($task['check_out'] != '') echo $feature->convertTimeZone(date("Y-m-d H:i:s", $task['check_out']), 'time'); ?></td>
                   <?php } ?>
-                  
+
                   <td class=" text-right entry_wh_<?php echo $task['id'] ?? ''; ?>"><?php echo sec2hms_new($task['working_hours']); ?></td>
                   <td class="text-right"><?php echo sec2hms_new($task['approved_time']); ?></td>
                   <td class="text-right"><?php echo sec2hms_new($task['working_hours'] - $task['approved_time']); ?></td>
 
-                    <td class="text-right">
-                      <?php
-                      $task['hourly_rate'] = $task['hourly_rate'] ?? 0;
-                      $compute_wages = 0;
-                      if ($task['hourly_rate'] != '' && $task['hourly_rate'] > 0) {
-                        $compute_wages =  $task['approved_time'] * ($task['hourly_rate'] / 3600);
-                      }
-                      echo number_format((float)$compute_wages, 2) . "SR";
-                      ?>
-                    </td>
+                  <td class="text-right">
+                    <?php
+                    $task['hourly_rate'] = $task['hourly_rate'] ?? 0;
+                    $compute_wages = 0;
+                    if ($task['hourly_rate'] != '' && $task['hourly_rate'] > 0) {
+                      $compute_wages =  $task['approved_time'] * ($task['hourly_rate'] / 3600);
+                    }
+                    echo number_format((float)$compute_wages, 2) . "SR";
+                    ?>
+                  </td>
 
                   <?php if ($_SESSION['department'] == 4 || $_SESSION['department'] == 5) { ?>
                     <td>
@@ -239,8 +241,8 @@ function sec2hms_new($seconds)
                   <?php } ?>
 
                 </tr>
-           
-           <?php
+
+            <?php
               }
             } ?>
           </tbody>

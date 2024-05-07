@@ -11,7 +11,7 @@
   .s_msg_container {
     color: #000;
     background: #FFF;
-    padding: 8px;
+    padding: 8px;<button type="submit" class="btn btn-success"><?php echo $lang['messages']; ?></button>
     margin: 2px;
     width: auto;
     border: 1px solid #989898;
@@ -175,7 +175,7 @@
         </div>
 
         <div class="chat_form_container">
-          <form method="post" class="form-inline" action="<?php $_SERVER['PHP_SELF']; ?>" enctype="multipart/form-data">
+          <form id='myForm' method="post" class="form-inline" action="<?php $_SERVER['PHP_SELF']; ?>" enctype="multipart/form-data">
             <div class="form-group" style="width: 100%;">
               <input class="form-control" rows="2" style="width: 90%;" id="message" name="message" type="text">
               <input type="hidden" name="employee_id" value="<?= $_POST['employee_id'] ?>">
@@ -220,7 +220,8 @@
 
     msg_container.scrollTop(msg_container.prop("scrollHeight"));
 
-    $("form").submit(function(e) {
+
+    $("#myForm").submit(function(e) {
       e.preventDefault();
       $.post(
         url, {

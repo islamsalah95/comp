@@ -135,6 +135,102 @@ ORDER BY
 
 
 } else {
+//case have many contracct select all hourly_rate contract for session country
+
+//     $report_details = $db->myQuery(" SELECT 
+//     sc.id, 
+//     sc.current_dt,
+//     sc.check_in,
+//     sc.check_out,
+//     sc.approved_time,
+//     e.employee_id,
+//     e.emp_name, 
+//     p.project_id,
+//     p.project_name,
+//     t.task_name,
+//     t.task_id,
+//     sc.check_out_time as working_hours,
+//     ecm.hourly_rate
+// FROM 
+//     `shift_check` sc 
+// LEFT JOIN 
+//     `employee` e ON e.employee_id = sc.employee_id 
+// LEFT JOIN 
+//     projects p ON p.project_id = sc.project_id
+// LEFT JOIN 
+//     to_do_list t ON t.task_id = sc.task_id 
+// LEFT JOIN 
+//     employee_company_map ecm ON ecm.employee_id = sc.employee_id
+// WHERE 
+// sc.company_id = '" . $_SESSION['company_id'] . "' 
+// AND sc.current_dt BETWEEN '" . $start_date . "' AND '" . $end_date . "' 
+// AND (e.`department` = 2 OR e.`department` = 3) 
+// GROUP BY 
+//     sc.id, 
+//     sc.current_dt,
+//     sc.check_in,
+//     sc.check_out,
+//     sc.approved_time,
+//     e.employee_id,
+//     e.emp_name, 
+//     p.project_id,
+//     p.project_name,
+//     t.task_name,
+//     t.task_id,
+//     sc.check_out_time ,
+//     ecm.hourly_rate
+// ORDER BY 
+//     e.`emp_name` ASC
+// ");
+
+//case have many contracct select only lase hourly_rate contract
+//     $report_details = $db->myQuery("SELECT 
+//     sc.id, 
+//     sc.current_dt,
+//     sc.check_in,
+//     sc.check_out,
+//     sc.approved_time,
+//     e.employee_id,
+//     e.emp_name, 
+//     p.project_id,
+//     p.project_name,
+//     t.task_name,
+//     t.task_id,
+//     sc.check_out_time as working_hours,
+//     ecm.hourly_rate
+// FROM 
+//     `shift_check` sc 
+// LEFT JOIN 
+//     `employee` e ON e.employee_id = sc.employee_id 
+// LEFT JOIN 
+//     projects p ON p.project_id = sc.project_id
+// LEFT JOIN 
+//     to_do_list t ON t.task_id = sc.task_id 
+// LEFT JOIN 
+//     employee_company_map ecm ON ecm.employee_id = sc.employee_id
+// AND CURDATE() BETWEEN ecm.start_date AND ecm.end_date
+// WHERE 
+//     sc.current_dt BETWEEN '" . $start_date . "' AND '" . $end_date . "' 
+//     AND (e.`department` = 2 OR e.`department` = 3) 
+// GROUP BY 
+//     sc.id, 
+//     sc.current_dt,
+//     sc.check_in,
+//     sc.check_out,
+//     sc.approved_time,
+//     e.employee_id,
+//     e.emp_name, 
+//     p.project_id,
+//     p.project_name,
+//     t.task_name,
+//     t.task_id,
+//     sc.check_out_time ,
+//     ecm.hourly_rate
+// ORDER BY 
+//     e.`emp_name` ASC
+// ");
+
+//case have many contracct select all hourly_rate contract
 
 $report_details = $db->myQuery(" SELECT 
     sc.id, 
@@ -149,7 +245,8 @@ $report_details = $db->myQuery(" SELECT
     t.task_name,
     t.task_id,
     sc.check_out_time as working_hours,
-    ecm.hourly_rate
+    ecm.hourly_rate,
+    comp.company_name
 FROM 
     `shift_check` sc 
 LEFT JOIN 
@@ -160,9 +257,10 @@ LEFT JOIN
     to_do_list t ON t.task_id = sc.task_id 
 LEFT JOIN 
     employee_company_map ecm ON ecm.employee_id = sc.employee_id
+LEFT JOIN 
+    company  comp ON comp.id = sc.company_id
 WHERE 
-sc.company_id = '" . $_SESSION['company_id'] . "' 
-AND sc.current_dt BETWEEN '" . $start_date . "' AND '" . $end_date . "' 
+sc.current_dt BETWEEN '" . $start_date . "' AND '" . $end_date . "' 
 AND (e.`department` = 2 OR e.`department` = 3) 
 GROUP BY 
     sc.id, 

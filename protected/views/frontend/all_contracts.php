@@ -39,6 +39,9 @@
                             <th class="min-tablet" width="20%"> <?php echo $lang['employee_name']; ?></th>
                             <th class="min-tablet" width="20%"> <?php echo $lang['employee_national_number']; ?></th>
                             <th class="min-tablet" width="10%"> <?php echo $lang['hour_rate']; ?></th>
+                            <th class="min-tablet" width="20%"> <?php echo $lang['approved_hours']; ?> </th>
+                            <th class="text-right"> <?php echo $lang['compute_wages']; ?> </th>
+
                             <!-- add contract status -->
                             <!--<th class="min-tablet" width="10%"> <?php echo $lang['contract_status']; ?></th>-->
                             <th width="8%"> <?php echo $lang['action']; ?></th>
@@ -55,11 +58,22 @@
                                     <td><?php echo $contract['employee_name']; ?></td>
                                     <td><?php echo $contract['employee_national_number']; ?></td>
                                     <td class="text-right"><?php echo $contract['hourly_rate']; ?></td>
+                                    <td class="text-right"><?php echo sec2hms_new($contract['approved_time']); ?></td>
+                                    <td class="text-right">
+                                        <?php
+                                        $contract['hourly_rate'] = $contract['hourly_rate'] ?? 0;
+                                        $compute_wages = 0;
+                                        if ($contract['hourly_rate'] != '' && $contract['hourly_rate'] > 0) {
+                                            $compute_wages =  $contract['approved_time'] * ($contract['hourly_rate'] / 3600);
+                                        }
+                                        echo number_format((float)$compute_wages, 2) . "SR";
+                                        ?>
+                                    </td>
                                     <!--<td><?php echo $contract['state']; ?></td>-->
                                     <!-- contract actions -->
                                     <td>
                                         <!-- <a href="<?php echo $link->link("view_contract", frontend, '&contract_id=' . $contract['id']); ?>" class="btn btn-success fa fa-eye" title="View add contract status"></a> -->
-                                        
+
                                         <form method="post" action="<?= $link->link('view_contract', frontend) ?>">
                                             <input type="hidden" name="contract_id" value="<?= $contract['id'] ?>">
                                             <button type="submit" class="btn btn-success fa fa-eye"></button>

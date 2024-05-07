@@ -39,51 +39,39 @@
 
 
 
-                <form method="post" action="<?php $_SERVER['PHP_SELF']; ?>" id="freelancer_search_form">
-                    <div class="row">
+            <form method="post" action="<?php $_SERVER['PHP_SELF']; ?>" id="freelancer_search_form">
+    <div class="row justify-content-center"> <!-- Center the form -->
+        <div class="col-md-6"> <!-- Adjust the width of the columns based on your preference -->
+            <div class="form-group">
+                <label class="text-muted" for="job_title"><?= $lang['job_title'] ?> *</label>
+                <select name="job_title" class="form-control select_job">
+                    <option value=""><?= $lang['select_option'] ?></option>
+                    <?php foreach ($specialities as $specialityID => $value) { ?>
+                        <option value="<?= $value[$_SESSION['site_lang'] . '_Title']; ?>" <?php echo isset($job_title) && $value[$_SESSION['site_lang'] . '_Title'] == $job_title ? 'selected' : ''; ?>>
+                            <?= $value[$_SESSION['site_lang'] . '_Title']; ?>
+                        </option>
+                    <?php } ?>
+                </select>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label class="text-muted">First Name *</label>
+                <input class="form-control" value="<?php echo isset($emp_name) ? $emp_name : ''; ?>" type="text" placeholder="Enter your name" name="emp_name">
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <label class="text-muted"> Experience *</label>
+                <input class="form-control" value="<?php echo isset($experiences) ? $experiences : ''; ?>" type="number" placeholder="Enter your experiences years" name="experiences">
+            </div>
+        </div>
+    </div>
+    <div class="text-center"> <!-- Center the button -->
+        <button class="btn btn-success register_button" type="submit" name="submit_freelancer"><i class="fa fa-save"></i> Search</button>
+    </div>
+</form>
 
-
-                        <div class="col-12">
-                            <div class="form-group">
-                                <label for="job_title"><?= $lang['job_title'] ?> </label>
-                                <select name="job_title" class="form-control select_job">
-                                    <option value=""><?= $lang['select_option'] ?></option>
-                                    <?php foreach ($specialities as $specialityID => $value) { ?>
-                                        <option value="<?= $value[$_SESSION['site_lang'] . '_Title']; ?>" <?php echo isset($job_title) && $value[$_SESSION['site_lang'] . '_Title'] == $job_title ? 'selected' : ''; ?>>
-                                            <?= $value[$_SESSION['site_lang'] . '_Title']; ?>
-                                        </option>
-                                    <?php } ?>
-                                </select>
-
-                            </div>
-                        </div>
-
-                        <div class="row" style="display: flex; justify-content: space-between;">
-
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <div class="text-left">
-                                        <label class="text-muted">First Name *</label>
-                                        <input class="form-control" value="<?php echo isset($emp_name) ? $emp_name : ''; ?>" type="text" placeholder="Enter your name" name="emp_name">
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <div class="text-left">
-                                        <label class="text-muted"> Experience *</label>
-                                        <input class="form-control" value="<?php echo isset($experiences) ? $experiences : ''; ?>" type="number" placeholder="Enter your experiences years" name="experiences">
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <button class="btn btn-success register_button" type="submit" name="submit_freelancer"><i class="fa fa-save"></i> Search</button>
-                </form>
 
 
 
